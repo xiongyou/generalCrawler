@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<className>com.gab.mycrawler.save.StdSaveObj</className>
+	<isSaveProductFiles>0</isSaveProductFiles><!-- 1：表示保存产品页面源文件，0：表示不保存 -->
+	
+	<!-- 上面两项不用管 -->
+	
+	<serverUri>http://202.202.5.140:8888/Test/TaskServlet</serverUri><!-- 服务器地址 -->
+	<clientID>1</clientID><!--用户ID分配： 熊友-1  杨梦琴-2  张盼-3	  刘宇胜-4   袁中卫-5  钟老师-6    陈光伟-7	  李老师-8  邓忠-9  崔磊-10-->
+	<taskCount>2000</taskCount><!-- 每次执行任务的数量 -->
+	<timeout>7</timeout><!-- 请求页面超时 -->	
+	<exceptionPause>3</exceptionPause><!-- 访问异常时，暂停访问时间，3 分钟 -->
+</config>
