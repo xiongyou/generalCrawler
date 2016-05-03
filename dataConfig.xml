@@ -307,7 +307,7 @@
 		<!-- 一号店 -->
 		<website name="YiHaoDian">
 			<errorInfos>
-				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{20,50})(?=&lt;/p&gt;)" isParsed="0"></errorInfo1>
+				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
 			</errorInfos>
 			<dataobjects>
@@ -583,7 +583,7 @@
 		<!-- 沱沱工社 -->
 		<website name="TuoTuoGongShe">
 			<errorInfos>
-				<errorInfo1 regex="" isParsed="0"></errorInfo1>
+				<errorInfo1 regex="您想访问的页面没找着" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
 			</errorInfos>
 			<dataobjects>
@@ -605,7 +605,7 @@
 						<factoryAddress regex=""></factoryAddress>
 						<series regex=""></series>
 						<specification regex="(?&lt;=&gt;规格[^&gt;]{1,100}>\n[^&lt;]{1,100})([^\s]*)(?=\n[^&lt;]{1,100}&lt;)"></specification>
-						<deliveryStartArea regex="" ></deliveryStartArea>
+						<deliveryStartArea regex="(?&lt;=third-party-cname&quot;[^&gt;]{0,30}&gt;)([^&lt;]*)(?=&lt;)" ></deliveryStartArea>
 						<!-- 新增产品信息：保质期、生产日期 -->>
 						<qualityDay regex="(?&lt;=保质期：&lt;span&gt;)([^&lt;]*)(?=&lt;)"></qualityDay>
 						<produceDay regex="(?&lt;=生产日期：&lt;span&gt;)([^&lt;]*)(?=&lt;)"></produceDay>
@@ -891,7 +891,7 @@
 						<province regex=""></province>
 						<city regex=""></city>
 						<category1  regex="(?&lt;=首页&lt;/a&gt;&lt;span&gt;&gt;[^&quot;]{20,50}&quot;[^&gt;]{20,40}&gt;)([^&lt;]*)(?=&lt;)"></category1>
-						<category2  regex="(?&lt;=&lt;/a>\s{10,20}&lt;span&gt;&gt;&lt;/span&gt;&lt;a href=&quot;/productlist[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;"></category2>
+						<category2  regex="(?&lt;=&lt;/a>\s{10,20}&lt;span&gt;&gt;&lt;/span&gt;&lt;a href=&quot;/productlist[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)"></category2>
 						<category3  regex="(?&lt;=span&gt;&gt;&lt;/span&gt;&lt;em&gt;)([^&lt;]*)(?=&lt;)"></category3>
 						
 						<specialtyCategory regex=""></specialtyCategory>

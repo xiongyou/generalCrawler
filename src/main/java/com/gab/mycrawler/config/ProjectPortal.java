@@ -94,6 +94,7 @@ public class ProjectPortal {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			logger.debug(e.toString());
 		
 		}
 
