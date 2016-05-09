@@ -3,10 +3,15 @@
 	<websites>
 		<!-- 淘宝 -->
 		<website name="TaoBao">
+			<loadElements>
+				<cssSelector id="1"  selector="#J_SellCounter|#J-From"></cssSelector>
+				<cssSelector id="2"  selector="#detail &gt; div.tb-detail-bd.tb-clear &gt; div.tb-summary.tb-clear &gt; div &gt; div.tb-item-info-r &gt; div &gt; div &gt; div.tb-key.tb-out-of-date.tb-key-off-sale &gt; div &gt; p &gt; strong"></cssSelector>
+				<cssSelector id="3" selector="#error-notice &gt; div.error-notice-text &gt; div.error-notice-hd"></cssSelector>
+			</loadElements>	
 			<errorInfos>
 					<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1"></errorInfo1>
 					<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)" isParsed="0"></errorInfo2>
-			</errorInfos>
+			</errorInfos>					
 			<dataobjects>
 				<Product>		
 					<fields>
@@ -102,6 +107,11 @@
 		
 		<!-- 天猫 -->
 		<website name="Tmall">
+			<loadElements>
+				<cssSelector id="1"  selector="#J_deliveryAdd"></cssSelector>
+				<cssSelector id="2"  selector="#J_Sold-out-recommend &gt; div.sold-out-info &gt; div.sold-out-left &gt; strong"></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>				
+			</loadElements>	
 			<errorInfos>
 				<errorInfo1 regex="此商品已下架" isParsed="1"></errorInfo1>
 				<errorInfo2 regex="您查看的商品找不到了" isParsed="0"></errorInfo2>
@@ -125,7 +135,7 @@
 						<factoryAddress regex="(?&lt;=title=[^&lt;]{1,20}&gt;厂址：)([^&lt;]*)(?=&lt;/li&gt;)"></factoryAddress>
 						<series regex="(?&lt;=title=[^&lt;]{1,10}&gt;系列: )([^&lt;]*)(?=&lt;)"></series>
 						<specification regex="(?&lt;=title=[^&lt;]{1,10}&gt;规格:)([^&lt;]*)(?=&lt;/li&gt;)"></specification>
-						<deliveryStartArea regex="(?&lt;=J_deliveryAdd&quot;&gt;)([^&lt;]*)(?=&lt;)"  cssSelector="#J_deliveryAdd"></deliveryStartArea>
+						<deliveryStartArea regex="(?&lt;=J_deliveryAdd&quot;&gt;)([^&lt;]*)(?=&lt;)"></deliveryStartArea>
 						<productPrice regex="(?&lt;=&quot;defaultItemPrice&quot;:&quot;)([^&quot;]*)(?=&quot;)" ></productPrice>
 						<productPromPrice regex="(?&lt;=&lt;div class=&quot;tm-promo-price&quot;&gt;[^&lt;]{1,20}&lt;em class=&quot;tm-yen&quot;&gt;¥&lt;/em&gt; &lt;span class=&quot;tm-price&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"></productPromPrice>
 						<monthSaleCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;月销量&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)" ></monthSaleCount>
@@ -208,6 +218,11 @@
 		
 		<!-- 京东 -->	
 		<website name="JingDong">
+			<loadElements>
+				<cssSelector id="1"  selector="#store-selector &gt; div.text &gt; div"></cssSelector>
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>	
 			<errorInfos>
 				<errorInfo1 regex="该商品已下柜" isParsed="1"></errorInfo1>
 				<errorInfo2 regex="您查看的商品找不到了" isParsed="0"></errorInfo2>
@@ -231,7 +246,7 @@
 						<factoryAddress regex=""></factoryAddress>
 						<series regex=""></series>
 						<specification regex="(?&lt;=规格&lt;/td&gt;&lt;td&gt;)([^&lt;]*)(?=&lt;)"></specification>
-						<deliveryStartArea regex="(?&lt;=从\s{1,5})([^\s]*)(?=\s{1,5}发货)" cssSelector="#store-selector &gt; div.text &gt; div"></deliveryStartArea>
+						<deliveryStartArea regex="(?&lt;=从\s{1,5})([^\s]*)(?=\s{1,5}发货)"></deliveryStartArea>
 						<productPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)" ></productPrice>
 						<productPromPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"></productPromPrice>
 						<monthSaleCount regex=""></monthSaleCount>
@@ -306,6 +321,11 @@
 		
 		<!-- 一号店 -->
 		<website name="YiHaoDian">
+			<loadElements>
+				<cssSelector id="1"  selector="#productMainName"></cssSelector><!-- 产品名称 -->
+				<cssSelector id="2"  selector="#desc_sppj &gt; em|#desc_sppj &gt; em"></cssSelector><!-- 价格、评价 -->
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -314,7 +334,7 @@
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=productMercantId[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)"></productActualID>
-						<productName regex="(?&lt;=cnName[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)" cssSelector="#productMainName"></productName>
+						<productName regex="(?&lt;=cnName[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)" ></productName>
 						<productDescription regex="(?&lt;=productSubName[^&gt;]{1,50}title=&quot;)([^&quot;]*)(?=&quot;)"></productDescription>
 						<shelveDate regex=""></shelveDate>
 						<status regex=""></status>
@@ -330,10 +350,10 @@
 						<series regex=""></series>
 						<specification regex=""></specification>
 						<deliveryStartArea regex=""></deliveryStartArea>
-						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)" cssSelector="#desc_sppj &gt; em"></productPrice>
+						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)" ></productPrice>
 						<productPromPrice regex=""></productPromPrice>
 						<monthSaleCount regex="(?&lt;=已售&lt;strong&gt;)([^&gt;]*)(?=&lt;)" ></monthSaleCount>
-						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)" cssSelector="#desc_sppj &gt; em"></commentCount>
+						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)"></commentCount>
 						<storeActualID regex="(?&lt;=license-)([^&quot;]*)(?=.html)"></storeActualID>
 						<storeName regex="(?&lt;=companyName[^&gt;]{1,20}&quot;)([^&quot;]*)(?=&quot; /)"></storeName>
 						<storeURL regex="(?&lt;=key_shop&quot;&gt;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot; target)"></storeURL>
@@ -401,6 +421,11 @@
 		
 		<!-- 商小妹购 -->
 		<website name="ShangXiaoMeiGou">
+			<loadElements>
+				<cssSelector id="1"  selector=""></cssSelector>
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -492,6 +517,11 @@
 		
 		<!-- 世纪购 -->
 		<website name="ShiJiGou">
+			<loadElements>
+				<cssSelector id="1"  selector=""></cssSelector>
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -582,6 +612,11 @@
 		
 		<!-- 沱沱工社 -->
 		<website name="TuoTuoGongShe">
+			<loadElements>
+				<cssSelector id="1"  selector=""></cssSelector>
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="您想访问的页面没找着" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -675,6 +710,11 @@
 		
 		<!-- 苏宁 -->
 		<website name="SuNing">
+			<loadElements>
+				<cssSelector id="1"  selector="#districtName|#promotionPrice"></cssSelector><!-- 配送地址 、促销价格-->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="此商品已下架" isParsed="1"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -702,10 +742,10 @@
 						<factoryAddress regex=""></factoryAddress>
 						<series regex=""></series>
 						<specification regex=""></specification>
-						<deliveryStartArea regex="(?&lt;=从\W{2})([^\s]*)(?=\W{2}销售和发货)" cssSelector="#districtName"></deliveryStartArea>
+						<deliveryStartArea regex="(?&lt;=从\W{2})([^\s]*)(?=\W{2}销售和发货)"></deliveryStartArea>
 						<expirationDate regex="(?&lt;=&gt;保质期[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"></expirationDate><!-- 保质期 -->
 						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)" ></productPrice>
-						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)" cssSelector="#promotionPrice"></productPromPrice>
+						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"></productPromPrice>
 						<monthSaleCount regex=""></monthSaleCount>
 						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"></commentCount>
 						<storeActualID regex="(?&lt;=value=&quot;)(\d*)(?=&quot;\sid=&quot;supplierID&quot;)"></storeActualID>
@@ -776,6 +816,11 @@
 		
 		<!-- 菜管家 -->
 		<website name="CaiGuanJia">
+			<loadElements>
+				<cssSelector id="1"  selector="body &gt; div.det_detinfo_frm &gt; div:nth-child(2) &gt; p:nth-child(5)|body &gt; div.det_detinfo_frm &gt; div.detinfo_infobox &gt; form &gt; p.detinfo_xl &gt; span"></cssSelector><!-- 产品实际ID、月销量 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -783,7 +828,7 @@
 			<dataobjects>
 				<Product>
 					<fields>
-						<productActualID regex="(?&lt;=货号：&lt;/span&gt;)([^&lt;]*)(?=&lt;)" cssSelector="body &gt; div.det_detinfo_frm &gt; div:nth-child(2) &gt; p:nth-child(5)"></productActualID>
+						<productActualID regex="(?&lt;=货号：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"></productActualID>
 						<productName regex="(?&lt;=名称：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"></productName>
 						<productDescription regex="(?&lt;=商品简述：&lt;br /&gt; &lt;span&gt;)([^&lt;]*)(?=&lt;)"></productDescription>
 						<shelveDate regex=""></shelveDate>
@@ -806,7 +851,7 @@
 						<expirationDate regex="(?&lt;=保质期：&lt;/span&gt;\s)([^&lt;]*)(?=&lt;)"></expirationDate><!-- 保质期 -->
 					 	<productPrice regex="(?&lt;=&lt;del&gt;￥)([^&lt;]*)(?=&lt;)" ></productPrice>
 						<productPromPrice regex="(?&lt;=&lt;em&gt;￥&lt;big&gt;)([^&lt;]*)(?=&lt;)"></productPromPrice>
-						<monthSaleCount regex="(?&lt;=月销&lt;span&gt;)(\d*)(?=&lt;)" cssSelector="body &gt; div.det_detinfo_frm &gt; div.detinfo_infobox &gt; form &gt; p.detinfo_xl &gt; span"></monthSaleCount>
+						<monthSaleCount regex="(?&lt;=月销&lt;span&gt;)(\d*)(?=&lt;)"></monthSaleCount>
 						<commentCount regex="(?&lt;=allComments&gt;[^\d]{10,30}&gt;)(\d*)(?=&lt;)"></commentCount>
 						<goodCommentCount regex="(?&lt;=好评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"></goodCommentCount>
 						<midCommentCount regex="(?&lt;=中评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"></midCommentCount>
@@ -874,6 +919,11 @@
 		
 		<!-- 太极养生馆 -->
 		<website name="TaiJiYSG">
+			<loadElements>
+				<cssSelector id="1"  selector=""></cssSelector>
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -972,6 +1022,11 @@
 		
 		<!-- 优码头 -->
 		<website name="YouMaTou">
+			<loadElements>
+				<cssSelector id="1"  selector="#product-intro > div.extInfo > div:nth-child(4)"></cssSelector><!-- 原产地 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -985,7 +1040,7 @@
 						<shelveDate regex=""></shelveDate>
 						<status regex=""></status>
 						<weight regex="(?&lt;=商品重量[^\d]{40,50}span&gt;)([^&lt;]*)(?=&lt;)"></weight>
-						<origin regex="(?&lt;=原产地：)([^&lt;]*)(?=&lt;)" cssSelector="#product-intro > div.extInfo > div:nth-child(4)"></origin>
+						<origin regex="(?&lt;=原产地：)([^&lt;]*)(?=&lt;)"></origin>
 						<province regex=""></province>
 						<city regex=""></city>
 						<category1 regex="(?&lt;=首页&lt;/a&gt; &lt;code&gt;&gt;&lt;/code&gt; &lt;a href=&quot;[^&quot;]{10,40}&quot;&gt;)([^&lt;]*)(?=&lt;)"></category1>
@@ -1076,8 +1131,13 @@
 		
 		<!-- 邮乐购 -->	
 		<website name="YouLeGou">
+			<loadElements>
+				<cssSelector id="1"  selector="span.btn-slideDown"></cssSelector><!-- 配送地址 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
-				<errorInfo1 regex="非常抱歉，该商品已下架" isParsed="1"></errorInfo1>
+				<errorInfo1 regex="该商品已下架" isParsed="1"></errorInfo1>
 				<errorInfo2 regex="您查看的物品或页面暂时未能查找到" isParsed="0"></errorInfo2>
 			</errorInfos>
 			<dataobjects>
@@ -1100,7 +1160,7 @@
 						<factoryAddress regex=""></factoryAddress>
 						<series regex=""></series>
 						<specification regex=""></specification>
-						<deliveryStartArea regex="(?&lt;=fArea&quot;&gt;\s{1,100}&lt;span&gt;\s{1,200})([^\t]*)(?=\s{0,100}&lt;/span)" cssSelector="span.btn-slideDown"></deliveryStartArea>
+						<deliveryStartArea regex="(?&lt;=fArea&quot;&gt;\s{1,100}&lt;span&gt;\s{1,200})([^\t]*)(?=\s{0,100}&lt;/span)"></deliveryStartArea>
 						
 						<productPrice regex="(?&lt;=￥&lt;[^&lt;]{1,50}&lt;strong&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/s)"></productPrice>
 						<commentCount regex="(?&lt;=商品评论[^&gt;]{1,5}&gt;)([^&lt;]*)(?=&lt;)"></commentCount>
@@ -1170,6 +1230,11 @@
 		
 		<!-- 顺丰优选 -->
 		<website name="ShunFengYouXuan">
+			<loadElements>
+				<cssSelector id="1"  selector="#price-sf &gt; div.priceBox &gt; strong"></cssSelector><!-- 产品价格 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -1198,7 +1263,7 @@
 						<specification regex="(?&lt;=规格：)([^&lt;]*)(?=&lt;/li)"></specification>
 						<deliveryStartArea regex=""></deliveryStartArea>
 
-						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')" cssSelector="#price-sf &gt; div.priceBox &gt; strong"></productPrice>
+						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')"></productPrice>
 						<commentCount regex="(?&lt;=全部评价&lt;font&gt;\()([^&lt;]*)(?=\))"></commentCount>
 						<goodCommentCount regex="(?&lt;=好评&lt;font&gt;\()([^&lt;]*)(?=\))"></goodCommentCount>
 						<midCommentCount regex="(?&lt;=中评&lt;font&gt;\()([^&lt;]*)(?=\))"></midCommentCount>
@@ -1208,7 +1273,7 @@
 				</Product>
 				<ProductMonitor>
 					<fields>
-						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')" cssSelector="#price-sf &gt; div.priceBox &gt; strong"></productPrice>
+						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')"></productPrice>
 						<productPromPrice regex=""></productPromPrice>
 						<monthSaleCount regex=""></monthSaleCount>
 						<commentCount regex="(?&lt;=全部评价&lt;font&gt;\()([^&lt;]*)(?=\))"></commentCount>
@@ -1265,6 +1330,11 @@
 		
 		<!-- 超级美味 -->
 		<website name="ChaoJiMeiWei">
+			<loadElements>
+				<cssSelector id="1"  selector="#detailinfo &gt; div.productintro &gt; div &gt; p.parameter.current_price &gt; span.pricenum"></cssSelector><!-- 价格 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -1290,7 +1360,7 @@
 						<series regex=""></series>
 						<specification regex="(?&lt;=规格：)([^&lt;]*)(?=&lt;)"></specification>
 						<deliveryStartArea regex=""></deliveryStartArea>
-						<productPrice regex="(?&lt;=¥&lt;/em&gt;)([^&lt;]*)(?=&lt;)" cssSelector="#detailinfo &gt; div.productintro &gt; div &gt; p.parameter.current_price &gt; span.pricenum"></productPrice>
+						<productPrice regex="(?&lt;=¥&lt;/em&gt;)([^&lt;]*)(?=&lt;)"></productPrice>
 
 					</fields>
 				</Product>
@@ -1353,6 +1423,11 @@
 
 		<!-- 生鲜宅配 -->	
 		<website name="ShengXianZhaiPei">
+			<loadElements>
+				<cssSelector id="1"  selector="#ECS_SHOPPRICE"></cssSelector><!-- 价格 -->
+				<cssSelector id="2"  selector=""></cssSelector>
+				<cssSelector id="3" selector=""></cssSelector>
+			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="" isParsed="0"></errorInfo1>
 				<errorInfo2 regex="" isParsed="0"></errorInfo2>
@@ -1379,7 +1454,7 @@
 						<specification regex=""></specification>
 						<deliveryStartArea regex=""></deliveryStartArea>
 
-						<productPrice regex="(?&lt;=ECS_SHOPPRICE[^&gt;]{1,30}&gt;￥)([^&lt;]*)(?=&lt;)" cssSelector="#ECS_SHOPPRICE"></productPrice>
+						<productPrice regex="(?&lt;=ECS_SHOPPRICE[^&gt;]{1,30}&gt;￥)([^&lt;]*)(?=&lt;)"></productPrice>
 						<commentCount regex="(?&lt;=&gt;)([^&lt;]*)(?=&lt;/p&gt;[^&gt;]{1,50}&gt;累计评价)"></commentCount>
 					</fields>
 				</Product>

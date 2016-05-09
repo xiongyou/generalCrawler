@@ -35,7 +35,7 @@ public class XPathTest {
   System.out.println("===========================================================");
   // 获取节点属性值
   String webTitleLang = (String) xpath.evaluate(
-    "/dataParseConfig/websites/website[@name='TaoBao']/dataobjects/product/fields/productName/@regex", document,
+    "/dataParseConfig/websites/website[@name='TaoBao']/loadElements/cssSelector[@id='2']/@selector", document,
     XPathConstants.STRING);
   System.out.println(webTitleLang);
   System.out.println("===========================================================");
@@ -45,11 +45,12 @@ public class XPathTest {
     XPathConstants.NODE);
   System.out.println(bookWeb.getNodeName());
   NodeList nodes=(NodeList) xpath.evaluate(
-		    "dataParseConfig/websites/website[@name='TaoBao']/dataobjects/Product/fields/*", document,
+		    "dataParseConfig/websites/website[@name='TaoBao']/loadElements/*", document,
 		    XPathConstants.NODESET);
   for (int i = 0; i < nodes.getLength(); i++) {
 	   Node book = nodes.item(i);
 	   System.out.println(book.getNodeName());
+	   System.out.println(book.getAttributes().getNamedItem("selector").getNodeValue());
 	  }
   System.out.println("===========================================================");
   // 获取节点集合

@@ -121,4 +121,5 @@ public interface iConfig {
 	String getErrorInfoIsParsed(String platform, String errorInfo)
 			throws Exception;
 	
+	List<String> getCssSelectors(String platform) throws Exception;
 }

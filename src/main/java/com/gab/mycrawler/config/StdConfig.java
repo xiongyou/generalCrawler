@@ -173,6 +173,19 @@ public class StdConfig implements iConfig {
 		String elementPath="/dataParseConfig/websites/website[@name='"+platform+"']/errorInfos/"+errorInfo+"/@isParsed";
 		return this.getXpathText(elementPath);
 	}
+
+	@Override
+	public List<String> getCssSelectors(String platform) throws Exception {
+		// TODO Auto-generated method stub
+		String elementPath="/dataParseConfig/websites/website[@name='"+platform+"']/loadElements/*";
+			NodeList nodes=getNodeList(elementPath);
+			List<String> cssSelectorList=new ArrayList<String>();
+	  for (int i = 0; i < nodes.getLength(); i++) {
+		   Node book = nodes.item(i);
+		   cssSelectorList.add(book.getAttributes().getNamedItem("selector").getNodeValue());
+		  }
+		return cssSelectorList;
+	}
 	
 	
 

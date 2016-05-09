@@ -71,95 +71,87 @@ public class UriContent {
 		else
 			stdUrl = tmpUrl;
 		final WebDriver tmpDriver = driver.switchTo().window(curWindowHandle);
-		// 等待页面加载完毕，超时时间设为 timeout秒
+		
 		final List<String> cssSelectorList;
-		cssSelectorList = config.getCssSelectors(platform, dataObject);
+		cssSelectorList = config.getCssSelectors(platform);
 		List<String> errorInfoNames = config.getErrorInfoNames(platform);
-
+		// 等待页面加载完毕，超时时间设为 timeout秒
 		try {
 			(new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
 				public Boolean apply(WebDriver d) {
 					List<Boolean> bList = new ArrayList();
-					try {
-						// 如果没有设置CssSeletor，则默认等待页面加载1.5秒
-						if (cssSelectorList.size() == 0) {
+
+					// 如果没有设置CssSeletor，则默认等待页面加载1.5秒
+					if (cssSelectorList.size() == 0) {
+						try {
 							Thread.sleep(1500);
-							return true;
-						}
-						for (String cssSelector : cssSelectorList) {
-							String cssContent = tmpDriver.findElement(By.cssSelector(cssSelector)).getText();
-							bList.add(!(cssContent.equals("") || cssContent.equals("-")));
-						}
-						for (boolean b : bList) {
-							if (!b)
-								return false;
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
 						}
 						return true;
-
-					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						// e.printStackTrace();
-						return false;
 					}
+					
+					for (String cssSelector : cssSelectorList) {
 
+						String[] selectors = cssSelector.split("\\|");
+						int i = 0;
+						for (String str : selectors) {
+							String cssContent ="";
+							try{
+								cssContent = tmpDriver.findElement(By.cssSelector(str)).getText();
+							}
+							catch(Exception e){
+								
+							}
+							boolean b = !(cssContent.equals("") || cssContent.equals("-"));
+							if (!b) {
+								break;
+							}
+							i++;
+							if (i == selectors.length) {
+								return true;
+							}
+						}
+					}
+					return false;
 				}
-			});
-			pageList.add("");
+			});			
 			ProjectPortal.logger.debug("Page is opened:" + uri);
 		} catch (TimeoutException e) {
-			content = driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
-					.replaceAll("&quot;", "\"");
 			// 如果没有设置下架等错误信息的配置，则默认下架
 			if (errorInfoNames.size() == 0) {
 				pageList.add("商品已下架！");
 			} else {
-				for (String errorInfoName : errorInfoNames) {
-					String errorInfoRegex = config.getErrorInfoRegex(platform, errorInfoName);
-					String errorInfo = this.resultOfRegex(content, errorInfoRegex).replaceAll("\t", " ")
-							.replaceAll("\n", " ").replaceFirst(" ", "");
-					if (!errorInfo.equals("")) {
-						pageList.add(errorInfo);
-						String isParsed = config.getErrorInfoIsParsed(platform, errorInfoName);
-						if (isParsed.equals("1"))
-							pageList.add(content);
-						break;
-					}
-				}
-				// 如果将所有错误都循环处理完了，仍然没有获取到，则说明访问超时
-				if (pageList.size() == 0)
-					pageList.add("访问超时");
+				pageList.add("访问超时");
 			}
-			ProjectPortal.logger.debug("Page is opened:" + uri);
 			return pageList;
 		}
-		/*
-		 * String commentCssSelector = "#productCommTitle > a"; WebElement
-		 * commentEle = driver.findElement(By.cssSelector(commentCssSelector));
-		 * 
-		 * commentEle.click(); // 等待评价数加载完毕，超时时间设为 timeout秒 try { (new
-		 * WebDriverWait(driver, timeout)).until(new
-		 * ExpectedCondition<Boolean>() { public Boolean apply(WebDriver d) {
-		 * 
-		 * String commentLoadCssSelector =
-		 * "#rv-main > div > div.rv-main-item > ul > li.l.now > a > p > span";
-		 * String cssContent =
-		 * tmpDriver.findElement(By.cssSelector(commentLoadCssSelector)).getText
-		 * (); System.out.println(cssContent); boolean b = cssContent.equals("")
-		 * || cssContent.equals("-"); return !b;
-		 * 
-		 * } }); } catch (TimeoutException e) { System.out.println("评价数为0！");
-		 * 
-		 * }
-		 */
-
+		
 		content = driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
 				.replaceAll("&quot;", "\"");
-		 //System.out.println(content);
-		// pageList.add(platform);
-		pageList.add(content);
-
-		// 是否保存产品源文件
-
+		// 如果包含出错数据的处理
+		int errorStatus=0;//初始化错误状态为0
+		for (String errorInfoName : errorInfoNames) {
+			String errorInfoRegex = config.getErrorInfoRegex(platform, errorInfoName);
+			String errorInfo = this.resultOfRegex(content, errorInfoRegex);
+			if (!errorInfo.equals("")) {
+				pageList.add(errorInfo);
+				String isParsed = config.getErrorInfoIsParsed(platform, errorInfoName);
+				if (isParsed.equals("1")){	//如果有错误信息，是否仍然进行解析，如果=1，则添加网页源内容到输出列表
+					pageList.add(content);					
+				}
+				errorStatus=1;	//如果匹配到了错误信息，则修改其状态
+				break;
+			} 
+		}
+		if(errorStatus==0){	//在出错数据处理之后，如果错误状态仍为0，则表示没有错误信息，则按照正常情况进行处理
+			pageList.add("");
+			// System.out.println(content);
+			pageList.add(content);
+		}
+		
+		// 是否保存页面源文件
 		iConfig config = new StdConfig("start.xml");
 		String isSaveProductFile = config.getXpathText("config/isSaveProductFiles/text()");
 
@@ -184,7 +176,6 @@ public class UriContent {
 			writer.close();
 			ProjectPortal.logger.debug("File is Saved:" + fileName);
 		}
-
 		return pageList;
 
 	}
@@ -207,7 +198,8 @@ public class UriContent {
 		}
 
 		String temp = sb.toString();
-		return temp.trim();// 去掉空格
+		return temp.trim().replaceAll("\t", " ").replaceAll("\n", " ")
+				.replaceFirst(" ", "");// 去掉空格
 	}
 
 }
