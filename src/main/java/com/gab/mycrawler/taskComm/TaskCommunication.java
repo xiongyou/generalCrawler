@@ -59,7 +59,7 @@ public class TaskCommunication {
 	        
 	    }
 		public Task getATask() throws Exception{			
-			 HttpResponse response = this.httpAccess(this.clientID, this.serverUri, "getTask",null);
+			 HttpResponse response = this.httpAccess(this.clientID, this.serverUri+"/getTask", "getTask",null);
 			 Task task=new Task();
 			 String notask = "All Task has been processed!";
 			 int statusCode = response.getStatusLine().getStatusCode();
@@ -68,7 +68,7 @@ public class TaskCommunication {
 		     }
 		     String result = EntityUtils.toString(response.getEntity(), HTTP.UTF_8);
 		     //System.out.println(result+":?");
-		     if(result.equals(notask)||result.equals("")){
+		     if(result.contains("success\":false")){
 		    	 System.out.println("任务已被全部处理，请等待下次任务发布!");
 		    	 return null;
 		     }
@@ -76,10 +76,10 @@ public class TaskCommunication {
 		     if (result.startsWith("{")) {
 		    	 System.out.println(result+":?");
 		    	 JSONObject jobj = JSONObject.fromObject(result);
-		         task.setCrawlerUri( jobj.getString("URL"));
-		         task.setDataobj(jobj.getString("DataObj"));
-		         task.setWebsite( jobj.getString("Website"));
-		         task.setTaskid( jobj.getString("TaskID"));
+		         task.setCrawlerUri( jobj.getJSONObject("task").getString("uRL"));
+		         task.setDataobj(jobj.getJSONObject("task").getString("dataObj"));
+		         task.setWebsite( jobj.getJSONObject("task").getString("website"));
+		         task.setTaskid( jobj.getJSONObject("task").getString("taskID"));
 		         taskdataID = jobj.getInt("TaskDataID");
 		         return task;
 		     } else {
@@ -100,9 +100,9 @@ public class TaskCommunication {
 			 jsonObject.put("URL", task.getCrawlerUri());
 			 jsonObject.put("Data",data.toJson());
 			// System.out.println(jsonObject.toString());
-			 HttpResponse response = httpAccess(clientid, serverUri, "postData",jsonObject);
+			 HttpResponse response = httpAccess(clientid, serverUri+"/uploadData", "postData",jsonObject);
 			 String result = EntityUtils.toString(response.getEntity(), HTTP.UTF_8);
-			 //System.out.println(result);
+			 System.out.println(result);
 		}		
 
 		private HttpResponse httpAccess(String clientId, String uri,String oper,JSONObject jsonObject ) throws IOException {

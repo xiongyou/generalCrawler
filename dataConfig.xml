@@ -5,8 +5,8 @@
 		<website name="TaoBao">
 			<loadElements>
 				<cssSelector id="1"  selector="#J_SellCounter|#J-From"></cssSelector>
-				<cssSelector id="2"  selector="#detail &gt; div.tb-detail-bd.tb-clear &gt; div.tb-summary.tb-clear &gt; div &gt; div.tb-item-info-r &gt; div &gt; div &gt; div.tb-key.tb-out-of-date.tb-key-off-sale &gt; div &gt; p &gt; strong"></cssSelector>
-				<cssSelector id="3" selector="#error-notice &gt; div.error-notice-text &gt; div.error-notice-hd"></cssSelector>
+				<cssSelector id="2"  selector="#detail &gt; div.tb-detail-bd.tb-clear &gt; div.tb-summary.tb-clear &gt; div &gt; div.tb-item-info-r &gt; div &gt; div &gt; div.tb-key.tb-out-of-date.tb-key-off-sale &gt; div &gt; p &gt; strong"></cssSelector><!-- 此宝贝已下架 -->
+				<cssSelector id="3" selector="#error-notice &gt; div.error-notice-text &gt; div.error-notice-hd"></cssSelector><!-- 已下架或者被转移 -->
 			</loadElements>	
 			<errorInfos>
 					<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1"></errorInfo1>
@@ -108,9 +108,9 @@
 		<!-- 天猫 -->
 		<website name="Tmall">
 			<loadElements>
-				<cssSelector id="1"  selector="#J_deliveryAdd"></cssSelector>
-				<cssSelector id="2"  selector="#J_Sold-out-recommend &gt; div.sold-out-info &gt; div.sold-out-left &gt; strong"></cssSelector>
-				<cssSelector id="3" selector=""></cssSelector>				
+				<cssSelector id="1"  selector="#J_deliveryAdd"></cssSelector><!-- 配送起始地址 -->
+				<cssSelector id="2"  selector="#J_Sold-out-recommend &gt; div.sold-out-info &gt; div.sold-out-left &gt; strong"></cssSelector><!-- 商品下架 -->
+												
 			</loadElements>	
 			<errorInfos>
 				<errorInfo1 regex="此商品已下架" isParsed="1"></errorInfo1>
@@ -219,13 +219,11 @@
 		<!-- 京东 -->	
 		<website name="JingDong">
 			<loadElements>
-				<cssSelector id="1"  selector="#store-selector &gt; div.text &gt; div"></cssSelector>
-				<cssSelector id="2"  selector=""></cssSelector>
-				<cssSelector id="3" selector=""></cssSelector>
+				<cssSelector id="1"  selector="#jd-price"></cssSelector><!-- 价格 -->
+				<cssSelector id="2"  selector="#itemInfo &gt; div.m-itemover &gt; div.m-itemover-title &gt; h3 &gt; strong"></cssSelector><!-- 商品已下柜 -->
 			</loadElements>	
 			<errorInfos>
 				<errorInfo1 regex="该商品已下柜" isParsed="1"></errorInfo1>
-				<errorInfo2 regex="您查看的商品找不到了" isParsed="0"></errorInfo2>
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -321,10 +319,10 @@
 		
 		<!-- 一号店 -->
 		<website name="YiHaoDian">
-			<loadElements>
-				<cssSelector id="1"  selector="#productMainName"></cssSelector><!-- 产品名称 -->
-				<cssSelector id="2"  selector="#desc_sppj &gt; em|#desc_sppj &gt; em"></cssSelector><!-- 价格、评价 -->
-				<cssSelector id="3" selector=""></cssSelector>
+			<loadElements>				
+				<cssSelector id="1"  selector="#desc_sppj &gt; em|#desc_sppj &gt; em"></cssSelector><!-- 价格、评价 -->
+				<cssSelector id="2" selector="#main404 &gt; p.sorry.sorryMt"></cssSelector><!-- 商品下架 /此站不销售-->
+				<cssSelector id="3"  selector="#productMainName"></cssSelector><!-- 产品名称 -->
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0"></errorInfo1>
@@ -712,12 +710,10 @@
 		<website name="SuNing">
 			<loadElements>
 				<cssSelector id="1"  selector="#districtName|#promotionPrice"></cssSelector><!-- 配送地址 、促销价格-->
-				<cssSelector id="2"  selector=""></cssSelector>
-				<cssSelector id="3" selector=""></cssSelector>
+				<cssSelector id="2"  selector="#J-slide3 &gt; h3"></cssSelector><!-- 商品已下架 -->
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="此商品已下架" isParsed="1"></errorInfo1>
-				<errorInfo2 regex="" isParsed="0"></errorInfo2>
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -958,7 +954,6 @@
 						<commentCount regex="(?&lt;=累计评价\()(\d*)(?=\))"></commentCount>
 						<goodCommentCount regex=""></goodCommentCount>
 						<goodCommentRate regex="(?&lt;=好评率[\w\W]{1,10}&gt;)([^&lt;]*)(?=&lt;)"></goodCommentRate>	<!--好评率-->
-						
 					</fields>
 				</Product>
 				<ProductMonitor>

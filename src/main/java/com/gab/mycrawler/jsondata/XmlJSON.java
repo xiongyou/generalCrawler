@@ -56,7 +56,8 @@ public class XmlJSON {
 				file.createNewFile();
 			} else {
 				System.out.println("文件已存在或创建文件失败");
-				return;
+				file.delete();
+				//return;
 			}
 			
 			OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
@@ -67,9 +68,20 @@ public class XmlJSON {
 				line = reader.readLine();
 				i++;
 				if(line==null)
-					break;				
-				String xml = json2XML(line).
-						replaceAll("<\\?xml[^>]{20,40}>", "").replaceAll(" type=\"string\"", "");				
+					break;	
+				String temp[]=line.split("\t");
+				if(temp.length!=3)
+					continue;
+							
+				String xml = json2XML(temp[2]).
+						replaceAll("<\\?xml[^>]{20,40}>", "").replaceAll(" type=\"string\"", "").trim();	
+				if(xml.equals("<o/>"))
+					xml="<o></o>";
+				StringBuilder  sb = new StringBuilder (xml);
+				if(!xml.contains("productUrl"))
+					sb.insert(3, "<productUrl>"+temp[1]+"</productUrl>");
+				sb.insert(3, "<platform>"+temp[0]+"</platform>");
+				xml=sb.toString();
 				writer.write(xml+"\r\n");
 				writer.flush();
 				System.out.println(xml);
