@@ -15,7 +15,7 @@
 			<dataobjects>
 				<Product>		
 					<fields>
-						<productActualID regex="(?&lt;=appId[\w\W]{1,50}itemId[^']{1,15}')([^']*)(?=')"></productActualID>
+						<productActualID regex="(?&lt;=itemId\s{3,15}: ')([^']*)(?=')"></productActualID>
 						<productName regex="(?&lt;=tb-main-title&quot; data-title=&quot;)([^&quot;]*)(?=&quot;)"></productName>
 						<productDescription regex="(?&lt;=tb-subtitle&quot;>)([^&lt;]*)(?=&lt;)"></productDescription>
 						<shelveDate regex=""></shelveDate>
@@ -23,23 +23,23 @@
 						<weight regex="(?&lt;=净含量:\s{0,3})([^&lt;]*)(?=&lt;)"></weight>
 						<origin regex="(?&lt;=产地:\s{0,3})([^&lt;]*)(?=&lt;)"></origin>
 						<province regex="(?&lt;=省份:\s{0,3})([^&lt;]*)(?=&lt;)"></province>
-						<city regex="(?&lt;=&lt;li title=[^&gt;]{1,20}&gt;城市:\s{0,5})([^&lt;]*)(?=&lt;/li&gt;)"></city>
-						<category regex="(?&lt;=&lt;li title=[^&gt;]{1,20}&gt;[\w\W]{0,10}种类:\s{0,5})([^&lt;]*)(?=&lt;/li&gt;)" ></category>
-						<specialtyCategory regex="(?&lt;=&lt;li title=[^&gt;]{1,20}&gt;[\w\W]{0,10}品类:\s{0,5})([^&lt;]*)(?=&lt;/li&gt;)"></specialtyCategory>
+						<city regex="(?&lt;=城市:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)"></city>
+						<category regex="(?&lt;=title=[^&gt;]{1,20}&gt;[^:]{0,10}种类:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)" ></category>
+						<specialtyCategory regex="(?&lt;=品类:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)"></specialtyCategory>
 						<brand regex="(?&lt;=品牌:\s{0,3})([^&lt;]*)(?=&lt;)"></brand>
 						<factoryName regex="(?&lt;=厂名:\s{0,3})([^&lt;]*)(?=&lt;)"></factoryName>
 						<factoryAddress regex="(?&lt;=厂地:\s{0,3})([^&lt;]*)(?=&lt;)"></factoryAddress>
 						<series regex="(?&lt;=系列:\s{0,3})([^&lt;]*)(?=&lt;)"></series>
 						<specification regex=""></specification>
 						<deliveryStartArea regex="(?&lt;=J-From&quot;&gt;)([^&lt;]*)(?=&lt;)" cssSelector="#J-From"></deliveryStartArea>
-						<productPrice regex="(?&lt;=current_price[^\d]{5,30}&quot;)([^&quot;]*)(?=&quot;)" ></productPrice>
+						<productPrice regex="(?&lt;=current_price[^\d]{5,10}&quot;)([^&quot;]*)(?=&quot;)" ></productPrice>
 						<productPromPrice regex="(?&lt;=&lt;em id=&quot;J_PromoPriceNum&quot; class=&quot;tb-rmb-num&quot;&gt;)([^&lt;]*)(?=&lt;/em&gt;)"></productPromPrice>
 						<monthSaleCount regex="(?&lt;=&lt;strong id=&quot;J_SellCounter&quot;&gt;)([^&gt;]*)(?=&lt;/strong&gt;)" ></monthSaleCount>
 						<commentCount regex="(?&lt;=&lt;em class=&quot;J_ReviewsCount&quot;&gt;)([^&gt;]*)(?=&lt;/em&gt;)" ></commentCount>
-						<storeActualID regex="(?&lt;=shop[\w\W]{30,40}id[^']{0,5}')([^']*)(?=')"></storeActualID>
+						<storeActualID regex="(?&lt;=shop[^']{30,40}id[^']{0,5}')([^']*)(?=')"></storeActualID>
 						<storeName regex="(?&lt;=shop-name[\w\W]{120,135}title=&quot;)([^&quot;]*)(?=&quot;)"></storeName>
-						<storeURL regex="(?&lt;=shop[\w\W]{60,70}url[^']{0,5}')([^']*)(?=')"></storeURL>
-						<shopkeeper regex="(?&lt;=tb-seller-name[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;)"></shopkeeper>
+						<storeURL regex="(?&lt;=shop[^/]{60,80}url[^']{0,5}')([^']*)(?=')"></storeURL>
+						<shopkeeper regex="(?&lt;=title=&quot;掌柜:)([^&quot;]*)(?=&quot;)"></shopkeeper>
 						<companyName regex="(?&lt;=company-name&quot;&gt;)([^&lt;]*)(?=&lt;)"></companyName>
 						<storeLocation regex=""></storeLocation>
 					</fields>
@@ -120,7 +120,7 @@
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=itemId:&quot;)(\d*)(?=&quot;)"></productActualID>
-						<productName regex="(?&lt;=tb-detail-hd[\w\W]{1,20}data-spm[^&gt;]{1,20}&gt;\s{0,50})([^&lt;]*)(?=&lt;)"></productName>				
+						<productName regex="(?&lt;=name=&quot;keywords&quot; content=&quot;)([^&quot;]*)(?=&quot;)"></productName>				
 						<productDescription regex="(?&lt;=class=&quot;newp&quot;&gt;)([^&lt;]*)(?=&lt;)"></productDescription>
 						<shelveDate regex="" ></shelveDate>
 						<status regex=""></status>
@@ -128,8 +128,8 @@
 						<origin regex="(?&lt;=title=[^&lt;]{1,8}&gt;产地: )([^&lt;]*)(?=&lt;/li&gt;)"></origin>
 						<province regex="(?&lt;=title=[^&lt;]{1,8}&gt;省份: )([^&lt;]*)(?=&lt;/li&gt;)"></province>
 						<city regex="(?&lt;=title=[^&lt;]{1,8}&gt;城市: )([^&lt;]*)(?=&lt;/li&gt;)"></city>
-						<category regex="(?&lt;=title=[^&lt;]{1,20}&gt;[\w\W]{0,10}种类: )([^&lt;]*)(?=&lt;/li&gt;)" ></category>
-						<specialtyCategory regex="(?&lt;=title=[\w\W]{0,20}品类: )([^&lt;]*)(?=&lt;)"></specialtyCategory>
+						<category regex="(?&lt;=title=[^&lt;]{1,20}&gt;[^:]{0,10}种类: )([^&lt;]*)(?=&lt;/li&gt;)" ></category>
+						<specialtyCategory regex="(?&lt;=title=[^:]{0,20}品类: )([^&lt;]*)(?=&lt;)"></specialtyCategory>
 						<brand regex="(?&lt;=title=[^&gt;]{1,20}&gt;品牌: )([^&lt;]*)(?=&lt;)"></brand>
 						<factoryName regex="(?&lt;=title=[^&lt;]{1,20}&gt;厂名：)([^&lt;]*)(?=&lt;/li&gt;)"></factoryName>
 						<factoryAddress regex="(?&lt;=title=[^&lt;]{1,20}&gt;厂址：)([^&lt;]*)(?=&lt;/li&gt;)"></factoryAddress>
@@ -140,12 +140,12 @@
 						<productPromPrice regex="(?&lt;=&lt;div class=&quot;tm-promo-price&quot;&gt;[^&lt;]{1,20}&lt;em class=&quot;tm-yen&quot;&gt;¥&lt;/em&gt; &lt;span class=&quot;tm-price&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"></productPromPrice>
 						<monthSaleCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;月销量&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)" ></monthSaleCount>
 						<commentCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;累计评价&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"></commentCount>
-						<storeActualID regex="(?&lt;=id=[^&lt;]{1,30}shopid=&quot;)([^&quot;]*)(?=&quot;)"></storeActualID>
+						<storeActualID regex="(?&lt;=shopId:&quot;)(\d*)(?=&quot;)"></storeActualID>
 						<storeName regex="(?&lt;=class=&quot;slogo-shopname&quot;[^&lt;]{1,50}&lt;strong&gt;)([^&lt;]*)(?=&lt;)"></storeName>
 						<storeURL regex="(?&lt;=class=&quot;slogo-shopname&quot; href=&quot;)([^&quot;]*)(?=&quot;)"></storeURL>
 						<shopkeeper regex="(?&lt;=data-spm=&quot;d4918097&quot;&gt;)([^&gt;]*)(?=&lt;/a&gt;)"></shopkeeper>
-						<companyName regex="(?&lt;=公\s{0,5}司\s{0,5}名：[^&gt;]{1,100}&gt;[^&gt;]{1,100}&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/div&gt;)"></companyName>
-						<storeLocation regex="(?&lt;=所 在 地：[^&lt;]{1,50}&lt;[^&lt;]{1,100}&lt;[^&gt;]{1,50}&gt;\s{30,50})([^\s]{0,50}[^&lt;]*)(?=\s{20,50}&lt;)"></storeLocation>
+						<!-- companyName regex="(?&lt;=公\s{0,5}司\s{0,5}名：[^&gt;]{1,100}&gt;[^&gt;]{1,100}&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/div&gt;)"></companyName-->
+						<storeLocation regex="(?&lt;=所 在 地：[^&quot;]{50,100}&quot;right&quot;&gt;)([^&lt;]*)(?=&lt;)"></storeLocation>
 					
 					
 					

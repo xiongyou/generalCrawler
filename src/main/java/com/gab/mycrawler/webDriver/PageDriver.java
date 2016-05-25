@@ -9,8 +9,10 @@ import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.gab.mycrawler.config.MyPath;
 import com.gab.mycrawler.config.ProjectPortal;
 import com.gab.mycrawler.data.StdData;
 import com.gab.mycrawler.data.iData;
@@ -20,8 +22,13 @@ import com.gab.mycrawler.parse.iParse;
 public class PageDriver {
 	public static WebDriver generateDriver() {
 		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
-		WebDriver driver = null;
+		String path=MyPath.getProjectPath();		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("user-data-dir="+path+"\\libs\\userData"); 
+		WebDriver driver = null;		
+		
 		// 初始化，不显示图片
+		/*
 		Map<String, Object> contentSettings = new HashMap<String, Object>();
 		contentSettings.put("images", 2);
 
@@ -29,8 +36,8 @@ public class PageDriver {
 		preferences.put("profile.default_content_setting_values", contentSettings);
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("chrome.prefs", preferences);
-
-		driver = new ChromeDriver();
+		*/
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		return driver;
 	}

@@ -18,8 +18,10 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.gab.mycrawler.config.MyPath;
 import com.gab.mycrawler.data.iData;
 import com.gab.mycrawler.parse.StdParse;
 import com.gab.mycrawler.parse.iParse;
@@ -37,6 +39,15 @@ public class StdSaveObj implements iSaveObject {
 		}
 		final int length = (max - start + 1);
 		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
+		String path=MyPath.getProjectPath();
+		//System.out.println("user-data-dir="+path+"uuu");
+		
+		
+		//ChromeDriver driver = new ChromeDriver(options);
+		//driver.get("http://www.baidu.com");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("user-data-dir="+path+"\\libs\\userData"); 
 		File file = new File("conf/tb_productURL.txt");
 		int lineHandled = 0;
 		BufferedReader reader = null;
@@ -44,7 +55,7 @@ public class StdSaveObj implements iSaveObject {
 		WebDriver driver = null;
 		
 		//初始化，不显示图片
-		
+		/*
 		Map<String, Object> contentSettings = new HashMap<String, Object>();
 		contentSettings.put("images", 2);
 
@@ -52,13 +63,13 @@ public class StdSaveObj implements iSaveObject {
 		preferences.put("profile.default_content_setting_values", contentSettings);
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("chrome.prefs", preferences);
-		
+		*/
 		
 		while (lineHandled < length) {
 			String line;
 			try {		
 			
-				driver = new ChromeDriver(caps);						
+				driver = new ChromeDriver(options);						
 				driver.manage().window().maximize();
 				
 				reader = new BufferedReader(new FileReader(file));
@@ -156,7 +167,7 @@ public class StdSaveObj implements iSaveObject {
 	@Override
 	public void save(int start, int length, int timeout) throws Exception {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
 
 		Date date=new Date();
 		String path="output/"+ new SimpleDateFormat("yyyy/MM/dd").format(date);

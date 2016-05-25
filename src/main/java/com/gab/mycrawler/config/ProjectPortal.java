@@ -75,8 +75,8 @@ public class ProjectPortal {
 						sc.nextLine();
 						break;	//如果连续出错三次，则程序终止。
 					}
-					System.out.println("访问异常，将暂停 "+exceptionPause+" 三分钟");
-					logger.warn("访问异常，将暂停 "+exceptionPause+" 三分钟");
+					System.out.println("访问异常，将暂停 "+exceptionPause+" 分钟");
+					logger.warn("访问异常，将暂停 "+exceptionPause+" 分钟");
 					driver.quit();
 					Thread.sleep(exceptionPause*60000);//出错暂停。
 					driver = PageDriver.generateDriver();					

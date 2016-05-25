@@ -1,4 +1,0 @@
-2	http://www.962360.com/Home/Details/index/materialId/108927051.html	CaiGuanJia	;ƻ��;��;	Product	商品下架或访问的地址不存在
-4	http://www.962360.com/Home/Details/index/materialId/108926792.html	CaiGuanJia	;ƻ��;��;����;��;	Product	商品下架或访问的地址不存在
-5	http://www.962360.com/Home/Details/index/materialId/108926802.html	CaiGuanJia	;ƻ��;��ݮ;ӣ��;��;	Product	商品下架或访问的地址不存在
-6	http://www.962360.com/Home/Details/index/materialId/108926799.html	CaiGuanJia	;ƻ��;â;��;����;	Product	商品下架或访问的地址不存在

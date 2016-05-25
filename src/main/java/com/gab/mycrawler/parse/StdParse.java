@@ -49,8 +49,9 @@ public class StdParse implements iParse {
 					ProjectPortal.logger.debug("Beginning,Parse Field:"+fieldName);
 					String regex = config.getFieldRegex(platform, dataObj,
 							fieldName);
-					
-					String info = uriContent
+					String info="";
+					if(!regex.equals(""))						
+					info = uriContent
 							.resultOfRegex(Content, regex).replaceAll("\t", " ").replaceAll("\n", " ").replaceFirst(" ", "");						
 					ProjectPortal.logger.debug("Field is Parsed:"+fieldName);
 					data.setFieldValue(fieldName, info);		
