@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataParseConfig>
+	<websites>
+		<!-- 1、淘宝 -->
+		<website name="TaoBao">
+			<loadElements>
+				<cssSelector id="1" selector="#J_SellCounter|#J-From"/>
+				<cssSelector id="2" selector="#detail &gt; div.tb-detail-bd.tb-clear &gt; div.tb-summary.tb-clear &gt; div &gt; div.tb-item-info-r &gt; div &gt; div &gt; div.tb-key.tb-out-of-date.tb-key-off-sale &gt; div &gt; p &gt; strong"/>
+				<!-- 此宝贝已下架 -->
+				<cssSelector id="3" selector="#error-notice &gt; div.error-notice-text &gt; div.error-notice-hd"/>
+				<!-- 已下架或者被转移 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)" isParsed="0">移除</errorInfo2>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+					 
+						<productActualID regex="(?&lt;=itemId\s{3,15}: ')([^']*)(?=')"/>
+						<productName regex="(?&lt;=tb-main-title&quot; data-title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productDescription regex="(?&lt;=tb-subtitle&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=净含量:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=产地:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<province regex="(?&lt;=省份:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<city regex="(?&lt;=城市:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<category regex="(?&lt;=title=[^&gt;]{1,20}&gt;[^:]{0,10}种类:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<specialtyCategory regex="(?&lt;=品类:\s{0,3})([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<brand regex="(?&lt;=品牌:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex="(?&lt;=厂名:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<factoryAddress regex="(?&lt;=厂地:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<series regex="(?&lt;=系列:\s{0,3})([^&lt;]*)(?=&lt;)"/>
+						<specification regex=""/>
+						<deliveryStartArea regex="(?&lt;=J-From&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=current_price[^\d]{5,10}&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=&lt;em id=&quot;J_PromoPriceNum&quot; class=&quot;tb-rmb-num&quot;&gt;)([^&lt;]*)(?=&lt;/em&gt;)"/>
+						<monthSaleCount regex="(?&lt;=&lt;strong id=&quot;J_SellCounter&quot;&gt;)([^&gt;]*)(?=&lt;/strong&gt;)"/>
+						<commentCount regex="(?&lt;=&lt;em class=&quot;J_ReviewsCount&quot;&gt;)([^&gt;]*)(?=&lt;/em&gt;)"/>
+						<storeActualID regex="(?&lt;=shop[^']{30,40}id[^']{0,5}')([^']*)(?=')"/>
+						<storeName regex="(?&lt;=shop-name[\w\W]{1,135}title=&quot;)([^&quot;]*)(?=&quot;)||(?&lt;=&quot;shop-name-link&quot;[^&gt;]{1,200}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=shop[^/]{60,80}url[^']{0,5}')([^']*)(?=')"/>
+						<shopkeeper regex="(?&lt;=title=&quot;掌柜:)([^&quot;]*)(?=&quot;)"/>
+						<companyName regex="(?&lt;=company-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex=""/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productActualID regex="(?&lt;=appId[\w\W]{1,50}itemId[^']{1,15}')([^']*)(?=')"/>
+						<productPrice regex="(?&lt;=current_price[^\d]{5,30}&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=&lt;em id=&quot;J_PromoPriceNum&quot; class=&quot;tb-rmb-num&quot;&gt;)([^&lt;]*)(?=&lt;/em&gt;)"/>
+						<monthSaleCount regex="(?&lt;=&lt;strong id=&quot;J_SellCounter&quot;&gt;)([^&gt;]*)(?=&lt;/strong&gt;)"/>
+						<commentCount regex="(?&lt;=&lt;em class=&quot;J_ReviewsCount&quot;&gt;)([^&gt;]*)(?=&lt;/em&gt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=shop[\w\W]{30,40}id[^']{0,5}')([^']*)(?=')"/>
+						<storeName regex="(?&lt;=shop-name[\w\W]{120,135}title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeURL regex="(?&lt;=shop[\w\W]{60,70}url[^']{0,5}')([^']*)(?=')"/>
+						<shopkeeper regex="(?&lt;=tb-seller-name[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<companyName regex="(?&lt;=company-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流服务[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 2、天猫 -->
+		<website name="Tmall">
+			<loadElements>
+				<cssSelector id="1" selector="#J_deliveryAdd"/>
+				<!-- 配送起始地址 -->				
+				<cssSelector id="2" selector="#J_Sold-out-recommend &gt; div.sold-out-info &gt; div.sold-out-left &gt; strong"/>
+				<!-- 商品下架 -->
+				<cssSelector id="3" selector="div.errorDetail &gt; h2"/>
+				<!-- 商品找不到 -->
+				
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="此商品已下架" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="您查看的商品找不到了" isParsed="0">移除</errorInfo2>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+					  
+						<productActualID regex="(?&lt;=itemId:&quot;)(\d*)(?=&quot;)"/>
+						<productName regex="(?&lt;=name=&quot;keywords&quot; content=&quot;)([^&quot;]*)(?=&quot;)||(?&lt;=title&quot; value=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productDescription regex="(?&lt;=class=&quot;newp&quot;&gt;)([^&lt;]*)(?=&lt;)||(?&lt;=newp&quot;&gt;\n\s{1,30}\n\s{17,30})([^&lt;]*)(?=\s{6,30}\n\s{1,30}&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=title=[^&gt;]{1,8}&gt;净含量:\s{0,5})([^&lt;]*)(?=&lt;/li&gt;)||(?&lt;=重量&lt;[^&lt;]{1,50}&lt;dd&gt;&lt;em&gt;)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=title=[^&lt;]{1,8}&gt;产地: )([^&lt;]*)(?=&lt;/li&gt;)||(?&lt;=产地：)([^&lt;]*)(?=&lt;)"/>
+						<province regex="(?&lt;=title=[^&lt;]{1,8}&gt;省份: )([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<city regex="(?&lt;=title=[^&lt;]{1,8}&gt;城市: )([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<category regex="(?&lt;=title=[^&lt;]{1,20}&gt;[^:]{0,10}种类: )([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<specialtyCategory regex="(?&lt;=title=[^:]{0,20}品类: )([^&lt;]*)(?=&lt;)"/>
+						<brand regex="(?&lt;=title=[^&gt;]{1,20}&gt;品牌: )([^&lt;]*)(?=&lt;)||(?&lt;=天猫超市&lt;/a&gt;&lt;/li&gt;[^&gt;]{1,20}&gt;[^&gt;]{1,130}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex="(?&lt;=title=[^&lt;]{1,20}&gt;厂名：)([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<factoryAddress regex="(?&lt;=title=[^&lt;]{1,20}&gt;厂址：)([^&lt;]*)(?=&lt;/li&gt;)"/>
+						<series regex="(?&lt;=title=[^&lt;]{1,10}&gt;系列: )([^&lt;]*)(?=&lt;)"/>
+						<specification regex="(?&lt;=title=[^&lt;]{1,10}&gt;规格:)([^&lt;]*)(?=&lt;/li&gt;)||(?&lt;=规格：)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex="(?&lt;=J_deliveryAdd&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=&quot;defaultItemPrice&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=&lt;div class=&quot;tm-promo-price&quot;&gt;[^&lt;]{1,20}&lt;em class=&quot;tm-yen&quot;&gt;¥&lt;/em&gt; &lt;span class=&quot;tm-price&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"/>
+						<monthSaleCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;月销量&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)||(?&lt;=&quot;tm-count&quot;&gt;)([^&lt;]{0,20})(?=&lt;)"/>
+						<commentCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;累计评价&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"/>
+						<storeActualID regex="(?&lt;=shopId:&quot;)(\d*)(?=&quot;)"/> 
+						
+						<storeName regex="(?&lt;=class=&quot;slogo-shopname&quot;[^&lt;]{1,200}&lt;strong&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=class=&quot;slogo-shopname&quot; href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex="(?&lt;=data-spm=&quot;d4918097&quot;&gt;)([^&gt;]*)(?=&lt;/a&gt;)"/>
+						<!-- companyName regex="(?&lt;=公\s{0,5}司\s{0,5}名：[^&gt;]{1,100}&gt;[^&gt;]{1,100}&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/div&gt;)"></companyName-->
+						<storeLocation regex="(?&lt;=所 在 地：[^&quot;]{50,100}&quot;right&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productActualID regex="(?&lt;=itemId:&quot;)(\d*)(?=&quot;)"/>
+						<productPrice regex="(?&lt;=&quot;defaultItemPrice&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=&lt;div class=&quot;tm-promo-price&quot;&gt;[^&lt;]{1,20}&lt;em class=&quot;tm-yen&quot;&gt;¥&lt;/em&gt; &lt;span class=&quot;tm-price&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"/>
+						<monthSaleCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;月销量&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)||(?&lt;=&quot;tm-count&quot;&gt;)([^&lt;]{0,20})(?=&lt;)"/>
+						<commentCount regex="(?&lt;=&lt;span class=&quot;tm-label&quot;&gt;累计评价&lt;/span&gt;&lt;span class=&quot;tm-count&quot;&gt;)([^&lt;]*)(?=&lt;/span&gt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=id=[^&lt;]{1,30}shopid=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeName regex="(?&lt;=class=&quot;slogo-shopname&quot;[^&lt;]{1,50}&lt;strong&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=class=&quot;slogo-shopname&quot; href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex="(?&lt;=data-spm=&quot;d4918097&quot;&gt;)([^&gt;]*)(?=&lt;/a&gt;)"/>
+						<companyName regex="(?&lt;=公\s{0,5}司\s{0,5}名：[^&gt;]{1,100}&gt;[^&gt;]{1,100}&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/div&gt;)"/>
+						<storeLocation regex="(?&lt;=所 在 地：[^&lt;]{1,50}&lt;[^&lt;]{1,100}&lt;[^&gt;]{1,50}&gt;\s{30,50})([^\s]{0,50}[^&lt;]*)(?=\s{20,50}&lt;)"/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,170}分&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,170}分&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=发货速度[^分]{1,170}分&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 3、京东 -->
+		<website name="JingDong">
+			<loadElements>
+				<cssSelector id="1" selector="#jd-price"/>
+				<!-- 价格 -->
+				<cssSelector id="2" selector="#itemInfo &gt; div.m-itemover &gt; div.m-itemover-title &gt; h3 &gt; strong"/>
+				<cssSelector id="3" selector="div.itemInfo-wrap &gt; div.itemover-tip"/><!-- 该商品已下柜，欢迎挑选其他商品！ -->
+				<cssSelector id="4" selector="span.p-price"/>				
+				<!-- 价格 -->
+				<!-- 商品已下柜 -->
+				<cssSelector id="5" selector="div#news.m &gt; div.mt &gt; h2"/><!-- 京东首页，京东快讯 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="该商品已下柜" isParsed="0">下架</errorInfo1>
+				<errorInfo2 regex="&lt;title&gt;京东\(JD.COM\)-综合网购首选" isParsed="0">移除</errorInfo2>
+				
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=skuid:\s{1,5})(\d{1,20})"/>
+						<productName regex="(?&lt;=id=&quot;name&quot;&gt;\s{1,28}&lt;h1&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=&lt;meta name=&quot;description&quot; content=&quot;)(.*?)(?=&quot; /&gt;)"/>
+						<shelveDate regex="(?&lt;=&lt;li title=.{22}上架时间：)([^&lt;]*?)(?=&lt;/li&gt;)"/>
+						<weight regex="(?&lt;=title=[^&gt;]{1,15}&gt;重量：)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=商品产地：)([^&lt;]*)(?=&lt;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex="(?&lt;=分类：)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex="(?&lt;=品种：)([^&lt;]*)(?=&lt;)"/>
+						<brand regex="(?&lt;=title=[^&gt;]{1,15}&gt;品牌：[^&gt;]{1,70}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=规格&lt;/td&gt;&lt;td&gt;)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex="(?&lt;=从\s{1,5})([^\s]*)(?=\s{1,5}发货)"/>
+						<productPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=商品评价[^(]{1,50}\()([^\)]*)(?=\))"/>
+						<storeActualID regex="(?&lt;=venderId:[^:]{1,50}shopId:')(\d{1,20})(?=')"/>
+						<storeName regex="(?&lt;=name&quot;[^_]{1,50}_blank&quot; title=&quot;)([^&quot;]*)(?=&quot; clstag=&quot;)||(?&lt;=class=&quot;seller-infor&quot;&gt;[^&gt;]{1,300}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=J-shop-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex="(?&lt;=J-shop-address&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=商品评价[^(]{1,50}\()([^\)]*)(?=\))"/>
+						<goodCommentCount regex="(?&lt;=好评&lt;em&gt;\()([^\)]*)(?=\))"/>
+						<midCommentCount regex="(?&lt;=中评&lt;em&gt;\()([^\)]*)(?=\))"/>
+						<badCommentCount regex="(?&lt;=差评&lt;em&gt;\()([^\)]*)(?=\))"/>
+						<pictureCommentCount regex="(?&lt;=有图片的评价&lt;em&gt;\()([^\)]*)(?=\)"/>
+						<additionCommentCount regex=""/>
+						<productURL regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=venderId:[^:]{1,50}shopId:')(\d{1,20})(?=')"/>
+						<storeName regex="(?&lt;=name&quot;[^_]{1,50}_blank&quot; title=&quot;)([^&quot;]*)(?=&quot; clstag=&quot;)"/>
+						<storeName2 regex="(?&lt;=class=&quot;seller-infor&quot;&gt;[^&gt;]{1,300}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=J-shop-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex="(?&lt;=J-shop-address&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex="(?&lt;=商品评价[^&quot;]{1,50}&quot;score-detail&quot;[^&quot;]{1,20}&quot;)([^分)]*)(?=分)"/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex="(?&lt;=服务态度[^&quot;]{1,50}&quot;score-detail&quot;[^&quot;]{1,20}&quot;)([^分)]*)(?=分)"/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流速度[^&quot;]{1,50}&quot;score-detail&quot;[^&quot;]{1,20}&quot;)([^分)]*)(?=分)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 4、一号店 -->
+		<website name="YiHaoDian">
+			<loadElements>
+				<cssSelector id="1" selector="#productMainName"/>
+				<!-- 产品名称  -->
+				<cssSelector id="2" selector="#main404 &gt; p.sorry.sorryMt"/>
+				<!-- 商品下架 /此站不销售-->
+				<cssSelector id="3" selector="#desc_sppj &gt; em|#desc_sppj &gt; em"/>
+				<!-- 价格、评价-->
+				
+				<cssSelector id="4" selector="#noProdRecommend &gt; div.hd"></cssSelector>
+				<!-- 这些商品也不错哦 -->
+				<cssSelector id="5" selector="#lunboActivities &gt; div.hd"></cssSelector>
+				<!-- 这些活动很热门哦 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0">下架</errorInfo1>
+				<errorInfo2 regex="这些商品也不错哦" isParsed="0">移除</errorInfo2>
+				<errorInfo3 regex="这些活动很热门哦" isParsed="0">移除</errorInfo3>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=productMercantId[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productName regex="(?&lt;=cnName[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productDescription regex="(?&lt;=productSubName[^&gt;]{1,50}title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=净重[^&gt;]{1,50}：)([^&gt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=产地：)([^&gt;]*)(?=&quot;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex="(?&lt;=种类：)([^&gt;]*)(?=&quot;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=&quot;品牌：)([^&gt;]*)(?=&quot;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已售&lt;strong&gt;)([^&gt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)"/>
+						<storeActualID regex="(?&lt;=license-)([^&quot;]*)(?=.html)"/>
+						<storeName regex="(?&lt;=companyName[^&gt;]{1,20}&quot;)([^&quot;]*)(?=&quot; /)"/>
+						<storeURL regex="(?&lt;=key_shop&quot;&gt;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot; target)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<!-- 选择地址提示框 -->
+						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已售&lt;strong&gt;)([^&gt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=license-)([^&quot;]*)(?=.html)"/>
+						<storeName regex="(?&lt;=companyName[^&gt;]{1,20}&quot;)([^&quot;]*)(?=&quot; /)"/>
+						<storeURL regex="(?&lt;=key_shop&quot;&gt;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot; target)"/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<!--店铺所在地需要进入到店铺页面才能获取-->
+						<storeLocation regex="(?&lt;=所在地[^&gt;]{1,10}&gt;[^&gt;]{1,10}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流服务[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 5、商小妹购 -->
+		<website name="ShangXiaoMeiGou">
+			<loadElements>
+				<cssSelector id="1" selector="#CM_FORMBUY &gt; div.glm-box &gt; div &gt; dl.discount &gt; dd &gt; span"/>
+				<!-- 商品价格 -->
+				<cssSelector id="2" selector="#CM_FORMBUY &gt; div.glm-box &gt; div &gt; dl.prep &gt; dd"/>
+				<!-- 市场价 -->
+				<cssSelector id="3" selector="#CM_FORMBUY &gt; div.gl-top &gt; a &gt; h2"/>
+				<!-- 商品名称 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=商品编号[^&gt;]{1,20}&gt;000)([^&lt;]*)(?=&lt;)"/>
+						<productName regex="(?&lt;=jqzoom[^&lt;]{1,100}&lt;img alt=&quot;)([^&gt;]*)(?=&quot; jqimg)"/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=重量[^&gt;]{1,10}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=产地[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;/td)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex="(?&lt;=类别[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;/td)"/>
+						<specialtyCategory regex="(?&lt;=品种[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;/td)"/>
+						<brand regex="(?&lt;=品牌[^&gt;]{1,20}&gt;)([^&lt;]*)(?=&lt;/)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=重量含包装[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;/td)"/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=class=&quot;fv&quot;&gt;)([^\s]*)(?=&lt;/s)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=销量[^&gt;]{1,20}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=共[^&gt;]{1,20}&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=class=&quot;fv&quot;&gt;)([^\s]*)(?=&lt;/s)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=销量[^&gt;]{1,20}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=共[^&gt;]{1,20}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<!--店铺所在地需要进入到店铺页面才能获取-->
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流服务[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 6、世纪购 -->
+		<website name="ShiJiGou">
+			<loadElements>
+				<cssSelector id="1" selector="#currentPrice"/>
+				<!-- 当前价格 -->
+				<cssSelector id="2" selector="#ProductInfo &gt; ul &gt; li.ProductName"/>
+				<!-- 商品名称 -->
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=产品编号[^&gt;]{1,10}&gt;)([^&lt;]*)(?=\n)"/>
+						<productName regex="(?&lt;=product_name[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex="(?&lt;=首页&lt;/a&gt;[^&quot;]{20,30}&quot;[^&quot;]{15,30}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex=""/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=&quot;price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已 销 售[^&gt;]{1,10}&gt;)([^&lt;]*)(?= 件)"/>
+						<commentCount regex="(?&lt;=商品评价[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;已有 )([^&lt;]*)(?= 人)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=&quot;price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已 销 售[^&gt;]{1,10}&gt;)([^&lt;]*)(?= 件)"/>
+						<commentCount regex="(?&lt;=商品评价[^&gt;]{1,10}&gt;[^&gt;]{1,50}&gt;已有 )([^&lt;]*)(?= 人)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流服务[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 7、沱沱工社 -->
+		<website name="TuoTuoGongShe">
+			<loadElements>
+				<cssSelector id="1" selector="#price"/>
+				<!-- 商品价格 -->
+				<cssSelector id="2" selector="div.third-party-cname"/>
+				<!-- 发货地 -->
+				<cssSelector id="3" selector="a.shop-btn.shop-btn-no.buyButton &gt; span"/>
+				<!-- 商品下架 -->
+				<cssSelector id="3" selector="p.tootootuan_detail_tit"/>
+				<!-- 沱沱团商品名称 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="您想访问的页面没找着" isParsed="0">移除</errorInfo1>
+				<errorInfo2 regex="商品已下架" isParsed="1">下架</errorInfo2>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=goodsId = ')([^']*)(?=')||(?&lt;=goodsID&quot;[^&quot;]{1,10}&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productName regex="(?&lt;=goodsTitle&quot;&gt;)([^&lt;]*)(?=&lt;)||(?&lt;=detail_tit&quot;&gt;)([^&lt;]*)(?=\n{0,1}&lt;)"/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex="(?&lt;=产地[^&gt;]{1,100}&gt;\n[^\S]{1,100})([^\s]*)(?=\n[^\S]{1,100}&lt;/)||(?&lt;=产地&lt;/td&gt;[^&gt;]{0,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex=""/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=品牌[^&gt;]{1,10}&gt;[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=&gt;规格[^&gt;]{1,100}&gt;\n[^&lt;]{1,100})([^\s]*)(?=\n[^&lt;]{1,100}&lt;)||(?&lt;=包装规格&lt;/td&gt;[^&gt;]{0,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex="(?&lt;=third-party-cname&quot;[^&gt;]{0,30}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 新增产品信息：保质期、生产日期 -->
+						<expirationDay regex="(?&lt;=保质期：&lt;span&gt;)([^&lt;]*)(?=&lt;)||(?&lt;=保质期&lt;/td&gt;[^&gt;]{0,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<produceDay regex="(?&lt;=生产日期：&lt;span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=price&quot;&gt;¥)([^&lt;]*)(?=&lt;)||(?&lt;=抢购价&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已购买&lt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=购买评论[^（]{1,10}（)([^&lt;]*)(?=）&lt;)"/>
+						<!-- 沱沱团 -->
+						<productPromotionID regex="(?&lt;=promotionID&quot;[^&quot;]{1,10}&quot;)([^&quot;]*)(?=&quot;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=price&quot;&gt;¥)([^&lt;]*)(?=&lt;)||(?&lt;=抢购价&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex="(?&lt;=已购买&lt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 累计销量？ -->
+						<commentCount regex="(?&lt;=购买评论[^（]{1,10}（)([^&lt;]*)(?=）&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=描述相符[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流服务[^分]{1,500}title=&quot;)([^&quot;]*)(?=分&quot;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 8、苏宁 -->
+		<website name="SuNing">
+			<loadElements>
+				<cssSelector id="1" selector="#districtName|#promotionPrice"/>
+				<!-- 配送地址 、促销价格-->
+				<cssSelector id="2" selector="#J-slide3 &gt; h3"/>
+				<!-- 商品已下架 -->
+				<cssSelector id="3" selector="#J-slide2 &gt; h3"/>
+				<!-- 其它类似商品 -->
+				<cssSelector id="4" selector="#promoPrice"/>
+				<!-- 促销价格-->
+				<cssSelector id="5" selector="#noPrice &gt; dl &gt; dd &gt; span"/>
+				<!-- noPrice-->
+				<cssSelector id="6" selector="#districtName"/>
+				<!-- 配送地址 -->
+				<cssSelector id="7" selector="#itemDisplayName"/>
+				<!-- 商品名称 -->				
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=&quot;&quot;&gt;[^&gt;]{10,20}&gt;)(此商品已下架)(?=，)" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="(?&lt;=&quot;&quot;&gt;[^&gt;]{10,20}&gt;)(其它类似商品)(?=&lt;)" isParsed="0">移除</errorInfo2>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=ninePartNumber&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productCompleteID regex="(?&lt;=prdTypeVal&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<!-- 产品完整ID -->
+						<productName regex="(?&lt;=value=&quot;)([^&quot;]*)(?=&quot; id=&quot;ga_itemDataBean_description_name)"/>
+						<productDescription regex="(?&lt;=&quot;description&quot;\scontent=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=净含量[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=产地[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex="(?&lt;=&gt;类[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category1 regex="(?&lt;=categoryName1&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<category2 regex="(?&lt;=categoryName2&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<category3 regex="(?&lt;=categoryName3&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=&gt;品牌[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex="(?&lt;=从\W{2})([^\s]*)(?=\W{2}销售和发货)"/>
+						<expirationDay regex="(?&lt;=&gt;保质期[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 保质期 -->
+						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex="(?&lt;=近期销量&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeActualID regex="(?&lt;=value=&quot;)(\d*)(?=&quot;\sid=&quot;supplierID&quot;)"/>
+						<storeName regex="(?&lt;=div\sclass=&quot;si-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=storeId&quot;:\s&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeName regex="(?&lt;=div\sclass=&quot;si-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=商品评分：[\w\W]{1,50}gSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度：[\w\W]{1,50}sSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流速度：[\w\W]{1,50}dSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields>
+						<service regex=""/>
+					</fields>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 8、苏宁特色馆 -->
+		<website name="SuNingTSG">
+			<loadElements>
+				<cssSelector id="1" selector="#districtName|#promotionPrice"/>
+				<!-- 配送地址 、促销价格-->
+				<cssSelector id="2" selector="#J-slide3 &gt; h3"/>
+				<!-- 商品已下架 -->
+				<cssSelector id="3" selector="#promoPrice"/>
+				<!-- 促销价格-->
+				<cssSelector id="4" selector="#noPrice &gt; dl &gt; dd &gt; span"/>
+				<!-- noPrice-->
+				<cssSelector id="5" selector="#districtName"/>
+				<!-- 配送地址 -->
+				<cssSelector id="6" selector="#itemDisplayName"/>
+				<!-- 商品名称 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=J-slide3&quot; class=&quot;nopro-rec proinfo-rec&quot; style&gt;[^&gt;]{10,20}&gt;)(此商品已下架)(?=，)" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=ninePartNumber&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productCompleteID regex="(?&lt;=prdTypeVal&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<!-- 产品完整ID -->
+						<productName regex="(?&lt;=value=&quot;)([^&quot;]*)(?=&quot; id=&quot;ga_itemDataBean_description_name)"/>
+						<productDescription regex="(?&lt;=&lt;h2 id=&quot;promotionDesc&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=净含量[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!--<origin regex="(?&lt;=产地[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"></origin>-->
+						<province regex=""/>
+						<city regex=""/>
+						<!--<category regex="(?&lt;=&gt;类[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)" ></category>-->
+						<category regex="(?&lt;=类别&lt;[^&lt;]{1,100}&lt;[^&lt;]{1,100}&lt;/td&gt;[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category1 regex="(?&lt;=categoryName1&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<category2 regex="(?&lt;=categoryName2&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<category3 regex="(?&lt;=categoryName3&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=&gt;品牌[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex="(?&lt;=从\W{2})([^\s]*)(?=\W{2}销售和发货)"/>
+						<expirationDay regex="(?&lt;=&gt;保质期[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 保质期 -->
+						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex="(?&lt;=近期销量&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!--<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"></commentCount>-->
+						<commentCount regex="(?&lt;=累计评价&lt;/span&gt;[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeActualID regex="(?&lt;=vendorCodeTile&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeName regex="(?&lt;=tileShopName&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<!--<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"></storeURL>-->
+						<storeURL regex="(?&lt;=domain : &quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex=""/>
+						<!-- <companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"></companyName> -->
+						<companyName regex="(?&lt;=companyName&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<companyLocation regex="(?&lt;=companyAddress&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=storeId&quot;:\s&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeName regex="(?&lt;=div\sclass=&quot;si-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex="(?&lt;=商品评分：[\w\W]{1,50}gSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<exchangeRate regex=""/>
+						<serviceScore regex="(?&lt;=服务态度：[\w\W]{1,50}sSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex="(?&lt;=物流速度：[\w\W]{1,50}dSatisfy&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields>
+						<service regex=""/>
+					</fields>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 9、菜管家 -->
+		<website name="CaiGuanJia">
+			<loadElements>
+				<cssSelector id="1" selector="body &gt; div.det_detinfo_frm &gt; div:nth-child(2) &gt; p:nth-child(5)|body &gt; div.det_detinfo_frm &gt; div.detinfo_infobox &gt; form &gt; p.detinfo_xl &gt; span"/>
+				<!-- 产品实际ID、月销量 -->
+				<cssSelector id="2" selector=""/>
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=货号：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productName regex="(?&lt;=名称：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=商品简述：&lt;br /&gt; &lt;span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex=""/>
+						<category1 regex="(?&lt;=首页&lt;/a&gt;[^&quot;]{10,50}&quot;[^&gt;]{20,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category2 regex="(?&lt;=首页&lt;/a&gt;[^&quot;]{10,50}&quot;[^&quot;]{10,50}&quot;[^&quot;]{10,50}&quot;[^&gt;]{20,80}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex=""/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=规格：&lt;/span&gt;\s)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex=""/>
+						<expirationDay regex="(?&lt;=保质期：&lt;/span&gt;\s)([^&lt;]*)(?=&lt;)"/>
+						<!-- 保质期 -->
+						<productPrice regex="(?&lt;=&lt;del&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=&lt;em&gt;￥&lt;big&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex="(?&lt;=月销&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=allComments&gt;[^\d]{10,30}&gt;)(\d*)(?=&lt;)"/>
+						<goodCommentCount regex="(?&lt;=好评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<midCommentCount regex="(?&lt;=中评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<badCommentCount regex="(?&lt;=差评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=&lt;del&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=&lt;em&gt;￥&lt;big&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex="(?&lt;=月销&lt;span&gt;)(\d*)(?=&lt;)" cssSelector="body &gt; div.det_detinfo_frm &gt; div.detinfo_infobox &gt; form &gt; p.detinfo_xl &gt; span"/>
+						<commentCount regex="(?&lt;=allComments&gt;[^\d]{10,30}&gt;)(\d*)(?=&lt;)"/>
+						<goodCommentCount regex="(?&lt;=好评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<midCommentCount regex="(?&lt;=中评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<badCommentCount regex="(?&lt;=差评&lt;/p&gt;\s&lt;span&gt;)(\d*)(?=&lt;)"/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 10、太极养生馆 -->
+		<website name="TaiJiYSG">
+			<loadElements>
+				<cssSelector id="1" selector="#price"/>
+				<!-- 销售价 -->
+				<cssSelector id="2" selector="div#shuoming &gt; div.r-rows &gt; div.info &gt; div.text"/>
+				<!-- 商品编号 -->
+				<cssSelector id="3" selector="div.m3L-title &gt; div.names &gt; h3"/>
+				<!-- 首页“热门推荐”，用于标识被移除的商品 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="热门推荐" isParsed="0">移除</errorInfo1>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=productId:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productName regex="(?&lt;=r-title&quot;&gt;&lt;h2&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=&quot;description&quot;\scontent=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex=""/>
+						<city regex=""/>
+						<category1 regex="(?&lt;=首页&lt;/a&gt;&lt;span&gt;&gt;[^&quot;]{20,50}&quot;[^&gt;]{20,40}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category2 regex="(?&lt;=&lt;/a&gt;\s{10,20}&lt;span&gt;&gt;&lt;/span&gt;&lt;a href=&quot;/productlist[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category3 regex="(?&lt;=span&gt;&gt;&lt;/span&gt;&lt;em&gt;)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=brand&quot;&gt;[^_]{70,80}_blank&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex="(?&lt;=生产厂家[^&quot;]{50,70}&quot;td2&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=产品规格[\w\W]{50,60}td2&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=class=&quot;price&quot; id=&quot;price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=市场价：&lt;em&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<SaleCount regex="(?&lt;=销量[^&quot;]{50,70}&quot;td2&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 销量 -->
+						<commentCount regex="(?&lt;=累计评价\()(\d*)(?=\))"/>
+						<goodCommentCount regex=""/>
+						<goodCommentRate regex="(?&lt;=好评率[\w\W]{1,10}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!--好评率-->
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=class=&quot;price&quot; id=&quot;price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=市场价：&lt;em&gt;)([^&lt;]*)(?=&lt;)"/>
+						<monthSaleCount regex=""/>
+						<SaleCount regex="(?&lt;=销量[^&quot;]{50,70}&quot;td2&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!-- 销量 -->
+						<commentCount regex="(?&lt;=累计评价\()(\d*)(?=\))"/>
+						<goodCommentCount regex=""/>
+						<goodCommentRate regex="(?&lt;=好评率[\w\W]{1,10}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<!--好评率-->
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 11、优码头 -->
+		<website name="YouMaTou">
+			<loadElements>
+				<cssSelector id="1" selector="#product-intro &gt; div.extInfo &gt; div:nth-child(4)"/>
+				<!-- 原产地 -->
+				<cssSelector id="2" selector="#name &gt; h1"/>
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=编号：)([^&lt;]*)(?=&lt;)"/>
+						<productName regex="(?&lt;=商品名称：)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=&quot;Description&quot;\scontent=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=商品重量[^\d]{40,50}span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=原产地：)([^&lt;]*)(?=&lt;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category1 regex="(?&lt;=首页&lt;/a&gt; &lt;code&gt;&gt;&lt;/code&gt; &lt;a href=&quot;[^&quot;]{10,40}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category2 regex="(?&lt;=首页[^_]{10,20}&gt;&gt;[^_]{50,80}&gt;&gt;[^&quot;]{10,30}&quot;[^&quot;]{10,40}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category3 regex="(?&lt;=首页[^_]{10,20}&gt;&gt;[^_]{50,80}&gt;&gt;[^_]{50,80}&gt;&gt;[^&quot;]{10,30}&quot;[^&quot;]{10,40}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category4 regex="(?&lt;=首页[^_]{10,20}&gt;&gt;[^_]{50,80}&gt;&gt;[^_]{50,80}&gt;&gt;[^_]{50,80}&gt;&gt;[^&quot;]{10,30}&quot;[^&quot;]{10,40}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category regex="(?&lt;=商品类型：)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=商品品牌[\w\W]{50,80}style[\w\W]{10,30}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex=""/>
+						<taxRate regex="(?&lt;=行邮税率：)([^&lt;]*)(?=&lt;)"/>
+						<!-- 行邮税率-->
+						<productPrice regex="(?&lt;=p-price&quot; id[^￥]]{0,18}￥)([^&lt;]*)(?=&lt;)"/>
+						<productHighVipPrice regex="(?&lt;=高级会员 ￥)([^&lt;]*)(?=&lt;)"/>
+						<!--VIP价格-->
+						<productLowVipPrice regex="(?&lt;=普通会员 ￥)([^&lt;]*)(?=&lt;)"/>
+						<!--VIP价格-->
+						<productPromPrice regex="(?&lt;=page_maprice&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productTax regex="(?&lt;=id=quot;total_shuilv_formatquot;&gt;\+￥)([^&lt;]*)(?=&lt;)"/>
+						<!--税费-->
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=累计评价[\w\W]{1,45}comment&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<goodCommentRate regex="(?&lt;=好评度[\w\W]{1,70}好评&lt;span&gt;\()([^\)]*)(?=\))"/>
+						<!--好评率-->
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=p-price&quot; id[^￥]]{0,18}￥)([^&lt;]*)(?=&lt;)"/>
+						<productHighVipPrice regex="(?&lt;=高级会员 ￥)([^&lt;]*)(?=&lt;)"/>
+						<!--VIP价格-->
+						<productLowVipPrice regex="(?&lt;=普通会员 ￥)([^&lt;]*)(?=&lt;)"/>
+						<!--VIP价格-->
+						<productPromPrice regex="(?&lt;=page_maprice&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productTax regex="(?&lt;=id=quot;total_shuilv_formatquot;&gt;\+￥)([^&lt;]*)(?=&lt;)"/>
+						<!--税费-->
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=累计评价[\w\W]{1,45}comment&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<goodCommentRate regex="(?&lt;=好评度[\w\W]{1,70}好评&lt;span&gt;\()([^\)]*)(?=\))"/>
+						<!--好评率-->
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 12、邮乐购 -->
+		<website name="YouLeGou">
+			<loadElements>
+				<cssSelector id="1" selector="span.btn-slideDown"/>			
+				<!-- 配送地址 -->
+				<cssSelector id="2" selector="#proDetail &gt; div.good_soldout_tip"/>
+				<!-- 商品下架 -->
+				<cssSelector id="3" selector="#wrapper &gt; div &gt; h3"/>
+				
+				<cssSelector id="4" selector="div.searchErrorContent"/>
+				
+				<!--<cssSelector id="5" selector="#proDetail &gt; div.pi_detail &gt; dl.proDetail_salesInfo &gt; dd &gt; div.fArea &gt; span"></cssSelector>
+				 配送起始地址 -->
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="该商品已下架" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="您查看的物品或页面暂时未能查找到" isParsed="0">移除</errorInfo2>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=listId = ')([^']*)(?=';)"/>
+						<productName regex="(?&lt;=productInfo[^&lt;]{1,50}&lt;h1&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=subtitle&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex="(?&lt;=省份[^&gt;]{1,50}&gt;\s{1,30})([^\s]*)(?=\s{0,40}&lt;/font)"/>
+						<city regex=""/>
+						<category1 regex="(?&lt;=首页[^&quot;]{1,100}&quot;[^&gt;]{1,100}&gt;)([^&lt;]*)(?=&lt;/)"/>
+						<category regex="(?&lt;=种类：\s{1,50}&lt;[^&gt;]{1,30}&gt;\s{1,50})([^\t]*)(?=\s{0,50}&lt;/f)"/>
+						<specialtyCategory regex=""/>
+						<brand regex=""/>
+						<factoryName regex="(?&lt;=merchantName = ')([^\w]*)(?=')"/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex="(?&lt;=fArea&quot;&gt;\s{1,100}&lt;span&gt;\s{1,200})([^\t]*)(?=\s{0,100}&lt;/span)"/>
+						<productPrice regex="(?&lt;=￥&lt;[^&lt;]{1,50}&lt;strong&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/s)"/>
+						<commentCount regex="(?&lt;=商品评论[^&gt;]{1,5}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeActualID regex="(?&lt;=storeId = ')([^\t]*)(?=')"/>
+						<storeName regex="(?&lt;=storeInfo[^&lt;]{1,50}&lt;[^&lt;]{1,50}&lt;a title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeURL regex="(?&lt;=storeInfo[^&lt;]{1,30}&lt;[^&lt;]{0,30}&lt;[^&gt;]{0,30}\s{1,30}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<companyName regex="(?&lt;=merchantName = ')([^\w]*)(?=')"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=￥&lt;[^&lt;]{1,50}&lt;strong&gt;\s{0,50})([^\s]*)(?=\s{0,50}&lt;/s)"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=商品评论[^&gt;]{1,5}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex="(?&lt;=storeId = ')([^\t]*)(?=')"/>
+						<storeName regex="(?&lt;=storeInfo[^&lt;]{1,50}&lt;[^&lt;]{1,50}&lt;a title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeURL regex="(?&lt;=storeInfo[^&lt;]{1,30}&lt;[^&lt;]{0,30}&lt;[^&gt;]{0,30}\s{1,30}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<shopkeeper regex=""/>
+						<companyName regex="(?&lt;=merchantName = ')([^\w]*)(?=')"/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 13、顺丰优选 -->
+		<website name="ShunFengYouXuan">
+			<loadElements>
+				<cssSelector id="1" selector="#price-sf &gt; div.priceBox &gt; strong"/>
+				<!-- 产品价格 -->
+				<cssSelector id="2" selector=""/>
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=商品编号：)([^&lt;]*)(?=&lt;)"/>
+						<productName regex="(?&lt;=base_name-sf&quot;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot;&gt;)"/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex="(?&lt;=重量：)([^&lt;]*)(?=&lt;/li)"/>
+						<origin regex="(?&lt;=产地：&lt;[^&quot;]{1,20}&quot;[^&quot;]{1,50}&quot; title=&quot;)([^&gt;]*)(?=&quot; )"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category1 regex="(?&lt;=p_class1&quot;: ')([^']*)(?=')"/>
+						<category2 regex="(?&lt;=p_class2&quot;: ')([^']*)(?=')"/>
+						<category3 regex="(?&lt;=p_class3&quot;: ')([^']*)(?=')"/>
+						<category regex=""/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=品牌：&lt;[^&quot;]{1,20}&quot;[^&quot;]{1,50}&quot; title=&quot;)([^&gt;]*)(?=&quot; )"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=规格：)([^&lt;]*)(?=&lt;/li)"/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')"/>
+						<commentCount regex="(?&lt;=全部评价&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<goodCommentCount regex="(?&lt;=好评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<midCommentCount regex="(?&lt;=中评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<badCommentCount regex="(?&lt;=差评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<pictureCommentCount regex="(?&lt;=有晒单&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=p_price&quot;: ')([^']*)(?=')"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=全部评价&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<goodCommentCount regex="(?&lt;=好评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<midCommentCount regex="(?&lt;=中评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<badCommentCount regex="(?&lt;=差评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<pictureCommentCount regex="(?&lt;=有晒单&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 14、超级美味 -->
+		<website name="ChaoJiMeiWei">
+			<loadElements>
+				<cssSelector id="1" selector="#detailinfo &gt; div.productintro &gt; div &gt; p.parameter.current_price &gt; span.pricenum"/>
+				<!-- 价格 -->
+				<cssSelector id="2" selector=""/>
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=\(this\).attr\('info'\)\) == &quot;)([^&quot;]*\d)(?=&quot;)"/>
+						<productName regex="(?&lt;=productMainName&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productDescription regex="(?&lt;=padding-left: 11px;&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex="(?&lt;=产地：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<province regex=""/>
+						<city regex=""/>
+						<category2 regex="(?&lt;=超级美味&lt;[^&lt;]{1,10}&lt;[^&gt;]{1,40}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category regex="(?&lt;=品种：)([^&lt;]*)(?=&lt;)"/>
+						<specialtyCategory regex=""/>
+						<brand regex="(?&lt;=品牌：&lt;/span&gt;)([^&lt;]*)(?=&lt;)"/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex="(?&lt;=规格：)([^&lt;]*)(?=&lt;)"/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=¥&lt;/em&gt;)([^&lt;]*)(?=&lt;)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=¥&lt;/em&gt;)([^&lt;]*)(?=&lt;)" cssSelector="#detailinfo &gt; div.productintro &gt; div &gt; p.parameter.current_price &gt; span.pricenum"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex=""/>
+						<commentCount regex=""/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+		<!-- 15、生鲜宅配 -->
+		<website name="ShengXianZhaiPei">
+			<loadElements>
+				<cssSelector id="1" selector="#ECS_SHOPPRICE"/>
+				<!-- 价格 -->
+				<cssSelector id="2" selector=""/>
+				<cssSelector id="3" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="0"/>
+				<errorInfo2 regex="" isParsed="0"/>
+			</errorInfos>
+			<dataobjects>
+				<Product>
+					<fields>
+						<productActualID regex="(?&lt;=addToCart_choose\()([^\)]*)(?=\)&quot;)"/>
+						<productName regex="(?&lt;=normal;&quot;&gt;)([^&lt;]*)(?=&lt;/p)"/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex=""/>
+						<city regex=""/>
+						<category2 regex="(?&lt;=首页&lt;[^&lt;]{1,5}&lt;[^&lt;]{1,10}&lt;/code&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<category regex=""/>
+						<specialtyCategory regex=""/>
+						<brand regex=""/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex="(?&lt;=ECS_SHOPPRICE[^&gt;]{1,30}&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=&gt;)([^&lt;]*)(?=&lt;/p&gt;[^&gt;]{1,50}&gt;累计评价)"/>
+					</fields>
+				</Product>
+				<ProductMonitor>
+					<fields>
+						<productPrice regex="(?&lt;=ECS_SHOPPRICE[^&gt;]{1,30}&gt;￥)([^&lt;]*)(?=&lt;)" cssSelector="#ECS_SHOPPRICE"/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex=""/>
+						<commentCount regex="(?&lt;=&gt;)([^&lt;]*)(?=&lt;/p&gt;[^&gt;]{1,50}&gt;累计评价)"/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</ProductMonitor>
+				<Store>
+					<fields>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<platform regex=""/>
+						<status regex=""/>
+					</fields>
+				</Store>
+				<StoreScoreMonitor>
+					<fields>
+						<storeMonitorID regex=""/>
+						<store regex=""/>
+						<monitorTime regex=""/>
+						<comprehensiveScore regex=""/>
+						<productScore regex=""/>
+						<productQuality regex=""/>
+						<productDescription regex=""/>
+						<exchangeRate regex=""/>
+						<serviceScore regex=""/>
+						<serviceAttitude regex=""/>
+						<deliveryAttitude regex=""/>
+						<onlineService regex=""/>
+						<exchangeDeal regex=""/>
+						<timelinessScore regex=""/>
+						<logisticsSpeed regex=""/>
+						<sendTimelinessRate regex=""/>
+						<exchangeDuration regex=""/>
+						<onlineResponseTime regex=""/>
+					</fields>
+				</StoreScoreMonitor>
+				<StoreLicenseInfo>
+					<fields/>
+				</StoreLicenseInfo>
+			</dataobjects>
+		</website>
+	</websites>
+</dataParseConfig>

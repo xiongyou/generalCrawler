@@ -1,0 +1,606 @@
+2016-07-20 09:58:22.022 [main:0] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 09:58:37.037 [main:15278] - [DEBUG] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=51.0.2704.84)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '192.168.253.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=E:\1xy\学习\实验室\钟老师\general\zhangqi\target\classes\libs\userData}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59fbe45c956af0fb8270db7a8e9c5b1f
+2016-07-20 09:58:37.037 [main:15281] - [WARN] java.lang.Exception
+2016-07-20 09:58:37.037 [main:15281] - [WARN] 访问异常，将暂停 1 分钟
+2016-07-20 09:59:21.021 [main:0] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 09:59:32.032 [main:10343] - [DEBUG] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=51.0.2704.84)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '192.168.253.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=E:\1xy\学习\实验室\钟老师\general\zhangqi\target\classes\libs\userData}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8baf20f9d59284fa6785718aee1df18
+2016-07-20 09:59:32.032 [main:10347] - [WARN] java.lang.Exception
+2016-07-20 09:59:32.032 [main:10348] - [WARN] 访问异常，将暂停 1 分钟
+2016-07-20 10:11:00.000 [main:0] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 10:11:10.010 [main:10237] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 10:11:11.011 [main:10405] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 10:11:11.011 [main:10414] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 10:11:11.011 [main:10416] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 10:11:11.011 [main:10423] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 10:11:11.011 [main:10424] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 10:11:11.011 [main:10602] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 10:11:11.011 [main:10602] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 10:11:11.011 [main:10608] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 10:11:11.011 [main:10609] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 10:11:11.011 [main:10619] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 10:11:11.011 [main:10620] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 10:11:11.011 [main:10621] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 10:11:11.011 [main:10622] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 10:11:11.011 [main:10623] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 10:11:11.011 [main:10624] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 10:11:11.011 [main:10627] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 10:11:11.011 [main:10628] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 10:11:11.011 [main:10629] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 10:11:11.011 [main:10629] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 10:11:11.011 [main:10631] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 10:11:11.011 [main:10687] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.14.j1yzSU&id=45052354169&abbucket=_AB-M744_B6&acm=201506250-8.1003.2.707563&aldid=yuKs7fKS&abtest=_AB-LR744-PR744&scm=1003.2.201506250-8.ITEM_45052354169_707563&pos=8
+2016-07-20 10:11:14.014 [main:13622] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.14.j1yzSU&id=45052354169&abbucket=_AB-M744_B6&acm=201506250-8.1003.2.707563&aldid=yuKs7fKS&abtest=_AB-LR744-PR744&scm=1003.2.201506250-8.ITEM_45052354169_707563&pos=8
+2016-07-20 10:11:14.014 [main:13737] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 10:11:14.014 [main:13744] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 10:11:14.014 [main:13744] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 10:11:14.014 [main:13750] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 10:11:14.014 [main:13751] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 10:11:14.014 [main:13826] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 10:11:14.014 [main:13827] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 10:11:14.014 [main:13832] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 10:11:14.014 [main:13833] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 10:11:14.014 [main:13838] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 10:11:14.014 [main:13839] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 10:11:14.014 [main:13850] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 10:11:14.014 [main:13850] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 10:11:14.014 [main:13851] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 10:11:14.014 [main:13852] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 10:11:14.014 [main:13853] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 10:11:14.014 [main:13854] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 10:11:14.014 [main:13855] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 10:11:14.014 [main:13856] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 10:11:14.014 [main:13857] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 10:11:14.014 [main:13889] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 10:23:30.030 [main:0] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 10:23:39.039 [main:9288] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 10:23:39.039 [main:9392] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 10:23:39.039 [main:9406] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 10:23:39.039 [main:9407] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 10:23:39.039 [main:9413] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 10:23:39.039 [main:9413] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 10:23:39.039 [main:9476] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 10:23:39.039 [main:9476] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 10:23:39.039 [main:9482] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 10:23:39.039 [main:9483] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 10:23:39.039 [main:9489] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 10:23:39.039 [main:9491] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 10:23:39.039 [main:9493] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 10:23:39.039 [main:9493] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 10:23:39.039 [main:9495] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 10:23:39.039 [main:9496] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 10:23:39.039 [main:9498] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 10:23:39.039 [main:9498] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 10:23:39.039 [main:9500] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 10:23:39.039 [main:9501] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 10:23:39.039 [main:9502] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 10:23:39.039 [main:9554] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.14.j1yzSU&id=45052354169&abbucket=_AB-M744_B6&acm=201506250-8.1003.2.707563&aldid=yuKs7fKS&abtest=_AB-LR744-PR744&scm=1003.2.201506250-8.ITEM_45052354169_707563&pos=8
+2016-07-20 14:44:51.051 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 14:45:34.034 [main:43214] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:22:36.036 [main:0] - [DEBUG] org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.07 seconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '192.168.253.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+2016-07-20 15:24:28.028 [main:0] - [DEBUG] org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.82 seconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '192.168.253.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+2016-07-20 15:27:25.025 [main:0] - [DEBUG] org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.48 seconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '192.168.253.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+2016-07-20 15:29:33.033 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 15:29:53.053 [main:19770] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:34:18.018 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 15:34:37.037 [main:19169] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:36:06.006 [main:108687] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:36:10.010 [main:112921] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:36:10.010 [main:112926] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:37:06.006 [main:168279] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:37:06.006 [main:168284] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:37:06.006 [main:168830] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:37:06.006 [main:168834] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:37:11.011 [main:173670] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:37:11.011 [main:173675] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:37:12.012 [main:174224] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:37:12.012 [main:174229] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:37:12.012 [main:174846] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:37:12.012 [main:174850] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:37:13.013 [main:175247] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:37:13.013 [main:175314] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:37:13.013 [main:175710] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:37:13.013 [main:175714] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:37:14.014 [main:176130] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:37:21.021 [main:183566] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:37:39.039 [main:201444] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:37:51.051 [main:213523] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:37:55.055 [main:217397] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:37:55.055 [main:217401] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:37:59.059 [main:221324] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:37:59.059 [main:221328] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:38:42.042 [main:264692] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:38:42.042 [main:264703] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:38:46.046 [main:268495] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:38:46.046 [main:268500] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:38:50.050 [main:272295] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:38:50.050 [main:272302] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:38:50.050 [main:272441] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:38:50.050 [main:272445] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:38:50.050 [main:272579] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:38:50.050 [main:272583] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:38:50.050 [main:272723] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:38:50.050 [main:272727] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:38:50.050 [main:272871] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:38:50.050 [main:272876] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:38:51.051 [main:273025] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:38:58.058 [main:280617] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:39:29.029 [main:311383] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:40:38.038 [main:380410] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:40:42.042 [main:384508] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:40:42.042 [main:384512] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:40:46.046 [main:388416] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:40:46.046 [main:388421] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:41:38.038 [main:440264] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:41:38.038 [main:440269] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:41:45.045 [main:447727] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:41:45.045 [main:447731] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:41:49.049 [main:451623] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:41:49.049 [main:451631] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:41:49.049 [main:451806] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:41:49.049 [main:451810] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:41:49.049 [main:451956] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:41:49.049 [main:451960] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:41:50.050 [main:452138] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:41:50.050 [main:452143] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:41:50.050 [main:452282] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:41:50.050 [main:452286] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:41:50.050 [main:452432] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:41:58.058 [main:460121] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:43:32.032 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 15:43:53.053 [main:21346] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:43:54.054 [main:21645] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:43:54.054 [main:21654] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:43:54.054 [main:21654] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:43:54.054 [main:21737] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:43:54.054 [main:21737] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:43:54.054 [main:21740] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:43:54.054 [main:21741] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:43:54.054 [main:21787] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:43:54.054 [main:21788] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:43:54.054 [main:21790] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:43:54.054 [main:21790] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:43:54.054 [main:21793] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:43:54.054 [main:21793] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:43:54.054 [main:21796] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:43:54.054 [main:21797] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:43:54.054 [main:21800] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:43:54.054 [main:21800] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:43:54.054 [main:21802] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:43:54.054 [main:21940] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:44:02.002 [main:29621] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:44:02.002 [main:29737] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:44:02.002 [main:29744] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:44:02.002 [main:29744] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:44:02.002 [main:29751] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:44:02.002 [main:29751] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:44:02.002 [main:29825] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:44:02.002 [main:29825] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:44:02.002 [main:29832] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:44:02.002 [main:29833] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:44:02.002 [main:29889] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:44:02.002 [main:29889] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:44:02.002 [main:29891] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:44:02.002 [main:29892] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:44:02.002 [main:29893] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:44:02.002 [main:29894] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:44:02.002 [main:29895] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:44:02.002 [main:29896] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:44:02.002 [main:29898] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:44:02.002 [main:29898] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:44:02.002 [main:29899] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:44:02.002 [main:29949] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:44:07.007 [main:35034] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:44:07.007 [main:35200] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:44:07.007 [main:35213] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:44:07.007 [main:35213] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:44:07.007 [main:35220] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:44:07.007 [main:35220] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:44:07.007 [main:35302] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:44:07.007 [main:35302] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:44:07.007 [main:35313] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:44:07.007 [main:35314] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:44:07.007 [main:35321] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:44:07.007 [main:35321] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:44:07.007 [main:35323] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:44:07.007 [main:35323] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:44:07.007 [main:35325] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:44:07.007 [main:35325] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:44:07.007 [main:35331] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:44:07.007 [main:35333] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:44:07.007 [main:35337] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:44:07.007 [main:35338] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:44:07.007 [main:35341] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:44:08.008 [main:35382] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:44:11.011 [main:38924] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:44:11.011 [main:39129] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:44:11.011 [main:39136] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:44:11.011 [main:39137] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:44:11.011 [main:39144] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:44:11.011 [main:39145] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:44:11.011 [main:39225] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:44:11.011 [main:39225] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:44:11.011 [main:39244] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:44:11.011 [main:39244] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:44:11.011 [main:39260] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:44:11.011 [main:39261] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:44:11.011 [main:39262] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:44:11.011 [main:39263] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:44:11.011 [main:39265] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:44:11.011 [main:39266] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:44:11.011 [main:39267] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:44:11.011 [main:39268] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:44:11.011 [main:39269] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:44:11.011 [main:39270] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:44:11.011 [main:39271] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:44:11.011 [main:39352] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=37403188961&skuId=4611686055830576865&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=1910146537&is_b=1
+2016-07-20 15:47:56.056 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 15:48:15.015 [main:19135] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:48:15.015 [main:19465] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:48:15.015 [main:19476] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:48:15.015 [main:19477] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:48:15.015 [main:19587] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:48:15.015 [main:19588] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:48:15.015 [main:19604] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:48:15.015 [main:19605] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:48:15.015 [main:19615] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:48:15.015 [main:19615] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:48:15.015 [main:19618] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:48:15.015 [main:19619] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:48:15.015 [main:19622] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:48:15.015 [main:19623] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:48:15.015 [main:19625] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:48:15.015 [main:19626] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:48:15.015 [main:19629] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:48:15.015 [main:19629] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:48:15.015 [main:19632] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:48:16.016 [main:19733] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:48:27.027 [main:31143] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:48:27.027 [main:31262] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:48:27.027 [main:31269] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:48:27.027 [main:31270] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:48:27.027 [main:31277] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:48:27.027 [main:31278] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:48:27.027 [main:31354] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:48:27.027 [main:31355] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:48:27.027 [main:31362] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:48:27.027 [main:31363] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:48:27.027 [main:31397] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:48:27.027 [main:31398] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:48:27.027 [main:31401] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:48:27.027 [main:31402] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:48:27.027 [main:31404] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:48:27.027 [main:31404] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:48:27.027 [main:31407] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:48:27.027 [main:31407] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:48:27.027 [main:31409] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:48:27.027 [main:31409] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:48:27.027 [main:31410] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:48:27.027 [main:31486] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:48:33.033 [main:36935] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:48:33.033 [main:37108] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:48:33.033 [main:37118] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:48:33.033 [main:37118] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:48:33.033 [main:37127] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:48:33.033 [main:37128] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:48:33.033 [main:37218] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:48:33.033 [main:37241] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:48:33.033 [main:37257] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:48:33.033 [main:37258] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:48:33.033 [main:37264] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:48:33.033 [main:37264] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:48:33.033 [main:37266] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:48:33.033 [main:37267] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:48:33.033 [main:37269] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:48:33.033 [main:37269] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:48:33.033 [main:37271] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:48:33.033 [main:37271] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:48:33.033 [main:37273] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:48:33.033 [main:37273] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:48:33.033 [main:37276] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:48:33.033 [main:37327] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:50:01.001 [main:0] - [DEBUG] Beginning,Open page:http://product.suning.com/104605338.html
+2016-07-20 15:50:19.019 [main:18493] - [DEBUG] Page is opened:http://product.suning.com/104605338.html
+2016-07-20 15:50:19.019 [main:18921] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:20.020 [main:18935] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:20.020 [main:18936] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:20.020 [main:19043] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:20.020 [main:19044] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:20.020 [main:19052] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:20.020 [main:19052] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:20.020 [main:19061] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:20.020 [main:19062] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:20.020 [main:19066] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:20.020 [main:19066] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:20.020 [main:19070] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:20.020 [main:19070] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:20.020 [main:19073] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:20.020 [main:19075] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:20.020 [main:19085] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:20.020 [main:19085] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:20.020 [main:19088] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:20.020 [main:19150] - [DEBUG] Beginning,Open page:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:50:28.028 [main:27541] - [DEBUG] Page is opened:https://chaoshi.detail.tmall.com/item.htm?spm=a3204.7084713.2996785438.9.j1yzSU&id=532217065594&abbucket=_AB-M744_B6&acm=201506250-3.1003.2.700741&aldid=yuKs7fKS&rewcatid=50514008&abtest=_AB-LR744-PR744&scm=1003.2.201506250-3.ITEM_532217065594_700741&pos=3
+2016-07-20 15:50:28.028 [main:27747] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:28.028 [main:27753] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:28.028 [main:27754] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:28.028 [main:27760] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:28.028 [main:27760] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:28.028 [main:27827] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:28.028 [main:27827] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:28.028 [main:27837] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:28.028 [main:27837] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:28.028 [main:27843] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:28.028 [main:27844] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:28.028 [main:27855] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:28.028 [main:27856] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:28.028 [main:27860] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:28.028 [main:27860] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:28.028 [main:27862] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:28.028 [main:27863] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:28.028 [main:27866] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:28.028 [main:27866] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:28.028 [main:27868] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:29.029 [main:27949] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:50:35.035 [main:34548] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1
+2016-07-20 15:50:35.035 [main:34665] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:35.035 [main:34677] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:35.035 [main:34677] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:35.035 [main:34691] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:35.035 [main:34693] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:35.035 [main:34764] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:35.035 [main:34764] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:35.035 [main:34779] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:35.035 [main:34779] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:35.035 [main:34785] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:35.035 [main:34786] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:35.035 [main:34787] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:35.035 [main:34788] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:35.035 [main:34789] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:35.035 [main:34790] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:35.035 [main:34791] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:35.035 [main:34791] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:35.035 [main:34793] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:35.035 [main:34793] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:35.035 [main:34794] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:35.035 [main:34834] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:50:39.039 [main:37981] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1
+2016-07-20 15:50:39.039 [main:38075] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:39.039 [main:38088] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:39.039 [main:38088] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:39.039 [main:38129] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:39.039 [main:38130] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:39.039 [main:38222] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:39.039 [main:38223] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:39.039 [main:38240] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:39.039 [main:38240] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:39.039 [main:38247] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:39.039 [main:38248] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:39.039 [main:38249] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:39.039 [main:38250] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:39.039 [main:38254] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:39.039 [main:38255] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:39.039 [main:38256] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:39.039 [main:38256] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:39.039 [main:38258] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:39.039 [main:38259] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:39.039 [main:38260] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:39.039 [main:38318] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=37403188961&skuId=4611686055830576865&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=1910146537&is_b=1
+2016-07-20 15:50:43.043 [main:42446] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=37403188961&skuId=4611686055830576865&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=1910146537&is_b=1
+2016-07-20 15:50:43.043 [main:42689] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:43.043 [main:42696] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:43.043 [main:42697] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:43.043 [main:42703] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:43.043 [main:42703] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:43.043 [main:42786] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:43.043 [main:42786] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:43.043 [main:42802] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:43.043 [main:42805] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:43.043 [main:42811] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:43.043 [main:42811] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:43.043 [main:42815] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:43.043 [main:42816] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:43.043 [main:42818] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:43.043 [main:42818] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:43.043 [main:42820] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:43.043 [main:42821] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:43.043 [main:42822] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:43.043 [main:42822] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:43.043 [main:42824] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:43.043 [main:42915] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=524179107276&skuId=4611686542606495180&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2127757331&is_b=1
+2016-07-20 15:50:48.048 [main:47893] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=524179107276&skuId=4611686542606495180&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2127757331&is_b=1
+2016-07-20 15:50:49.049 [main:48526] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:49.049 [main:48537] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:49.049 [main:48537] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:49.049 [main:48545] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:49.049 [main:48546] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:49.049 [main:48766] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:49.049 [main:48766] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:49.049 [main:48787] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:49.049 [main:48788] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:49.049 [main:48803] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:49.049 [main:48803] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:49.049 [main:48806] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:49.049 [main:48806] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:49.049 [main:48809] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:49.049 [main:48810] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:49.049 [main:48812] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:49.049 [main:48813] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:49.049 [main:48818] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:49.049 [main:48818] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:49.049 [main:48819] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:49.049 [main:48859] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523051545825&skuId=4611686541478933729&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2643205009&is_b=1
+2016-07-20 15:50:52.052 [main:51553] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523051545825&skuId=4611686541478933729&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2643205009&is_b=1
+2016-07-20 15:50:52.052 [main:51667] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:50:52.052 [main:51677] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:50:52.052 [main:51677] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:50:52.052 [main:51690] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:50:52.052 [main:51690] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:50:52.052 [main:51791] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:50:52.052 [main:51792] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:50:52.052 [main:51813] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:50:52.052 [main:51813] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:50:52.052 [main:51826] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:50:52.052 [main:51826] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:50:52.052 [main:51828] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:50:52.052 [main:51828] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:50:52.052 [main:51831] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:50:52.052 [main:51831] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:50:52.052 [main:51834] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:50:52.052 [main:51834] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:50:52.052 [main:51835] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:50:52.052 [main:51836] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:50:52.052 [main:51837] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:50:52.052 [main:51880] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&cat_id=2&rn=5ab551d5a895daeb20d4382f0ab35b56&user_id=2098911049&is_b=1
+2016-07-20 15:50:55.055 [main:54924] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&cat_id=2&rn=5ab551d5a895daeb20d4382f0ab35b56&user_id=2098911049&is_b=1
+2016-07-20 15:50:56.056 [main:55024] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:50:58.058 [main:57453] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:50:59.059 [main:57934] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%C9%BD%B6%AB+%BD%BA%D6%DD
+2016-07-20 15:51:00.000 [main:59110] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%C9%BD%B6%AB+%BD%BA%D6%DD
+2016-07-20 15:51:00.000 [main:59210] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%BD%BA%D6%DD
+2016-07-20 15:51:01.001 [main:60506] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%BD%BA%D6%DD
+2016-07-20 15:51:01.001 [main:60619] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=523406188326&skuId=4611686541833576230&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:51:03.003 [main:61969] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=523406188326&skuId=4611686541833576230&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:51:03.003 [main:62130] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=524458088400&skuId=4611686542885476304&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:51:07.007 [main:66136] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=524458088400&skuId=4611686542885476304&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB
+2016-07-20 15:51:07.007 [main:66457] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:51:07.007 [main:66476] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:51:07.007 [main:66476] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:51:07.007 [main:66495] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:51:07.007 [main:66495] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:51:07.007 [main:66749] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:51:07.007 [main:66750] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:51:07.007 [main:66791] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:51:07.007 [main:66791] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:51:07.007 [main:66812] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:51:07.007 [main:66812] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:51:07.007 [main:66813] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:51:07.007 [main:66814] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:51:07.007 [main:66815] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:51:07.007 [main:66816] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:51:07.007 [main:66817] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:51:07.007 [main:66817] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:51:07.007 [main:66819] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:51:07.007 [main:66819] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:51:07.007 [main:66820] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:51:07.007 [main:66909] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=25245412407&skuId=4611686043672800311&areaId=500100&cat_id=2&rn=3109196210434f6c95be4d14298863c3&user_id=1611830203&is_b=1
+2016-07-20 15:51:15.015 [main:74824] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=25245412407&skuId=4611686043672800311&areaId=500100&cat_id=2&rn=3109196210434f6c95be4d14298863c3&user_id=1611830203&is_b=1
+2016-07-20 15:51:16.016 [main:75459] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:51:16.016 [main:75515] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:51:16.016 [main:75515] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:51:16.016 [main:75543] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:51:16.016 [main:75543] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:51:17.017 [main:76047] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:51:17.017 [main:76048] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:51:17.017 [main:76097] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:51:17.017 [main:76097] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:51:17.017 [main:76124] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:51:17.017 [main:76124] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:51:17.017 [main:76126] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:51:17.017 [main:76126] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:51:17.017 [main:76127] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:51:17.017 [main:76127] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:51:17.017 [main:76129] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:51:17.017 [main:76129] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:51:17.017 [main:76130] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:51:17.017 [main:76131] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:51:17.017 [main:76132] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:51:17.017 [main:76177] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=38626047511&skuId=4611686057053435415&areaId=500100&cat_id=2&rn=5032e37101fe7331a581a76d7cc72abd&user_id=1015650064&is_b=1
+2016-07-20 15:51:21.021 [main:79938] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=38626047511&skuId=4611686057053435415&areaId=500100&cat_id=2&rn=5032e37101fe7331a581a76d7cc72abd&user_id=1015650064&is_b=1
+2016-07-20 15:51:21.021 [main:80155] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:51:21.021 [main:80165] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:51:21.021 [main:80165] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:51:21.021 [main:80176] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:51:21.021 [main:80176] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:51:21.021 [main:80348] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:51:21.021 [main:80348] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:51:21.021 [main:80361] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:51:21.021 [main:80362] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:51:21.021 [main:80377] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:51:21.021 [main:80378] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:51:21.021 [main:80379] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:51:21.021 [main:80379] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:51:21.021 [main:80380] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:51:21.021 [main:80381] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:51:21.021 [main:80382] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:51:21.021 [main:80382] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:51:21.021 [main:80384] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:51:21.021 [main:80384] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:51:21.021 [main:80385] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:51:21.021 [main:80424] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=38626047511&skuId=4611686057053435415&areaId=500100&is_b=1&cat_id=2&q=%DD%BB%B2%CB
+2016-07-20 15:51:25.025 [main:84123] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=38626047511&skuId=4611686057053435415&areaId=500100&is_b=1&cat_id=2&q=%DD%BB%B2%CB
+2016-07-20 15:51:25.025 [main:84461] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:51:25.025 [main:84473] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:51:25.025 [main:84473] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:51:25.025 [main:84485] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:51:25.025 [main:84485] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:51:25.025 [main:84667] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:51:25.025 [main:84668] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:51:25.025 [main:84679] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:51:25.025 [main:84679] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:51:25.025 [main:84691] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:51:25.025 [main:84691] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:51:25.025 [main:84693] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:51:25.025 [main:84694] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:51:25.025 [main:84695] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:51:25.025 [main:84695] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:51:25.025 [main:84697] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:51:25.025 [main:84697] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:51:25.025 [main:84698] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:51:25.025 [main:84699] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:51:25.025 [main:84700] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:51:25.025 [main:84759] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=36711830543&skuId=4611686055139218447&areaId=500100&cat_id=2&rn=5032e37101fe7331a581a76d7cc72abd&user_id=1910146537&is_b=1
+2016-07-20 15:51:29.029 [main:88176] - [DEBUG] Page is opened:https://detail.tmall.com/item.htm?id=36711830543&skuId=4611686055139218447&areaId=500100&cat_id=2&rn=5032e37101fe7331a581a76d7cc72abd&user_id=1910146537&is_b=1
+2016-07-20 15:51:29.029 [main:88289] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-20 15:51:29.029 [main:88296] - [DEBUG] Field is Parsed:productActualID
+2016-07-20 15:51:29.029 [main:88296] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-20 15:51:29.029 [main:88302] - [DEBUG] Field is Parsed:productPrice
+2016-07-20 15:51:29.029 [main:88302] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-20 15:51:29.029 [main:88374] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-20 15:51:29.029 [main:88377] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-20 15:51:29.029 [main:88384] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-20 15:51:29.029 [main:88385] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-20 15:51:29.029 [main:88392] - [DEBUG] Field is Parsed:commentCount
+2016-07-20 15:51:29.029 [main:88393] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-07-20 15:51:29.029 [main:88394] - [DEBUG] Field is Parsed:goodCommentCount
+2016-07-20 15:51:29.029 [main:88394] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-07-20 15:51:29.029 [main:88396] - [DEBUG] Field is Parsed:midCommentCount
+2016-07-20 15:51:29.029 [main:88396] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-07-20 15:51:29.029 [main:88399] - [DEBUG] Field is Parsed:badCommentCount
+2016-07-20 15:51:29.029 [main:88399] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-07-20 15:51:29.029 [main:88401] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-07-20 15:51:29.029 [main:88402] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-07-20 15:51:29.029 [main:88404] - [DEBUG] Field is Parsed:additionCommentCount
+2016-07-20 15:51:29.029 [main:88436] - [DEBUG] Beginning,Open page:https://detail.tmall.com/item.htm?id=20886880079&skuId=4611686039314267983&areaId=500100&cat_id=2&rn=5032e37101fe7331a581a76d7cc72abd&user_id=911353470&is_b=1

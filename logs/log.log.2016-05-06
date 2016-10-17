@@ -1,0 +1,56 @@
+2016-05-06 00:01:15.015 [main:1] - [DEBUG] Beginning,Open page:https://item.taobao.com/item.htm?id=17420614310
+2016-05-06 00:10:54.054 [main:0] - [DEBUG] Beginning,Open page:https://item.taobao.com/item.htm?id=17420614310
+2016-05-06 00:12:17.017 [main:82272] - [DEBUG] Page is opened:https://item.taobao.com/item.htm?id=17420614310
+2016-05-06 00:13:48.048 [main:173644] - [DEBUG] Beginning,Parse Field:productActualID
+2016-05-06 00:17:27.027 [main:392068] - [DEBUG] Field is Parsed:productActualID
+2016-05-06 00:17:27.027 [main:392076] - [DEBUG] Beginning,Parse Field:productName
+2016-05-06 00:17:32.032 [main:397446] - [DEBUG] Field is Parsed:productName
+2016-05-06 00:17:32.032 [main:397450] - [DEBUG] Beginning,Parse Field:productDescription
+2016-05-06 00:17:38.038 [main:403275] - [DEBUG] Field is Parsed:productDescription
+2016-05-06 00:17:38.038 [main:403279] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-05-06 00:18:03.003 [main:428937] - [DEBUG] Field is Parsed:shelveDate
+2016-05-06 00:18:03.003 [main:428947] - [DEBUG] Beginning,Parse Field:status
+2016-05-06 00:18:29.029 [main:454502] - [DEBUG] Field is Parsed:status
+2016-05-06 00:18:29.029 [main:454507] - [DEBUG] Beginning,Parse Field:weight
+2016-05-06 00:18:46.046 [main:471085] - [DEBUG] Field is Parsed:weight
+2016-05-06 00:18:46.046 [main:471091] - [DEBUG] Beginning,Parse Field:origin
+2016-05-06 00:19:01.001 [main:486645] - [DEBUG] Field is Parsed:origin
+2016-05-06 00:19:01.001 [main:486711] - [DEBUG] Beginning,Parse Field:province
+2016-05-06 00:19:18.018 [main:503511] - [DEBUG] Field is Parsed:province
+2016-05-06 00:19:18.018 [main:503515] - [DEBUG] Beginning,Parse Field:city
+2016-05-06 00:20:46.046 [main:591928] - [DEBUG] Field is Parsed:city
+2016-05-06 00:20:46.046 [main:591932] - [DEBUG] Beginning,Parse Field:category
+2016-05-06 00:22:48.048 [main:713628] - [DEBUG] Field is Parsed:category
+2016-05-06 00:22:48.048 [main:713633] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-05-06 00:24:52.052 [main:837663] - [DEBUG] Field is Parsed:specialtyCategory
+2016-05-06 00:24:52.052 [main:837667] - [DEBUG] Beginning,Parse Field:brand
+2016-05-06 00:25:08.008 [main:853620] - [DEBUG] Field is Parsed:brand
+2016-05-06 00:25:08.008 [main:853624] - [DEBUG] Beginning,Parse Field:factoryName
+2016-05-06 00:25:24.024 [main:869621] - [DEBUG] Field is Parsed:factoryName
+2016-05-06 00:25:24.024 [main:869625] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-05-06 00:25:40.040 [main:885788] - [DEBUG] Field is Parsed:factoryAddress
+2016-05-06 00:25:40.040 [main:885792] - [DEBUG] Beginning,Parse Field:series
+2016-05-06 00:25:56.056 [main:901699] - [DEBUG] Field is Parsed:series
+2016-05-06 00:25:56.056 [main:901705] - [DEBUG] Beginning,Parse Field:specification
+2016-05-06 00:26:21.021 [main:926204] - [DEBUG] Field is Parsed:specification
+2016-05-06 00:26:21.021 [main:926208] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-05-06 00:26:27.027 [main:932447] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-05-06 00:26:27.027 [main:932451] - [DEBUG] Beginning,Parse Field:productPrice
+2016-05-06 00:27:59.059 [main:1024549] - [DEBUG] Field is Parsed:productPrice
+2016-05-06 00:27:59.059 [main:1024553] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-05-06 00:28:05.005 [main:1030849] - [DEBUG] Field is Parsed:productPromPrice
+2016-05-06 00:28:05.005 [main:1030853] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-05-06 00:28:12.012 [main:1037411] - [DEBUG] Field is Parsed:monthSaleCount
+2016-05-06 00:28:12.012 [main:1037415] - [DEBUG] Beginning,Parse Field:commentCount
+2016-05-06 00:28:18.018 [main:1043713] - [DEBUG] Field is Parsed:commentCount
+2016-05-06 00:28:18.018 [main:1043720] - [DEBUG] Beginning,Parse Field:storeActualID
+2016-05-06 00:29:46.046 [main:1131087] - [DEBUG] Field is Parsed:storeActualID
+2016-05-06 00:29:46.046 [main:1131093] - [DEBUG] Beginning,Parse Field:storeName
+2016-05-06 00:30:44.044 [main:1189691] - [DEBUG] Field is Parsed:storeName
+2016-05-06 00:30:44.044 [main:1189695] - [DEBUG] Beginning,Parse Field:storeURL
+2016-05-06 00:32:35.035 [main:1300568] - [DEBUG] Field is Parsed:storeURL
+2016-05-06 00:32:35.035 [main:1300573] - [DEBUG] Beginning,Parse Field:shopkeeper
+2016-05-06 00:46:37.037 [main:0] - [DEBUG] Beginning,Open page:https://item.taobao.com/item.htm?id=17420614310
+2016-05-06 00:49:27.027 [main:0] - [DEBUG] Beginning,Open page:https://item.taobao.com/item.htm?id=17420614310
+2016-05-06 00:53:43.043 [main:256829] - [DEBUG] Beginning,Open page:https://item.taobao.com/item.htm?id=20119854729
+2016-05-06 00:53:58.058 [main:271252] - [DEBUG] Page is opened:https://item.taobao.com/item.htm?id=20119854729

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<isSaveProductFiles>0</isSaveProductFiles><!-- 1：表示保存产品页面源文件，0：表示不保存 -->
+	
+	<!-- 上面两项不用管 -->		
+	<startline>1</startline><!-- 每次执行任务的开始行数 -->
+	<length>300</length><!-- 任务数量 -->
+	<timeout>7</timeout><!-- 请求页面超时 -->	
+	<exceptionPause>1</exceptionPause><!-- 访问异常时，暂停访问时间，1 分钟 -->
+</config>

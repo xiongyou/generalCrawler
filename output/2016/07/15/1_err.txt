@@ -1,0 +1,12 @@
+1	赣南脐橙			45.00								https://detail.tmall.com/item.htm?id=42260938716&skuId=4611686060688326620&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2243902285&is_b=1	此商品已下架	2016-07-15 10:07:35
+2	赣南脐橙		水源红 赣南脐橙现摘 江西赣州寻乌甜橙子水果【预售11月发货】	80.00								https://detail.tmall.com/item.htm?id=40699813240&skuId=4611686059127201144&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2179279224&is_b=1	此商品已下架	2016-07-15 10:07:38
+3	赣南脐橙			45.00	25.00							https://detail.tmall.com/item.htm?id=37403188961&skuId=4611686055830576865&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=1910146537&is_b=1	此商品已下架	2016-07-15 10:07:40
+4	https://detail.tmall.com/item.htm?id=524179107276&skuId=4611686542606495180&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2127757331&is_b=1	Tmall	赣南脐橙	ProductMonitor	访问异常
+4	赣南脐橙		兴盟 正宗江西赣南脐橙10斤玲珑橙子赣州寻乌新鲜水果9省包邮	78.00								https://detail.tmall.com/item.htm?id=523051545825&skuId=4611686541478933729&areaId=500100&cat_id=55070022&rn=a42d493916e6d4e5f515a7e6807085e9&user_id=2643205009&is_b=1	此商品已下架	2016-07-15 10:08:56
+5	胶州大白菜	https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&cat_id=2&rn=5ab551d5a895daeb20d4382f0ab35b56&user_id=2098911049&is_b=1	您查看的商品找不到了	2016-07-15 10:08:57
+6	胶州大白菜	https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB	您查看的商品找不到了	2016-07-15 10:08:58
+7	胶州大白菜	https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%C9%BD%B6%AB+%BD%BA%D6%DD	您查看的商品找不到了	2016-07-15 10:08:59
+8	胶州大白菜	https://detail.tmall.com/item.htm?id=523750848482&skuId=4611686542178236386&areaId=500100&is_b=1&cat_id=2&q=%BD%BA%D6%DD	您查看的商品找不到了	2016-07-15 10:08:59
+9	胶州大白菜	https://detail.tmall.com/item.htm?id=523406188326&skuId=4611686541833576230&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB	您查看的商品找不到了	2016-07-15 10:09:00
+10	上海新鲜娃娃菜		【mahota 泰生农场】有机大白菜黄芽菜1000g新鲜蔬菜上海同城配送	32.00								https://detail.tmall.com/item.htm?id=524458088400&skuId=4611686542885476304&areaId=500100&is_b=1&cat_id=2&q=%B4%F3%B0%D7%B2%CB	此商品已下架	2016-07-15 10:09:03
+11	上海新鲜娃娃菜		嘉仕有机蔬菜娃娃菜300g时令新鲜特产生鲜农食品现摘配送礼盒	18.50								https://detail.tmall.com/item.htm?id=25245412407&skuId=4611686043672800311&areaId=500100&cat_id=2&rn=3109196210434f6c95be4d14298863c3&user_id=1611830203&is_b=1	此商品已下架	2016-07-15 10:09:06

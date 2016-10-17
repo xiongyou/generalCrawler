@@ -1,0 +1,1257 @@
+2016-04-23 19:51:23.023 [main:0] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108927051.html
+2016-04-23 19:51:59.059 [main:36524] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108927051.html
+2016-04-23 19:51:59.059 [main:36621] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:51:59.059 [main:36628] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:51:59.059 [main:36628] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:51:59.059 [main:36631] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:51:59.059 [main:36632] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:51:59.059 [main:36640] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:51:59.059 [main:36640] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:51:59.059 [main:36647] - [DEBUG] Field is Parsed:store
+2016-04-23 19:51:59.059 [main:36647] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:51:59.059 [main:36651] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:51:59.059 [main:36651] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:51:59.059 [main:36659] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:51:59.059 [main:36660] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:51:59.059 [main:36665] - [DEBUG] Field is Parsed:status
+2016-04-23 19:51:59.059 [main:36667] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:51:59.059 [main:36672] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:51:59.059 [main:36672] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:51:59.059 [main:36678] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:51:59.059 [main:36678] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:51:59.059 [main:36684] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:51:59.059 [main:36684] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:51:59.059 [main:36691] - [DEBUG] Field is Parsed:province
+2016-04-23 19:51:59.059 [main:36692] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:51:59.059 [main:36698] - [DEBUG] Field is Parsed:city
+2016-04-23 19:51:59.059 [main:36698] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:00.000 [main:37368] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:00.000 [main:37369] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:00.000 [main:37465] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:00.000 [main:37465] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:00.000 [main:37715] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:00.000 [main:37715] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:00.000 [main:37721] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:00.000 [main:37722] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:00.000 [main:37727] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:00.000 [main:37728] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:00.000 [main:37735] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:00.000 [main:37735] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:00.000 [main:37742] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:00.000 [main:37743] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:00.000 [main:37748] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:00.000 [main:37749] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:00.000 [main:37752] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:00.000 [main:37752] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:00.000 [main:37794] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:00.000 [main:37798] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:00.000 [main:37803] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:00.000 [main:37803] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:00.000 [main:37811] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:00.000 [main:37811] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:00.000 [main:37814] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:00.000 [main:37815] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:00.000 [main:37818] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:00.000 [main:37818] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:00.000 [main:37845] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:00.000 [main:37846] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:00.000 [main:37849] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:00.000 [main:37849] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:00.000 [main:37853] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:00.000 [main:37853] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:00.000 [main:37856] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:00.000 [main:37857] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:00.000 [main:37862] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:00.000 [main:37862] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:00.000 [main:37868] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:00.000 [main:37868] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:00.000 [main:37873] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:00.000 [main:37895] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 19:52:03.003 [main:40328] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 19:52:03.003 [main:40368] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:03.003 [main:40371] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:03.003 [main:40372] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:03.003 [main:40375] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:03.003 [main:40376] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:03.003 [main:40382] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:03.003 [main:40382] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:03.003 [main:40388] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:03.003 [main:40389] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:03.003 [main:40393] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:03.003 [main:40393] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:03.003 [main:40419] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:03.003 [main:40420] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:03.003 [main:40426] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:03.003 [main:40426] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:03.003 [main:40432] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:03.003 [main:40433] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:03.003 [main:40440] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:03.003 [main:40440] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:03.003 [main:40458] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:03.003 [main:40458] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:03.003 [main:40468] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:03.003 [main:40468] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:03.003 [main:40475] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:03.003 [main:40476] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:04.004 [main:41193] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:04.004 [main:41193] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:04.004 [main:41277] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:04.004 [main:41278] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:04.004 [main:41484] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:04.004 [main:41484] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:04.004 [main:41490] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:04.004 [main:41491] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:04.004 [main:41504] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:04.004 [main:41504] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:04.004 [main:41509] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:04.004 [main:41510] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:04.004 [main:41515] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:04.004 [main:41516] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:04.004 [main:41521] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:04.004 [main:41522] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:04.004 [main:41525] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:04.004 [main:41526] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:04.004 [main:41532] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:04.004 [main:41534] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:04.004 [main:41537] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:04.004 [main:41538] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:04.004 [main:41541] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:04.004 [main:41541] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:04.004 [main:41544] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:04.004 [main:41545] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:04.004 [main:41548] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:04.004 [main:41548] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:04.004 [main:41578] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:04.004 [main:41578] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:04.004 [main:41582] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:04.004 [main:41583] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:04.004 [main:41590] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:04.004 [main:41590] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:04.004 [main:41594] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:04.004 [main:41594] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:04.004 [main:41600] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:04.004 [main:41601] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:04.004 [main:41608] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:04.004 [main:41608] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:04.004 [main:41617] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:04.004 [main:41635] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926792.html
+2016-04-23 19:52:06.006 [main:43381] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926792.html
+2016-04-23 19:52:06.006 [main:43414] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:06.006 [main:43418] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:06.006 [main:43418] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:06.006 [main:43421] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:06.006 [main:43421] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:06.006 [main:43426] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:06.006 [main:43426] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:06.006 [main:43433] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:06.006 [main:43433] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:06.006 [main:43436] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:06.006 [main:43436] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:06.006 [main:43443] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:06.006 [main:43443] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:06.006 [main:43448] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:06.006 [main:43449] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:06.006 [main:43455] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:06.006 [main:43455] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:06.006 [main:43461] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:06.006 [main:43462] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:06.006 [main:43468] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:06.006 [main:43469] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:06.006 [main:43475] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:06.006 [main:43475] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:06.006 [main:43481] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:06.006 [main:43482] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:07.007 [main:44035] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:07.007 [main:44035] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:07.007 [main:44107] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:07.007 [main:44108] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:07.007 [main:44344] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:07.007 [main:44345] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:07.007 [main:44350] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:07.007 [main:44350] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:07.007 [main:44357] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:07.007 [main:44357] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:07.007 [main:44366] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:07.007 [main:44367] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:07.007 [main:44373] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:07.007 [main:44373] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:07.007 [main:44378] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:07.007 [main:44379] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:07.007 [main:44385] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:07.007 [main:44385] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:07.007 [main:44392] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:07.007 [main:44392] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:07.007 [main:44395] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:07.007 [main:44395] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:07.007 [main:44400] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:07.007 [main:44401] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:07.007 [main:44404] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:07.007 [main:44404] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:07.007 [main:44407] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:07.007 [main:44407] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:07.007 [main:44431] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:07.007 [main:44431] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:07.007 [main:44435] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:07.007 [main:44435] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:07.007 [main:44438] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:07.007 [main:44438] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:07.007 [main:44442] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:07.007 [main:44443] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:07.007 [main:44448] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:07.007 [main:44448] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:07.007 [main:44453] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:07.007 [main:44454] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:07.007 [main:44460] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:07.007 [main:44478] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926802.html
+2016-04-23 19:52:09.009 [main:46393] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926802.html
+2016-04-23 19:52:09.009 [main:46433] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:09.009 [main:46436] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:09.009 [main:46436] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:09.009 [main:46439] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:09.009 [main:46439] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:09.009 [main:46444] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:09.009 [main:46445] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:09.009 [main:46450] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:09.009 [main:46450] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:09.009 [main:46455] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:09.009 [main:46456] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:09.009 [main:46460] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:09.009 [main:46461] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:09.009 [main:46466] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:09.009 [main:46466] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:09.009 [main:46471] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:09.009 [main:46471] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:09.009 [main:46477] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:09.009 [main:46477] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:09.009 [main:46485] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:09.009 [main:46485] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:09.009 [main:46491] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:09.009 [main:46491] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:09.009 [main:46496] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:09.009 [main:46497] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:10.010 [main:47060] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:10.010 [main:47061] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:10.010 [main:47134] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:10.010 [main:47135] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:10.010 [main:47349] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:10.010 [main:47350] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:10.010 [main:47355] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:10.010 [main:47355] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:10.010 [main:47361] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:10.010 [main:47362] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:10.010 [main:47368] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:10.010 [main:47368] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:10.010 [main:47373] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:10.010 [main:47374] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:10.010 [main:47381] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:10.010 [main:47388] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:10.010 [main:47391] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:10.010 [main:47391] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:10.010 [main:47398] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:10.010 [main:47398] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:10.010 [main:47401] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:10.010 [main:47401] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:10.010 [main:47404] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:10.010 [main:47404] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:10.010 [main:47408] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:10.010 [main:47408] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:10.010 [main:47412] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:10.010 [main:47412] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:10.010 [main:47437] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:10.010 [main:47438] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:10.010 [main:47441] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:10.010 [main:47441] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:10.010 [main:47443] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:10.010 [main:47444] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:10.010 [main:47447] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:10.010 [main:47447] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:10.010 [main:47452] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:10.010 [main:47453] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:10.010 [main:47458] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:10.010 [main:47458] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:10.010 [main:47465] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:10.010 [main:47488] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926799.html
+2016-04-23 19:52:12.012 [main:49161] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926799.html
+2016-04-23 19:52:12.012 [main:49210] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:12.012 [main:49213] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:12.012 [main:49213] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:12.012 [main:49216] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:12.012 [main:49216] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:12.012 [main:49221] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:12.012 [main:49221] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:12.012 [main:49226] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:12.012 [main:49227] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:12.012 [main:49230] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:12.012 [main:49231] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:12.012 [main:49237] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:12.012 [main:49238] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:12.012 [main:49246] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:12.012 [main:49246] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:12.012 [main:49251] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:12.012 [main:49254] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:12.012 [main:49259] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:12.012 [main:49260] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:12.012 [main:49265] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:12.012 [main:49265] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:12.012 [main:49282] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:12.012 [main:49283] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:12.012 [main:49288] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:12.012 [main:49288] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:13.013 [main:49933] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:13.013 [main:49934] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:13.013 [main:50008] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:13.013 [main:50009] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:13.013 [main:50210] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:13.013 [main:50210] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:13.013 [main:50215] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:13.013 [main:50216] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:13.013 [main:50222] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:13.013 [main:50223] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:13.013 [main:50228] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:13.013 [main:50228] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:13.013 [main:50234] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:13.013 [main:50234] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:13.013 [main:50239] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:13.013 [main:50240] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:13.013 [main:50242] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:13.013 [main:50243] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:13.013 [main:50248] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:13.013 [main:50248] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:13.013 [main:50251] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:13.013 [main:50251] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:13.013 [main:50255] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:13.013 [main:50255] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:13.013 [main:50258] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:13.013 [main:50258] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:13.013 [main:50261] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:13.013 [main:50262] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:13.013 [main:50285] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:13.013 [main:50285] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:13.013 [main:50288] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:13.013 [main:50288] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:13.013 [main:50291] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:13.013 [main:50291] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:13.013 [main:50294] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:13.013 [main:50294] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:13.013 [main:50299] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:13.013 [main:50299] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:13.013 [main:50305] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:13.013 [main:50305] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:13.013 [main:50310] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:13.013 [main:50330] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926326.html
+2016-04-23 19:52:15.015 [main:52357] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926326.html
+2016-04-23 19:52:15.015 [main:52414] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:15.015 [main:52417] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:15.015 [main:52417] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:15.015 [main:52420] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:15.015 [main:52421] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:15.015 [main:52426] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:15.015 [main:52426] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:15.015 [main:52432] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:15.015 [main:52432] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:15.015 [main:52435] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:15.015 [main:52435] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:15.015 [main:52441] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:15.015 [main:52441] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:15.015 [main:52448] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:15.015 [main:52448] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:15.015 [main:52453] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:15.015 [main:52453] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:15.015 [main:52459] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:15.015 [main:52459] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:15.015 [main:52472] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:15.015 [main:52472] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:15.015 [main:52480] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:15.015 [main:52480] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:15.015 [main:52488] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:15.015 [main:52488] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:16.016 [main:53069] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:16.016 [main:53070] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:16.016 [main:53172] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:16.016 [main:53173] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:16.016 [main:53358] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:16.016 [main:53358] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:16.016 [main:53363] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:16.016 [main:53364] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:16.016 [main:53369] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:16.016 [main:53369] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:16.016 [main:53376] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:16.016 [main:53376] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:16.016 [main:53381] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:16.016 [main:53382] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:16.016 [main:53387] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:16.016 [main:53388] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:16.016 [main:53391] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:16.016 [main:53391] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:16.016 [main:53397] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:16.016 [main:53397] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:16.016 [main:53400] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:16.016 [main:53401] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:16.016 [main:53408] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:16.016 [main:53408] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:16.016 [main:53411] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:16.016 [main:53411] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:16.016 [main:53416] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:16.016 [main:53417] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:16.016 [main:53441] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:16.016 [main:53441] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:16.016 [main:53444] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:16.016 [main:53445] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:16.016 [main:53448] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:16.016 [main:53448] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:16.016 [main:53451] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:16.016 [main:53451] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:16.016 [main:53457] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:16.016 [main:53457] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:16.016 [main:53462] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:16.016 [main:53463] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:16.016 [main:53468] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:16.016 [main:53485] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623947.html
+2016-04-23 19:52:18.018 [main:55299] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108623947.html
+2016-04-23 19:52:18.018 [main:55340] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:18.018 [main:55343] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:18.018 [main:55344] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:18.018 [main:55347] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:18.018 [main:55347] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:18.018 [main:55352] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:18.018 [main:55352] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:18.018 [main:55358] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:18.018 [main:55358] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:18.018 [main:55363] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:18.018 [main:55364] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:18.018 [main:55369] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:18.018 [main:55369] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:18.018 [main:55385] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:18.018 [main:55386] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:18.018 [main:55391] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:18.018 [main:55391] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:18.018 [main:55397] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:18.018 [main:55398] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:18.018 [main:55403] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:18.018 [main:55403] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:18.018 [main:55421] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:18.018 [main:55421] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:18.018 [main:55426] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:18.018 [main:55427] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:19.019 [main:56041] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:19.019 [main:56042] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:19.019 [main:56121] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:19.019 [main:56121] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:19.019 [main:56329] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:19.019 [main:56330] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:19.019 [main:56335] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:19.019 [main:56335] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:19.019 [main:56341] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:19.019 [main:56341] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:19.019 [main:56348] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:19.019 [main:56349] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:19.019 [main:56354] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:19.019 [main:56354] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:19.019 [main:56361] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:19.019 [main:56361] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:19.019 [main:56364] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:19.019 [main:56364] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:19.019 [main:56370] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:19.019 [main:56370] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:19.019 [main:56374] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:19.019 [main:56374] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:19.019 [main:56377] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:19.019 [main:56377] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:19.019 [main:56383] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:19.019 [main:56383] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:19.019 [main:56388] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:19.019 [main:56388] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:19.019 [main:56413] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:19.019 [main:56413] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:19.019 [main:56416] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:19.019 [main:56417] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:19.019 [main:56421] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:19.019 [main:56421] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:19.019 [main:56424] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:19.019 [main:56424] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:19.019 [main:56430] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:19.019 [main:56430] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:19.019 [main:56435] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:19.019 [main:56435] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:19.019 [main:56447] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:19.019 [main:56462] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623858.html
+2016-04-23 19:52:21.021 [main:58222] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108623858.html
+2016-04-23 19:52:21.021 [main:58273] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:21.021 [main:58276] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:21.021 [main:58276] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:21.021 [main:58279] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:21.021 [main:58279] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:21.021 [main:58284] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:21.021 [main:58285] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:21.021 [main:58290] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:21.021 [main:58293] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:21.021 [main:58296] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:21.021 [main:58296] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:21.021 [main:58301] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:21.021 [main:58302] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:21.021 [main:58316] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:21.021 [main:58316] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:21.021 [main:58323] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:21.021 [main:58323] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:21.021 [main:58329] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:21.021 [main:58329] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:21.021 [main:58335] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:21.021 [main:58335] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:21.021 [main:58349] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:21.021 [main:58350] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:21.021 [main:58356] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:21.021 [main:58357] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:22.022 [main:58997] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:22.022 [main:58997] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:22.022 [main:59088] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:22.022 [main:59089] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:22.022 [main:59295] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:22.022 [main:59295] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:22.022 [main:59301] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:22.022 [main:59301] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:22.022 [main:59308] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:22.022 [main:59308] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:22.022 [main:59314] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:22.022 [main:59314] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:22.022 [main:59320] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:22.022 [main:59320] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:22.022 [main:59326] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:22.022 [main:59326] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:22.022 [main:59330] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:22.022 [main:59331] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:22.022 [main:59338] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:22.022 [main:59339] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:22.022 [main:59342] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:22.022 [main:59343] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:22.022 [main:59346] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:22.022 [main:59346] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:22.022 [main:59349] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:22.022 [main:59349] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:22.022 [main:59352] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:22.022 [main:59352] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:22.022 [main:59379] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:22.022 [main:59380] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:22.022 [main:59383] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:22.022 [main:59384] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:22.022 [main:59387] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:22.022 [main:59388] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:22.022 [main:59392] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:22.022 [main:59393] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:22.022 [main:59398] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:22.022 [main:59399] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:22.022 [main:59404] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:22.022 [main:59405] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:22.022 [main:59412] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:22.022 [main:59434] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623818.html
+2016-04-23 19:52:24.024 [main:61160] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108623818.html
+2016-04-23 19:52:24.024 [main:61211] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:24.024 [main:61213] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:24.024 [main:61214] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:24.024 [main:61216] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:24.024 [main:61217] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:24.024 [main:61222] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:24.024 [main:61222] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:24.024 [main:61228] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:24.024 [main:61228] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:24.024 [main:61231] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:24.024 [main:61231] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:24.024 [main:61240] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:24.024 [main:61240] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:24.024 [main:61246] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:24.024 [main:61246] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:24.024 [main:61255] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:24.024 [main:61255] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:24.024 [main:61260] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:24.024 [main:61260] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:24.024 [main:61268] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:24.024 [main:61268] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:24.024 [main:61283] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:24.024 [main:61283] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:24.024 [main:61288] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:24.024 [main:61289] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:24.024 [main:61900] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:24.024 [main:61900] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:25.025 [main:61981] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:25.025 [main:61983] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:25.025 [main:62185] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:25.025 [main:62186] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:25.025 [main:62191] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:25.025 [main:62192] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:25.025 [main:62199] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:25.025 [main:62200] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:25.025 [main:62206] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:25.025 [main:62206] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:25.025 [main:62211] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:25.025 [main:62212] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:25.025 [main:62218] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:25.025 [main:62218] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:25.025 [main:62222] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:25.025 [main:62222] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:25.025 [main:62228] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:25.025 [main:62229] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:25.025 [main:62232] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:25.025 [main:62232] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:25.025 [main:62235] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:25.025 [main:62235] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:25.025 [main:62241] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:25.025 [main:62242] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:25.025 [main:62245] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:25.025 [main:62245] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:25.025 [main:62272] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:25.025 [main:62273] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:25.025 [main:62276] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:25.025 [main:62276] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:25.025 [main:62279] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:25.025 [main:62279] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:25.025 [main:62283] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:25.025 [main:62284] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:25.025 [main:62289] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:25.025 [main:62290] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:25.025 [main:62296] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:25.025 [main:62296] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:25.025 [main:62301] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:25.025 [main:62316] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623819.html
+2016-04-23 19:52:27.027 [main:64107] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108623819.html
+2016-04-23 19:52:27.027 [main:64201] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:27.027 [main:64204] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:27.027 [main:64204] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:27.027 [main:64207] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:27.027 [main:64207] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:27.027 [main:64213] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:27.027 [main:64213] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:27.027 [main:64220] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:27.027 [main:64220] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:27.027 [main:64224] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:27.027 [main:64224] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:27.027 [main:64230] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:27.027 [main:64230] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:27.027 [main:64236] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:27.027 [main:64237] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:27.027 [main:64242] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:27.027 [main:64242] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:27.027 [main:64271] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:27.027 [main:64272] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:27.027 [main:64278] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:27.027 [main:64278] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:27.027 [main:64284] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:27.027 [main:64284] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:27.027 [main:64290] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:27.027 [main:64290] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:27.027 [main:64912] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:27.027 [main:64913] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:28.028 [main:64995] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:28.028 [main:64995] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:28.028 [main:65208] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:28.028 [main:65209] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:28.028 [main:65215] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:28.028 [main:65216] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:28.028 [main:65222] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:28.028 [main:65222] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:28.028 [main:65228] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:28.028 [main:65228] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:28.028 [main:65234] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:28.028 [main:65234] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:28.028 [main:65241] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:28.028 [main:65241] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:28.028 [main:65244] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:28.028 [main:65244] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:28.028 [main:65251] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:28.028 [main:65251] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:28.028 [main:65255] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:28.028 [main:65257] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:28.028 [main:65260] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:28.028 [main:65260] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:28.028 [main:65263] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:28.028 [main:65264] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:28.028 [main:65266] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:28.028 [main:65267] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:28.028 [main:65292] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:28.028 [main:65293] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:28.028 [main:65296] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:28.028 [main:65296] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:28.028 [main:65300] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:28.028 [main:65301] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:28.028 [main:65304] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:28.028 [main:65305] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:28.028 [main:65310] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:28.028 [main:65310] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:28.028 [main:65317] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:28.028 [main:65317] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:28.028 [main:65323] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:28.028 [main:65339] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108927050.html
+2016-04-23 19:52:30.030 [main:66951] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108927050.html
+2016-04-23 19:52:30.030 [main:67074] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:30.030 [main:67077] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:30.030 [main:67078] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:30.030 [main:67081] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:30.030 [main:67081] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:30.030 [main:67092] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:30.030 [main:67093] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:30.030 [main:67101] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:30.030 [main:67101] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:30.030 [main:67107] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:30.030 [main:67107] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:30.030 [main:67114] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:30.030 [main:67114] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:30.030 [main:67119] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:30.030 [main:67120] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:30.030 [main:67126] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:30.030 [main:67127] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:30.030 [main:67134] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:30.030 [main:67134] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:30.030 [main:67152] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:30.030 [main:67153] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:30.030 [main:67160] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:30.030 [main:67160] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:30.030 [main:67165] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:30.030 [main:67165] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 19:52:30.030 [main:67839] - [DEBUG] Field is Parsed:category
+2016-04-23 19:52:30.030 [main:67840] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 19:52:30.030 [main:67918] - [DEBUG] Field is Parsed:category1
+2016-04-23 19:52:30.030 [main:67918] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 19:52:31.031 [main:68109] - [DEBUG] Field is Parsed:category2
+2016-04-23 19:52:31.031 [main:68110] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 19:52:31.031 [main:68116] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 19:52:31.031 [main:68117] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 19:52:31.031 [main:68122] - [DEBUG] Field is Parsed:brand
+2016-04-23 19:52:31.031 [main:68122] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 19:52:31.031 [main:68127] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 19:52:31.031 [main:68128] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 19:52:31.031 [main:68133] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 19:52:31.031 [main:68134] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 19:52:31.031 [main:68139] - [DEBUG] Field is Parsed:series
+2016-04-23 19:52:31.031 [main:68139] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 19:52:31.031 [main:68142] - [DEBUG] Field is Parsed:specification
+2016-04-23 19:52:31.031 [main:68143] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 19:52:31.031 [main:68149] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 19:52:31.031 [main:68150] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 19:52:31.031 [main:68152] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 19:52:31.031 [main:68153] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 19:52:31.031 [main:68155] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 19:52:31.031 [main:68156] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 19:52:31.031 [main:68159] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 19:52:31.031 [main:68159] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 19:52:31.031 [main:68164] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 19:52:31.031 [main:68165] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 19:52:31.031 [main:68189] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 19:52:31.031 [main:68189] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 19:52:31.031 [main:68192] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 19:52:31.031 [main:68192] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 19:52:31.031 [main:68195] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 19:52:31.031 [main:68195] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 19:52:31.031 [main:68198] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 19:52:31.031 [main:68198] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 19:52:31.031 [main:68203] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 19:52:31.031 [main:68204] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 19:52:31.031 [main:68210] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 19:52:31.031 [main:68210] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:31.031 [main:68216] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:31.031 [main:68230] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926796.html
+2016-04-23 19:52:33.033 [main:69949] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926796.html
+2016-04-23 19:52:33.033 [main:69993] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 19:52:33.033 [main:69996] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 19:52:33.033 [main:69996] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 19:52:33.033 [main:69999] - [DEBUG] Field is Parsed:productName
+2016-04-23 19:52:33.033 [main:69999] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 19:52:33.033 [main:70004] - [DEBUG] Field is Parsed:productURL
+2016-04-23 19:52:33.033 [main:70004] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 19:52:33.033 [main:70009] - [DEBUG] Field is Parsed:store
+2016-04-23 19:52:33.033 [main:70009] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 19:52:33.033 [main:70012] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 19:52:33.033 [main:70012] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 19:52:33.033 [main:70019] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 19:52:33.033 [main:70019] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 19:52:33.033 [main:70026] - [DEBUG] Field is Parsed:status
+2016-04-23 19:52:33.033 [main:70026] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 19:52:33.033 [main:70031] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 19:52:33.033 [main:70032] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 19:52:33.033 [main:70037] - [DEBUG] Field is Parsed:weight
+2016-04-23 19:52:33.033 [main:70037] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 19:52:33.033 [main:70044] - [DEBUG] Field is Parsed:origin
+2016-04-23 19:52:33.033 [main:70044] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 19:52:33.033 [main:70049] - [DEBUG] Field is Parsed:province
+2016-04-23 19:52:33.033 [main:70050] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 19:52:33.033 [main:70058] - [DEBUG] Field is Parsed:city
+2016-04-23 19:52:33.033 [main:70058] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:33:22.022 [main:0] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623235.html
+2016-04-23 20:33:33.033 [main:10309] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108623235.html
+2016-04-23 20:33:33.033 [main:10373] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:33:33.033 [main:10381] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:33:33.033 [main:10382] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:33:33.033 [main:10387] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:33:33.033 [main:10387] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:33:33.033 [main:10401] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:33:33.033 [main:10401] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:33:33.033 [main:10408] - [DEBUG] Field is Parsed:store
+2016-04-23 20:33:33.033 [main:10409] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:33:33.033 [main:10415] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:33:33.033 [main:10416] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:33:33.033 [main:10421] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:33:33.033 [main:10422] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:33:33.033 [main:10427] - [DEBUG] Field is Parsed:status
+2016-04-23 20:33:33.033 [main:10429] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:33:33.033 [main:10434] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:33:33.033 [main:10435] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:33:33.033 [main:10441] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:33:33.033 [main:10444] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:33:33.033 [main:10449] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:33:33.033 [main:10450] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:33:33.033 [main:10456] - [DEBUG] Field is Parsed:province
+2016-04-23 20:33:33.033 [main:10456] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:33:33.033 [main:10462] - [DEBUG] Field is Parsed:city
+2016-04-23 20:33:33.033 [main:10463] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:33:33.033 [main:10468] - [DEBUG] Field is Parsed:category
+2016-04-23 20:33:33.033 [main:10469] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:33:33.033 [main:10560] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:33:33.033 [main:10560] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:33:33.033 [main:10759] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:33:33.033 [main:10759] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:33:33.033 [main:10767] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:33:33.033 [main:10767] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:33:33.033 [main:10773] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:33:33.033 [main:10773] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:33:33.033 [main:10779] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:33:33.033 [main:10779] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:33:33.033 [main:10785] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:33:33.033 [main:10786] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:33:33.033 [main:10792] - [DEBUG] Field is Parsed:series
+2016-04-23 20:33:33.033 [main:10792] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:33:33.033 [main:10796] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:33:33.033 [main:10796] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:33:33.033 [main:10802] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:33:33.033 [main:10802] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:33:33.033 [main:10807] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:33:33.033 [main:10807] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:33:33.033 [main:10811] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:33:33.033 [main:10812] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:33:33.033 [main:10819] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:33:33.033 [main:10819] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:33:33.033 [main:10822] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:33:33.033 [main:10822] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:33:33.033 [main:10846] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:33:33.033 [main:10846] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:33:33.033 [main:10850] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:33:33.033 [main:10850] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:33:33.033 [main:10853] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:33:33.033 [main:10854] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:33:33.033 [main:10857] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:33:33.033 [main:10858] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:33:33.033 [main:10867] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:33:33.033 [main:10867] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:33:33.033 [main:10874] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:33:33.033 [main:10875] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:33:33.033 [main:10880] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:33:33.033 [main:10898] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108927051.html
+2016-04-23 20:34:01.001 [main:39160] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 20:34:05.005 [main:42800] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 20:34:05.005 [main:42846] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:34:05.005 [main:42850] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:34:05.005 [main:42850] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:34:05.005 [main:42853] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:34:05.005 [main:42853] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:34:05.005 [main:42868] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:34:05.005 [main:42868] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:34:05.005 [main:42873] - [DEBUG] Field is Parsed:store
+2016-04-23 20:34:05.005 [main:42874] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:34:05.005 [main:42877] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:34:05.005 [main:42878] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:34:05.005 [main:42883] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:34:05.005 [main:42883] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:34:05.005 [main:42892] - [DEBUG] Field is Parsed:status
+2016-04-23 20:34:05.005 [main:42893] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:34:05.005 [main:42899] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:34:05.005 [main:42899] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:34:05.005 [main:42905] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:34:05.005 [main:42905] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:34:05.005 [main:42911] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:34:05.005 [main:42911] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:34:05.005 [main:42919] - [DEBUG] Field is Parsed:province
+2016-04-23 20:34:05.005 [main:42920] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:34:05.005 [main:42926] - [DEBUG] Field is Parsed:city
+2016-04-23 20:34:05.005 [main:42926] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:34:05.005 [main:42932] - [DEBUG] Field is Parsed:category
+2016-04-23 20:34:05.005 [main:42932] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:34:05.005 [main:43014] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:34:05.005 [main:43015] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:34:06.006 [main:43231] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:34:06.006 [main:43231] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:34:06.006 [main:43237] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:34:06.006 [main:43237] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:34:06.006 [main:43244] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:34:06.006 [main:43245] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:34:06.006 [main:43250] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:34:06.006 [main:43250] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:34:06.006 [main:43256] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:34:06.006 [main:43257] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:34:06.006 [main:43263] - [DEBUG] Field is Parsed:series
+2016-04-23 20:34:06.006 [main:43264] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:34:06.006 [main:43267] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:34:06.006 [main:43267] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:34:06.006 [main:43274] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:34:06.006 [main:43274] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:34:06.006 [main:43293] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:34:06.006 [main:43294] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:34:06.006 [main:43298] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:34:06.006 [main:43298] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:34:06.006 [main:43302] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:34:06.006 [main:43302] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:34:06.006 [main:43306] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:34:06.006 [main:43306] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:34:06.006 [main:43342] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:34:06.006 [main:43343] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:34:06.006 [main:43347] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:34:06.006 [main:43348] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:34:06.006 [main:43351] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:34:06.006 [main:43351] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:34:06.006 [main:43355] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:34:06.006 [main:43355] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:34:06.006 [main:43361] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:34:06.006 [main:43362] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:34:06.006 [main:43371] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:34:06.006 [main:43372] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:34:06.006 [main:43380] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:34:06.006 [main:43395] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926792.html
+2016-04-23 20:34:22.022 [main:59277] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926802.html
+2016-04-23 20:34:31.031 [main:68330] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926799.html
+2016-04-23 20:34:40.040 [main:77346] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926326.html
+2016-04-23 20:34:43.043 [main:80495] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926326.html
+2016-04-23 20:34:43.043 [main:80535] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:34:43.043 [main:80538] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:34:43.043 [main:80539] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:34:43.043 [main:80571] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:34:43.043 [main:80572] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:34:43.043 [main:80577] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:34:43.043 [main:80577] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:34:43.043 [main:80583] - [DEBUG] Field is Parsed:store
+2016-04-23 20:34:43.043 [main:80583] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:34:43.043 [main:80586] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:34:43.043 [main:80586] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:34:43.043 [main:80591] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:34:43.043 [main:80591] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:34:43.043 [main:80596] - [DEBUG] Field is Parsed:status
+2016-04-23 20:34:43.043 [main:80597] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:34:43.043 [main:80608] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:34:43.043 [main:80608] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:34:43.043 [main:80613] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:34:43.043 [main:80613] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:34:43.043 [main:80625] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:34:43.043 [main:80625] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:34:43.043 [main:80630] - [DEBUG] Field is Parsed:province
+2016-04-23 20:34:43.043 [main:80630] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:34:43.043 [main:80636] - [DEBUG] Field is Parsed:city
+2016-04-23 20:34:43.043 [main:80636] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:34:43.043 [main:80641] - [DEBUG] Field is Parsed:category
+2016-04-23 20:34:43.043 [main:80642] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:34:43.043 [main:80715] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:34:43.043 [main:80715] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:34:43.043 [main:80928] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:34:43.043 [main:80928] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:34:43.043 [main:80933] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:34:43.043 [main:80933] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:34:43.043 [main:80938] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:34:43.043 [main:80939] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:34:43.043 [main:80945] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:34:43.043 [main:80945] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:34:43.043 [main:80950] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:34:43.043 [main:80951] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:34:43.043 [main:80957] - [DEBUG] Field is Parsed:series
+2016-04-23 20:34:43.043 [main:80957] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:34:43.043 [main:80960] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:34:43.043 [main:80960] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:34:43.043 [main:80965] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:34:43.043 [main:80966] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:34:43.043 [main:80969] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:34:43.043 [main:80969] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:34:43.043 [main:80972] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:34:43.043 [main:80972] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:34:43.043 [main:80975] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:34:43.043 [main:80975] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:34:43.043 [main:80978] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:34:43.043 [main:80978] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:34:43.043 [main:81002] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:34:43.043 [main:81002] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:34:43.043 [main:81005] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:34:43.043 [main:81005] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:34:43.043 [main:81009] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:34:43.043 [main:81009] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:34:43.043 [main:81012] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:34:43.043 [main:81012] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:34:43.043 [main:81017] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:34:43.043 [main:81017] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:34:43.043 [main:81022] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:34:43.043 [main:81022] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:34:43.043 [main:81027] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:34:43.043 [main:81044] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108623947.html
+2016-04-23 20:44:22.022 [main:0] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 20:44:32.032 [main:10129] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926920.html
+2016-04-23 20:44:32.032 [main:10188] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:44:32.032 [main:10193] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:44:32.032 [main:10194] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:44:32.032 [main:10198] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:44:32.032 [main:10198] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:32.032 [main:10209] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:32.032 [main:10209] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:44:32.032 [main:10216] - [DEBUG] Field is Parsed:store
+2016-04-23 20:44:32.032 [main:10217] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:44:32.032 [main:10223] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:44:32.032 [main:10223] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:44:32.032 [main:10228] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:44:32.032 [main:10229] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:44:32.032 [main:10235] - [DEBUG] Field is Parsed:status
+2016-04-23 20:44:32.032 [main:10237] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:44:32.032 [main:10243] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:44:32.032 [main:10243] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:44:32.032 [main:10252] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:44:32.032 [main:10252] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:44:32.032 [main:10259] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:44:32.032 [main:10259] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:44:32.032 [main:10265] - [DEBUG] Field is Parsed:province
+2016-04-23 20:44:32.032 [main:10265] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:44:32.032 [main:10271] - [DEBUG] Field is Parsed:city
+2016-04-23 20:44:32.032 [main:10271] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:44:32.032 [main:10278] - [DEBUG] Field is Parsed:category
+2016-04-23 20:44:32.032 [main:10278] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:44:32.032 [main:10374] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:44:32.032 [main:10375] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:44:33.033 [main:10572] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:44:33.033 [main:10572] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:44:33.033 [main:10578] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:44:33.033 [main:10578] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:44:33.033 [main:10585] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:44:33.033 [main:10585] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:44:33.033 [main:10591] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:44:33.033 [main:10591] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:44:33.033 [main:10598] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:44:33.033 [main:10599] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:44:33.033 [main:10606] - [DEBUG] Field is Parsed:series
+2016-04-23 20:44:33.033 [main:10606] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:44:33.033 [main:10609] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:44:33.033 [main:10609] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:44:33.033 [main:10615] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:44:33.033 [main:10615] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:44:33.033 [main:10618] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:44:33.033 [main:10619] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:44:33.033 [main:10622] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:44:33.033 [main:10622] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:44:33.033 [main:10628] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:44:33.033 [main:10629] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:44:33.033 [main:10632] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:44:33.033 [main:10632] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:44:33.033 [main:10657] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:44:33.033 [main:10658] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:44:33.033 [main:10661] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:44:33.033 [main:10662] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:44:33.033 [main:10665] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:44:33.033 [main:10665] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:44:33.033 [main:10669] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:44:33.033 [main:10669] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:44:33.033 [main:10675] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:44:33.033 [main:10676] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:44:33.033 [main:10682] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:44:33.033 [main:10683] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:33.033 [main:10689] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:33.033 [main:10717] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926792.html
+2016-04-23 20:44:43.043 [main:20513] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926792.html
+2016-04-23 20:44:43.043 [main:20567] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:44:43.043 [main:20570] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:44:43.043 [main:20571] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:44:43.043 [main:20574] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:44:43.043 [main:20574] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:43.043 [main:20582] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:43.043 [main:20582] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:44:43.043 [main:20587] - [DEBUG] Field is Parsed:store
+2016-04-23 20:44:43.043 [main:20588] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:44:43.043 [main:20590] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:44:43.043 [main:20591] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:44:43.043 [main:20596] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:44:43.043 [main:20597] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:44:43.043 [main:20602] - [DEBUG] Field is Parsed:status
+2016-04-23 20:44:43.043 [main:20602] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:44:43.043 [main:20610] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:44:43.043 [main:20610] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:44:43.043 [main:20615] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:44:43.043 [main:20616] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:44:43.043 [main:20624] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:44:43.043 [main:20624] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:44:43.043 [main:20630] - [DEBUG] Field is Parsed:province
+2016-04-23 20:44:43.043 [main:20630] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:44:43.043 [main:20637] - [DEBUG] Field is Parsed:city
+2016-04-23 20:44:43.043 [main:20637] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:44:43.043 [main:20644] - [DEBUG] Field is Parsed:category
+2016-04-23 20:44:43.043 [main:20644] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:44:43.043 [main:20739] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:44:43.043 [main:20740] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:44:43.043 [main:20960] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:44:43.043 [main:20961] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:44:43.043 [main:20966] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:44:43.043 [main:20966] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:44:43.043 [main:20972] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:44:43.043 [main:20972] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:44:43.043 [main:20979] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:44:43.043 [main:20979] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:44:43.043 [main:20985] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:44:43.043 [main:20985] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:44:43.043 [main:20993] - [DEBUG] Field is Parsed:series
+2016-04-23 20:44:43.043 [main:20993] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:44:43.043 [main:20996] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:44:43.043 [main:20997] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:44:43.043 [main:21002] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:44:43.043 [main:21002] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:44:43.043 [main:21005] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:44:43.043 [main:21005] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:44:43.043 [main:21008] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:44:43.043 [main:21009] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:44:43.043 [main:21012] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:44:43.043 [main:21012] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:44:43.043 [main:21015] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:44:43.043 [main:21015] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:44:43.043 [main:21040] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:44:43.043 [main:21041] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:44:43.043 [main:21046] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:44:43.043 [main:21046] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:44:43.043 [main:21050] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:44:43.043 [main:21050] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:44:43.043 [main:21053] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:44:43.043 [main:21053] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:44:43.043 [main:21058] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:44:43.043 [main:21059] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:44:43.043 [main:21078] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:44:43.043 [main:21079] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:43.043 [main:21092] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:43.043 [main:21113] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926802.html
+2016-04-23 20:44:48.048 [main:25809] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926802.html
+2016-04-23 20:44:48.048 [main:25842] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:44:48.048 [main:25846] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:44:48.048 [main:25846] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:44:48.048 [main:25849] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:44:48.048 [main:25849] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:48.048 [main:25854] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:48.048 [main:25854] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:44:48.048 [main:25859] - [DEBUG] Field is Parsed:store
+2016-04-23 20:44:48.048 [main:25859] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:44:48.048 [main:25862] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:44:48.048 [main:25862] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:44:48.048 [main:25867] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:44:48.048 [main:25868] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:44:48.048 [main:25876] - [DEBUG] Field is Parsed:status
+2016-04-23 20:44:48.048 [main:25876] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:44:48.048 [main:25881] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:44:48.048 [main:25882] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:44:48.048 [main:25887] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:44:48.048 [main:25887] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:44:48.048 [main:25893] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:44:48.048 [main:25893] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:44:48.048 [main:25899] - [DEBUG] Field is Parsed:province
+2016-04-23 20:44:48.048 [main:25900] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:44:48.048 [main:25906] - [DEBUG] Field is Parsed:city
+2016-04-23 20:44:48.048 [main:25906] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:44:48.048 [main:25911] - [DEBUG] Field is Parsed:category
+2016-04-23 20:44:48.048 [main:25912] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:44:48.048 [main:25986] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:44:48.048 [main:25986] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:44:48.048 [main:26183] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:44:48.048 [main:26183] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:44:48.048 [main:26189] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:44:48.048 [main:26189] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:44:48.048 [main:26196] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:44:48.048 [main:26197] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:44:48.048 [main:26211] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:44:48.048 [main:26211] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:44:48.048 [main:26216] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:44:48.048 [main:26217] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:44:48.048 [main:26222] - [DEBUG] Field is Parsed:series
+2016-04-23 20:44:48.048 [main:26222] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:44:48.048 [main:26226] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:44:48.048 [main:26226] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:44:48.048 [main:26231] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:44:48.048 [main:26231] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:44:48.048 [main:26234] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:44:48.048 [main:26234] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:44:48.048 [main:26237] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:44:48.048 [main:26238] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:44:48.048 [main:26242] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:44:48.048 [main:26243] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:44:48.048 [main:26246] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:44:48.048 [main:26247] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:44:48.048 [main:26269] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:44:48.048 [main:26269] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:44:48.048 [main:26272] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:44:48.048 [main:26273] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:44:48.048 [main:26275] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:44:48.048 [main:26276] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:44:48.048 [main:26278] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:44:48.048 [main:26279] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:44:48.048 [main:26284] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:44:48.048 [main:26284] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:44:48.048 [main:26289] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:44:48.048 [main:26289] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:48.048 [main:26297] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:48.048 [main:26328] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926799.html
+2016-04-23 20:44:53.053 [main:30733] - [DEBUG] Page is opened:http://www.962360.com/Home/Details/index/materialId/108926799.html
+2016-04-23 20:44:53.053 [main:30768] - [DEBUG] Beginning,Parse Field:productActualID
+2016-04-23 20:44:53.053 [main:30771] - [DEBUG] Field is Parsed:productActualID
+2016-04-23 20:44:53.053 [main:30771] - [DEBUG] Beginning,Parse Field:productName
+2016-04-23 20:44:53.053 [main:30774] - [DEBUG] Field is Parsed:productName
+2016-04-23 20:44:53.053 [main:30774] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:53.053 [main:30779] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:53.053 [main:30779] - [DEBUG] Beginning,Parse Field:store
+2016-04-23 20:44:53.053 [main:30784] - [DEBUG] Field is Parsed:store
+2016-04-23 20:44:53.053 [main:30784] - [DEBUG] Beginning,Parse Field:productDescription
+2016-04-23 20:44:53.053 [main:30787] - [DEBUG] Field is Parsed:productDescription
+2016-04-23 20:44:53.053 [main:30788] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-04-23 20:44:53.053 [main:30792] - [DEBUG] Field is Parsed:shelveDate
+2016-04-23 20:44:53.053 [main:30793] - [DEBUG] Beginning,Parse Field:status
+2016-04-23 20:44:53.053 [main:30801] - [DEBUG] Field is Parsed:status
+2016-04-23 20:44:53.053 [main:30801] - [DEBUG] Beginning,Parse Field:unshelveDate
+2016-04-23 20:44:53.053 [main:30806] - [DEBUG] Field is Parsed:unshelveDate
+2016-04-23 20:44:53.053 [main:30806] - [DEBUG] Beginning,Parse Field:weight
+2016-04-23 20:44:53.053 [main:30811] - [DEBUG] Field is Parsed:weight
+2016-04-23 20:44:53.053 [main:30811] - [DEBUG] Beginning,Parse Field:origin
+2016-04-23 20:44:53.053 [main:30816] - [DEBUG] Field is Parsed:origin
+2016-04-23 20:44:53.053 [main:30817] - [DEBUG] Beginning,Parse Field:province
+2016-04-23 20:44:53.053 [main:30823] - [DEBUG] Field is Parsed:province
+2016-04-23 20:44:53.053 [main:30824] - [DEBUG] Beginning,Parse Field:city
+2016-04-23 20:44:53.053 [main:30829] - [DEBUG] Field is Parsed:city
+2016-04-23 20:44:53.053 [main:30832] - [DEBUG] Beginning,Parse Field:category
+2016-04-23 20:44:53.053 [main:30839] - [DEBUG] Field is Parsed:category
+2016-04-23 20:44:53.053 [main:30839] - [DEBUG] Beginning,Parse Field:category1
+2016-04-23 20:44:53.053 [main:30914] - [DEBUG] Field is Parsed:category1
+2016-04-23 20:44:53.053 [main:30914] - [DEBUG] Beginning,Parse Field:category2
+2016-04-23 20:44:53.053 [main:31168] - [DEBUG] Field is Parsed:category2
+2016-04-23 20:44:53.053 [main:31169] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-04-23 20:44:53.053 [main:31174] - [DEBUG] Field is Parsed:specialtyCategory
+2016-04-23 20:44:53.053 [main:31174] - [DEBUG] Beginning,Parse Field:brand
+2016-04-23 20:44:53.053 [main:31180] - [DEBUG] Field is Parsed:brand
+2016-04-23 20:44:53.053 [main:31180] - [DEBUG] Beginning,Parse Field:factoryName
+2016-04-23 20:44:53.053 [main:31185] - [DEBUG] Field is Parsed:factoryName
+2016-04-23 20:44:53.053 [main:31185] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-04-23 20:44:53.053 [main:31190] - [DEBUG] Field is Parsed:factoryAddress
+2016-04-23 20:44:53.053 [main:31191] - [DEBUG] Beginning,Parse Field:series
+2016-04-23 20:44:53.053 [main:31196] - [DEBUG] Field is Parsed:series
+2016-04-23 20:44:53.053 [main:31196] - [DEBUG] Beginning,Parse Field:specification
+2016-04-23 20:44:53.053 [main:31199] - [DEBUG] Field is Parsed:specification
+2016-04-23 20:44:53.053 [main:31199] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-04-23 20:44:53.053 [main:31204] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-04-23 20:44:53.053 [main:31205] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-04-23 20:44:53.053 [main:31209] - [DEBUG] Field is Parsed:expirationDate
+2016-04-23 20:44:53.053 [main:31209] - [DEBUG] Beginning,Parse Field:productPrice
+2016-04-23 20:44:53.053 [main:31212] - [DEBUG] Field is Parsed:productPrice
+2016-04-23 20:44:53.053 [main:31212] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-04-23 20:44:53.053 [main:31215] - [DEBUG] Field is Parsed:productPromPrice
+2016-04-23 20:44:53.053 [main:31215] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-04-23 20:44:53.053 [main:31218] - [DEBUG] Field is Parsed:monthSaleCount
+2016-04-23 20:44:53.053 [main:31219] - [DEBUG] Beginning,Parse Field:commentCount
+2016-04-23 20:44:53.053 [main:31244] - [DEBUG] Field is Parsed:commentCount
+2016-04-23 20:44:53.053 [main:31244] - [DEBUG] Beginning,Parse Field:goodCommentCount
+2016-04-23 20:44:53.053 [main:31247] - [DEBUG] Field is Parsed:goodCommentCount
+2016-04-23 20:44:53.053 [main:31247] - [DEBUG] Beginning,Parse Field:midCommentCount
+2016-04-23 20:44:53.053 [main:31250] - [DEBUG] Field is Parsed:midCommentCount
+2016-04-23 20:44:53.053 [main:31250] - [DEBUG] Beginning,Parse Field:badCommentCount
+2016-04-23 20:44:53.053 [main:31253] - [DEBUG] Field is Parsed:badCommentCount
+2016-04-23 20:44:53.053 [main:31253] - [DEBUG] Beginning,Parse Field:pictureCommentCount
+2016-04-23 20:44:53.053 [main:31258] - [DEBUG] Field is Parsed:pictureCommentCount
+2016-04-23 20:44:53.053 [main:31259] - [DEBUG] Beginning,Parse Field:additionCommentCount
+2016-04-23 20:44:53.053 [main:31264] - [DEBUG] Field is Parsed:additionCommentCount
+2016-04-23 20:44:53.053 [main:31264] - [DEBUG] Beginning,Parse Field:productURL
+2016-04-23 20:44:53.053 [main:31270] - [DEBUG] Field is Parsed:productURL
+2016-04-23 20:44:53.053 [main:31285] - [DEBUG] Beginning,Open page:http://www.962360.com/Home/Details/index/materialId/108926326.html

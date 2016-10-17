@@ -1,0 +1,302 @@
+2016-07-09 15:41:29.029 [main:0] - [DEBUG] org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62.80 seconds
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'DengPan-PC', ip: '172.20.53.187', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+2016-07-09 15:42:07.007 [main:0] - [DEBUG] Get a task:1
+2016-07-09 15:42:07.007 [main:482] - [DEBUG] Task is gotten:826176
+2016-07-09 15:42:07.007 [main:590] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_134542664.html
+2016-07-09 15:42:26.026 [main:19033] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_134542664.html
+2016-07-09 15:42:26.026 [main:19162] - [DEBUG] Post a task:826176
+2016-07-09 15:42:26.026 [main:19508] - [DEBUG] Task Posted:826176
+2016-07-09 15:42:26.026 [main:19508] - [DEBUG] 已执行 1/3 条任务！
+2016-07-09 15:42:26.026 [main:19508] - [DEBUG] Get a task:1
+2016-07-09 15:42:27.027 [main:19608] - [DEBUG] Task is gotten:826177
+2016-07-09 15:42:27.027 [main:19647] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_140885386.html
+2016-07-09 15:43:02.002 [main:55554] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_140885386.html
+2016-07-09 15:43:03.003 [main:55710] - [DEBUG] Post a task:826177
+2016-07-09 15:43:03.003 [main:56092] - [DEBUG] Task Posted:826177
+2016-07-09 15:43:03.003 [main:56092] - [DEBUG] 已执行 2/3 条任务！
+2016-07-09 15:43:03.003 [main:56093] - [DEBUG] Get a task:1
+2016-07-09 15:43:03.003 [main:56145] - [DEBUG] Task is gotten:826178
+2016-07-09 15:43:03.003 [main:56182] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_135338019.html
+2016-07-09 15:43:15.015 [main:67632] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_135338019.html
+2016-07-09 15:43:15.015 [main:67770] - [DEBUG] Post a task:826178
+2016-07-09 15:43:15.015 [main:67893] - [DEBUG] Task Posted:826178
+2016-07-09 15:43:15.015 [main:67893] - [DEBUG] 已执行 3/3 条任务！
+2016-07-09 15:43:15.015 [main:67893] - [DEBUG] 3 条任务已经完成，是否继续下一次任务？（Y/N）
+2016-07-09 15:50:01.001 [main:0] - [DEBUG] Get a task:1
+2016-07-09 15:50:01.001 [main:320] - [DEBUG] Task is gotten:826185
+2016-07-09 15:50:01.001 [main:404] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_134789297.html
+2016-07-09 15:50:54.054 [main:52855] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_134789297.html
+2016-07-09 15:50:54.054 [main:53007] - [DEBUG] Post a task:826185
+2016-07-09 15:50:54.054 [main:53131] - [DEBUG] Task Posted:826185
+2016-07-09 15:50:54.054 [main:53132] - [DEBUG] 已执行 1/3 条任务！
+2016-07-09 15:50:54.054 [main:53132] - [DEBUG] Get a task:1
+2016-07-09 15:50:54.054 [main:53201] - [DEBUG] Task is gotten:826191
+2016-07-09 15:50:54.054 [main:53242] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_135126437.html
+2016-07-09 15:51:11.011 [main:70482] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_135126437.html
+2016-07-09 15:51:12.012 [main:70634] - [DEBUG] Post a task:826191
+2016-07-09 15:51:12.012 [main:70755] - [DEBUG] Task Posted:826191
+2016-07-09 15:51:12.012 [main:70755] - [DEBUG] 已执行 2/3 条任务！
+2016-07-09 15:51:12.012 [main:70755] - [DEBUG] Get a task:1
+2016-07-09 15:51:12.012 [main:70829] - [DEBUG] Task is gotten:826192
+2016-07-09 15:51:12.012 [main:70859] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_136113112.html
+2016-07-09 15:51:37.037 [main:96406] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_136113112.html
+2016-07-09 15:51:38.038 [main:96606] - [DEBUG] Post a task:826192
+2016-07-09 15:51:38.038 [main:96763] - [DEBUG] Task Posted:826192
+2016-07-09 15:51:38.038 [main:96764] - [DEBUG] 已执行 3/3 条任务！
+2016-07-09 15:51:38.038 [main:96764] - [DEBUG] 3 条任务已经完成，是否继续下一次任务？（Y/N）
+2016-07-09 16:00:09.009 [main:0] - [DEBUG] Get a task:1
+2016-07-09 16:00:09.009 [main:388] - [DEBUG] Task is gotten:826205
+2016-07-09 16:00:10.010 [main:535] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_153620750.html
+2016-07-09 16:00:33.033 [main:24356] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_153620750.html
+2016-07-09 16:00:34.034 [main:24574] - [DEBUG] Post a task:826205
+2016-07-09 16:00:34.034 [main:24802] - [DEBUG] Task Posted:826205
+2016-07-09 16:00:34.034 [main:24803] - [DEBUG] 已执行 1/3 条任务！
+2016-07-09 16:00:34.034 [main:24803] - [DEBUG] Get a task:1
+2016-07-09 16:00:34.034 [main:24915] - [DEBUG] Task is gotten:826206
+2016-07-09 16:00:34.034 [main:24950] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_153492050.html
+2016-07-09 16:00:38.038 [main:29193] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_153492050.html
+2016-07-09 16:00:38.038 [main:29296] - [DEBUG] Post a task:826206
+2016-07-09 16:00:38.038 [main:29421] - [DEBUG] Task Posted:826206
+2016-07-09 16:00:38.038 [main:29421] - [DEBUG] 已执行 2/3 条任务！
+2016-07-09 16:00:38.038 [main:29421] - [DEBUG] Get a task:1
+2016-07-09 16:00:39.039 [main:29516] - [DEBUG] Task is gotten:826207
+2016-07-09 16:00:39.039 [main:29552] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_140974369.html
+2016-07-09 16:00:42.042 [main:32541] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_140974369.html
+2016-07-09 16:00:42.042 [main:32703] - [DEBUG] Post a task:826207
+2016-07-09 16:00:42.042 [main:33025] - [DEBUG] Task Posted:826207
+2016-07-09 16:00:42.042 [main:33026] - [DEBUG] 已执行 3/3 条任务！
+2016-07-09 16:00:42.042 [main:33026] - [DEBUG] 3 条任务已经完成，是否继续下一次任务？（Y/N）
+2016-07-09 16:00:54.054 [main:44879] - [DEBUG] Get a task:1
+2016-07-09 16:00:54.054 [main:44950] - [DEBUG] Task is gotten:826208
+2016-07-09 16:00:54.054 [main:44979] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_140971498.html
+2016-07-09 16:01:23.023 [main:74015] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_140971498.html
+2016-07-09 16:01:23.023 [main:74173] - [DEBUG] Post a task:826208
+2016-07-09 16:01:23.023 [main:74333] - [DEBUG] Task Posted:826208
+2016-07-09 16:01:23.023 [main:74334] - [DEBUG] 已执行 1/3 条任务！
+2016-07-09 16:01:23.023 [main:74334] - [DEBUG] Get a task:1
+2016-07-09 16:01:23.023 [main:74401] - [DEBUG] Task is gotten:826209
+2016-07-09 16:01:24.024 [main:74433] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_141019941.html
+2016-07-09 16:01:40.040 [main:90765] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_141019941.html
+2016-07-09 16:01:40.040 [main:90897] - [DEBUG] Post a task:826209
+2016-07-09 16:01:40.040 [main:91019] - [DEBUG] Task Posted:826209
+2016-07-09 16:01:40.040 [main:91020] - [DEBUG] 已执行 2/3 条任务！
+2016-07-09 16:01:40.040 [main:91020] - [DEBUG] Get a task:1
+2016-07-09 16:01:40.040 [main:91107] - [DEBUG] Task is gotten:826210
+2016-07-09 16:01:40.040 [main:91163] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070105863_140974038.html
+2016-07-09 16:01:59.059 [main:110323] - [DEBUG] Page is opened:http://product.suning.com/detail_0070105863_140974038.html
+2016-07-09 16:02:00.000 [main:110460] - [DEBUG] Post a task:826210
+2016-07-09 16:02:00.000 [main:110578] - [DEBUG] Task Posted:826210
+2016-07-09 16:02:00.000 [main:110578] - [DEBUG] 已执行 3/3 条任务！
+2016-07-09 16:02:00.000 [main:110578] - [DEBUG] 3 条任务已经完成，是否继续下一次任务？（Y/N）
+2016-07-09 16:03:14.014 [main:184593] - [DEBUG] Get a task:1
+2016-07-09 16:03:27.027 [main:197657] - [DEBUG] Task is gotten:826123
+2016-07-09 16:03:27.027 [main:197687] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070133256_150288826.html
+2016-07-09 16:03:32.032 [main:202439] - [DEBUG] Page is opened:http://product.suning.com/detail_0070133256_150288826.html
+2016-07-09 16:03:32.032 [main:202582] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-09 16:03:32.032 [main:202597] - [DEBUG] Field is Parsed:productActualID
+2016-07-09 16:03:32.032 [main:202597] - [DEBUG] Beginning,Parse Field:productCompleteID
+2016-07-09 16:03:32.032 [main:202605] - [DEBUG] Field is Parsed:productCompleteID
+2016-07-09 16:03:32.032 [main:202606] - [DEBUG] Beginning,Parse Field:productName
+2016-07-09 16:03:32.032 [main:202615] - [DEBUG] Field is Parsed:productName
+2016-07-09 16:03:32.032 [main:202615] - [DEBUG] Beginning,Parse Field:productDescription
+2016-07-09 16:03:32.032 [main:202627] - [DEBUG] Field is Parsed:productDescription
+2016-07-09 16:03:32.032 [main:202628] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-07-09 16:03:32.032 [main:202632] - [DEBUG] Field is Parsed:shelveDate
+2016-07-09 16:03:32.032 [main:202632] - [DEBUG] Beginning,Parse Field:status
+2016-07-09 16:03:32.032 [main:202635] - [DEBUG] Field is Parsed:status
+2016-07-09 16:03:32.032 [main:202635] - [DEBUG] Beginning,Parse Field:weight
+2016-07-09 16:03:32.032 [main:202670] - [DEBUG] Field is Parsed:weight
+2016-07-09 16:03:32.032 [main:202671] - [DEBUG] Beginning,Parse Field:province
+2016-07-09 16:03:32.032 [main:202673] - [DEBUG] Field is Parsed:province
+2016-07-09 16:03:32.032 [main:202673] - [DEBUG] Beginning,Parse Field:city
+2016-07-09 16:03:32.032 [main:202677] - [DEBUG] Field is Parsed:city
+2016-07-09 16:03:32.032 [main:202677] - [DEBUG] Beginning,Parse Field:category
+2016-07-09 16:03:33.033 [main:204032] - [DEBUG] Field is Parsed:category
+2016-07-09 16:03:33.033 [main:204032] - [DEBUG] Beginning,Parse Field:category1
+2016-07-09 16:03:33.033 [main:204041] - [DEBUG] Field is Parsed:category1
+2016-07-09 16:03:33.033 [main:204042] - [DEBUG] Beginning,Parse Field:category2
+2016-07-09 16:03:33.033 [main:204053] - [DEBUG] Field is Parsed:category2
+2016-07-09 16:03:33.033 [main:204053] - [DEBUG] Beginning,Parse Field:category3
+2016-07-09 16:03:33.033 [main:204062] - [DEBUG] Field is Parsed:category3
+2016-07-09 16:03:33.033 [main:204062] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-07-09 16:03:33.033 [main:204064] - [DEBUG] Field is Parsed:specialtyCategory
+2016-07-09 16:03:33.033 [main:204064] - [DEBUG] Beginning,Parse Field:brand
+2016-07-09 16:03:33.033 [main:204100] - [DEBUG] Field is Parsed:brand
+2016-07-09 16:03:33.033 [main:204100] - [DEBUG] Beginning,Parse Field:factoryName
+2016-07-09 16:03:33.033 [main:204102] - [DEBUG] Field is Parsed:factoryName
+2016-07-09 16:03:33.033 [main:204102] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-07-09 16:03:33.033 [main:204106] - [DEBUG] Field is Parsed:factoryAddress
+2016-07-09 16:03:33.033 [main:204106] - [DEBUG] Beginning,Parse Field:series
+2016-07-09 16:03:33.033 [main:204108] - [DEBUG] Field is Parsed:series
+2016-07-09 16:03:33.033 [main:204108] - [DEBUG] Beginning,Parse Field:specification
+2016-07-09 16:03:33.033 [main:204110] - [DEBUG] Field is Parsed:specification
+2016-07-09 16:03:33.033 [main:204110] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-07-09 16:03:33.033 [main:204124] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-07-09 16:03:33.033 [main:204125] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-07-09 16:03:33.033 [main:204164] - [DEBUG] Field is Parsed:expirationDate
+2016-07-09 16:03:33.033 [main:204165] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-09 16:03:33.033 [main:204173] - [DEBUG] Field is Parsed:productPrice
+2016-07-09 16:03:33.033 [main:204174] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-09 16:03:33.033 [main:204278] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-09 16:03:33.033 [main:204278] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-09 16:03:34.034 [main:204513] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-09 16:03:34.034 [main:204514] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-09 16:03:34.034 [main:205092] - [DEBUG] Field is Parsed:commentCount
+2016-07-09 16:03:34.034 [main:205093] - [DEBUG] Beginning,Parse Field:storeActualID
+2016-07-09 16:03:34.034 [main:205102] - [DEBUG] Field is Parsed:storeActualID
+2016-07-09 16:03:34.034 [main:205103] - [DEBUG] Beginning,Parse Field:storeName
+2016-07-09 16:03:34.034 [main:205112] - [DEBUG] Field is Parsed:storeName
+2016-07-09 16:03:34.034 [main:205113] - [DEBUG] Beginning,Parse Field:storeURL
+2016-07-09 16:03:34.034 [main:205125] - [DEBUG] Field is Parsed:storeURL
+2016-07-09 16:03:34.034 [main:205128] - [DEBUG] Beginning,Parse Field:shopkeeper
+2016-07-09 16:03:34.034 [main:205133] - [DEBUG] Field is Parsed:shopkeeper
+2016-07-09 16:03:34.034 [main:205134] - [DEBUG] Beginning,Parse Field:companyName
+2016-07-09 16:03:34.034 [main:205146] - [DEBUG] Field is Parsed:companyName
+2016-07-09 16:03:34.034 [main:205146] - [DEBUG] Beginning,Parse Field:companyLocation
+2016-07-09 16:03:34.034 [main:205166] - [DEBUG] Field is Parsed:companyLocation
+2016-07-09 16:03:34.034 [main:205167] - [DEBUG] Post a task:826123
+2016-07-09 16:03:34.034 [main:205354] - [DEBUG] Task Posted:826123
+2016-07-09 16:03:34.034 [main:205355] - [DEBUG] 已执行 1/3 条任务！
+2016-07-09 16:03:34.034 [main:205355] - [DEBUG] Get a task:1
+2016-07-09 16:03:35.035 [main:205446] - [DEBUG] Task is gotten:826124
+2016-07-09 16:03:35.035 [main:205477] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070133256_150915944.html
+2016-07-09 16:03:38.038 [main:209152] - [DEBUG] Page is opened:http://product.suning.com/detail_0070133256_150915944.html
+2016-07-09 16:03:38.038 [main:209269] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-09 16:03:38.038 [main:209285] - [DEBUG] Field is Parsed:productActualID
+2016-07-09 16:03:38.038 [main:209285] - [DEBUG] Beginning,Parse Field:productCompleteID
+2016-07-09 16:03:38.038 [main:209294] - [DEBUG] Field is Parsed:productCompleteID
+2016-07-09 16:03:38.038 [main:209294] - [DEBUG] Beginning,Parse Field:productName
+2016-07-09 16:03:38.038 [main:209303] - [DEBUG] Field is Parsed:productName
+2016-07-09 16:03:38.038 [main:209303] - [DEBUG] Beginning,Parse Field:productDescription
+2016-07-09 16:03:38.038 [main:209311] - [DEBUG] Field is Parsed:productDescription
+2016-07-09 16:03:38.038 [main:209312] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-07-09 16:03:38.038 [main:209313] - [DEBUG] Field is Parsed:shelveDate
+2016-07-09 16:03:38.038 [main:209314] - [DEBUG] Beginning,Parse Field:status
+2016-07-09 16:03:38.038 [main:209315] - [DEBUG] Field is Parsed:status
+2016-07-09 16:03:38.038 [main:209316] - [DEBUG] Beginning,Parse Field:weight
+2016-07-09 16:03:38.038 [main:209351] - [DEBUG] Field is Parsed:weight
+2016-07-09 16:03:38.038 [main:209351] - [DEBUG] Beginning,Parse Field:province
+2016-07-09 16:03:38.038 [main:209353] - [DEBUG] Field is Parsed:province
+2016-07-09 16:03:38.038 [main:209353] - [DEBUG] Beginning,Parse Field:city
+2016-07-09 16:03:38.038 [main:209355] - [DEBUG] Field is Parsed:city
+2016-07-09 16:03:38.038 [main:209356] - [DEBUG] Beginning,Parse Field:category
+2016-07-09 16:03:40.040 [main:210725] - [DEBUG] Field is Parsed:category
+2016-07-09 16:03:40.040 [main:210725] - [DEBUG] Beginning,Parse Field:category1
+2016-07-09 16:03:40.040 [main:210735] - [DEBUG] Field is Parsed:category1
+2016-07-09 16:03:40.040 [main:210736] - [DEBUG] Beginning,Parse Field:category2
+2016-07-09 16:03:40.040 [main:210744] - [DEBUG] Field is Parsed:category2
+2016-07-09 16:03:40.040 [main:210744] - [DEBUG] Beginning,Parse Field:category3
+2016-07-09 16:03:40.040 [main:210752] - [DEBUG] Field is Parsed:category3
+2016-07-09 16:03:40.040 [main:210753] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-07-09 16:03:40.040 [main:210754] - [DEBUG] Field is Parsed:specialtyCategory
+2016-07-09 16:03:40.040 [main:210755] - [DEBUG] Beginning,Parse Field:brand
+2016-07-09 16:03:40.040 [main:210785] - [DEBUG] Field is Parsed:brand
+2016-07-09 16:03:40.040 [main:210785] - [DEBUG] Beginning,Parse Field:factoryName
+2016-07-09 16:03:40.040 [main:210787] - [DEBUG] Field is Parsed:factoryName
+2016-07-09 16:03:40.040 [main:210787] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-07-09 16:03:40.040 [main:210789] - [DEBUG] Field is Parsed:factoryAddress
+2016-07-09 16:03:40.040 [main:210789] - [DEBUG] Beginning,Parse Field:series
+2016-07-09 16:03:40.040 [main:210821] - [DEBUG] Field is Parsed:series
+2016-07-09 16:03:40.040 [main:210822] - [DEBUG] Beginning,Parse Field:specification
+2016-07-09 16:03:40.040 [main:210824] - [DEBUG] Field is Parsed:specification
+2016-07-09 16:03:40.040 [main:210824] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-07-09 16:03:40.040 [main:210844] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-07-09 16:03:40.040 [main:210845] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-07-09 16:03:40.040 [main:210874] - [DEBUG] Field is Parsed:expirationDate
+2016-07-09 16:03:40.040 [main:210886] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-09 16:03:40.040 [main:210895] - [DEBUG] Field is Parsed:productPrice
+2016-07-09 16:03:40.040 [main:210895] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-09 16:03:40.040 [main:210993] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-09 16:03:40.040 [main:210994] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-09 16:03:40.040 [main:211220] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-09 16:03:40.040 [main:211220] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-09 16:03:41.041 [main:211706] - [DEBUG] Field is Parsed:commentCount
+2016-07-09 16:03:41.041 [main:211706] - [DEBUG] Beginning,Parse Field:storeActualID
+2016-07-09 16:03:41.041 [main:211714] - [DEBUG] Field is Parsed:storeActualID
+2016-07-09 16:03:41.041 [main:211714] - [DEBUG] Beginning,Parse Field:storeName
+2016-07-09 16:03:41.041 [main:211723] - [DEBUG] Field is Parsed:storeName
+2016-07-09 16:03:41.041 [main:211723] - [DEBUG] Beginning,Parse Field:storeURL
+2016-07-09 16:03:41.041 [main:211732] - [DEBUG] Field is Parsed:storeURL
+2016-07-09 16:03:41.041 [main:211732] - [DEBUG] Beginning,Parse Field:shopkeeper
+2016-07-09 16:03:41.041 [main:211734] - [DEBUG] Field is Parsed:shopkeeper
+2016-07-09 16:03:41.041 [main:211734] - [DEBUG] Beginning,Parse Field:companyName
+2016-07-09 16:03:41.041 [main:211742] - [DEBUG] Field is Parsed:companyName
+2016-07-09 16:03:41.041 [main:211743] - [DEBUG] Beginning,Parse Field:companyLocation
+2016-07-09 16:03:41.041 [main:211753] - [DEBUG] Field is Parsed:companyLocation
+2016-07-09 16:03:41.041 [main:211753] - [DEBUG] Post a task:826124
+2016-07-09 16:03:41.041 [main:211985] - [DEBUG] Task Posted:826124
+2016-07-09 16:03:41.041 [main:211985] - [DEBUG] 已执行 2/3 条任务！
+2016-07-09 16:03:41.041 [main:211985] - [DEBUG] Get a task:1
+2016-07-09 16:03:41.041 [main:212052] - [DEBUG] Task is gotten:826125
+2016-07-09 16:03:41.041 [main:212077] - [DEBUG] Beginning,Open page:http://product.suning.com/detail_0070133256_157078934.html
+2016-07-09 16:04:05.005 [main:235512] - [DEBUG] Page is opened:http://product.suning.com/detail_0070133256_157078934.html
+2016-07-09 16:04:05.005 [main:235673] - [DEBUG] Beginning,Parse Field:productActualID
+2016-07-09 16:04:05.005 [main:235681] - [DEBUG] Field is Parsed:productActualID
+2016-07-09 16:04:05.005 [main:235681] - [DEBUG] Beginning,Parse Field:productCompleteID
+2016-07-09 16:04:05.005 [main:235689] - [DEBUG] Field is Parsed:productCompleteID
+2016-07-09 16:04:05.005 [main:235689] - [DEBUG] Beginning,Parse Field:productName
+2016-07-09 16:04:05.005 [main:235696] - [DEBUG] Field is Parsed:productName
+2016-07-09 16:04:05.005 [main:235697] - [DEBUG] Beginning,Parse Field:productDescription
+2016-07-09 16:04:05.005 [main:235713] - [DEBUG] Field is Parsed:productDescription
+2016-07-09 16:04:05.005 [main:235714] - [DEBUG] Beginning,Parse Field:shelveDate
+2016-07-09 16:04:05.005 [main:235717] - [DEBUG] Field is Parsed:shelveDate
+2016-07-09 16:04:05.005 [main:235717] - [DEBUG] Beginning,Parse Field:status
+2016-07-09 16:04:05.005 [main:235719] - [DEBUG] Field is Parsed:status
+2016-07-09 16:04:05.005 [main:235719] - [DEBUG] Beginning,Parse Field:weight
+2016-07-09 16:04:05.005 [main:235808] - [DEBUG] Field is Parsed:weight
+2016-07-09 16:04:05.005 [main:235808] - [DEBUG] Beginning,Parse Field:province
+2016-07-09 16:04:05.005 [main:235814] - [DEBUG] Field is Parsed:province
+2016-07-09 16:04:05.005 [main:235814] - [DEBUG] Beginning,Parse Field:city
+2016-07-09 16:04:05.005 [main:235818] - [DEBUG] Field is Parsed:city
+2016-07-09 16:04:05.005 [main:235818] - [DEBUG] Beginning,Parse Field:category
+2016-07-09 16:04:06.006 [main:237199] - [DEBUG] Field is Parsed:category
+2016-07-09 16:04:06.006 [main:237200] - [DEBUG] Beginning,Parse Field:category1
+2016-07-09 16:04:06.006 [main:237213] - [DEBUG] Field is Parsed:category1
+2016-07-09 16:04:06.006 [main:237213] - [DEBUG] Beginning,Parse Field:category2
+2016-07-09 16:04:06.006 [main:237222] - [DEBUG] Field is Parsed:category2
+2016-07-09 16:04:06.006 [main:237223] - [DEBUG] Beginning,Parse Field:category3
+2016-07-09 16:04:06.006 [main:237232] - [DEBUG] Field is Parsed:category3
+2016-07-09 16:04:06.006 [main:237233] - [DEBUG] Beginning,Parse Field:specialtyCategory
+2016-07-09 16:04:06.006 [main:237236] - [DEBUG] Field is Parsed:specialtyCategory
+2016-07-09 16:04:06.006 [main:237237] - [DEBUG] Beginning,Parse Field:brand
+2016-07-09 16:04:06.006 [main:237273] - [DEBUG] Field is Parsed:brand
+2016-07-09 16:04:06.006 [main:237274] - [DEBUG] Beginning,Parse Field:factoryName
+2016-07-09 16:04:06.006 [main:237276] - [DEBUG] Field is Parsed:factoryName
+2016-07-09 16:04:06.006 [main:237277] - [DEBUG] Beginning,Parse Field:factoryAddress
+2016-07-09 16:04:06.006 [main:237279] - [DEBUG] Field is Parsed:factoryAddress
+2016-07-09 16:04:06.006 [main:237279] - [DEBUG] Beginning,Parse Field:series
+2016-07-09 16:04:06.006 [main:237281] - [DEBUG] Field is Parsed:series
+2016-07-09 16:04:06.006 [main:237282] - [DEBUG] Beginning,Parse Field:specification
+2016-07-09 16:04:06.006 [main:237284] - [DEBUG] Field is Parsed:specification
+2016-07-09 16:04:06.006 [main:237284] - [DEBUG] Beginning,Parse Field:deliveryStartArea
+2016-07-09 16:04:06.006 [main:237296] - [DEBUG] Field is Parsed:deliveryStartArea
+2016-07-09 16:04:06.006 [main:237297] - [DEBUG] Beginning,Parse Field:expirationDate
+2016-07-09 16:04:06.006 [main:237333] - [DEBUG] Field is Parsed:expirationDate
+2016-07-09 16:04:06.006 [main:237333] - [DEBUG] Beginning,Parse Field:productPrice
+2016-07-09 16:04:06.006 [main:237343] - [DEBUG] Field is Parsed:productPrice
+2016-07-09 16:04:06.006 [main:237344] - [DEBUG] Beginning,Parse Field:productPromPrice
+2016-07-09 16:04:07.007 [main:237432] - [DEBUG] Field is Parsed:productPromPrice
+2016-07-09 16:04:07.007 [main:237432] - [DEBUG] Beginning,Parse Field:monthSaleCount
+2016-07-09 16:04:07.007 [main:237750] - [DEBUG] Field is Parsed:monthSaleCount
+2016-07-09 16:04:07.007 [main:237751] - [DEBUG] Beginning,Parse Field:commentCount
+2016-07-09 16:04:07.007 [main:238303] - [DEBUG] Field is Parsed:commentCount
+2016-07-09 16:04:07.007 [main:238303] - [DEBUG] Beginning,Parse Field:storeActualID
+2016-07-09 16:04:07.007 [main:238311] - [DEBUG] Field is Parsed:storeActualID
+2016-07-09 16:04:07.007 [main:238312] - [DEBUG] Beginning,Parse Field:storeName
+2016-07-09 16:04:07.007 [main:238320] - [DEBUG] Field is Parsed:storeName
+2016-07-09 16:04:07.007 [main:238321] - [DEBUG] Beginning,Parse Field:storeURL
+2016-07-09 16:04:07.007 [main:238331] - [DEBUG] Field is Parsed:storeURL
+2016-07-09 16:04:07.007 [main:238331] - [DEBUG] Beginning,Parse Field:shopkeeper
+2016-07-09 16:04:07.007 [main:238333] - [DEBUG] Field is Parsed:shopkeeper
+2016-07-09 16:04:07.007 [main:238334] - [DEBUG] Beginning,Parse Field:companyName
+2016-07-09 16:04:07.007 [main:238343] - [DEBUG] Field is Parsed:companyName
+2016-07-09 16:04:07.007 [main:238344] - [DEBUG] Beginning,Parse Field:companyLocation
+2016-07-09 16:04:07.007 [main:238352] - [DEBUG] Field is Parsed:companyLocation
+2016-07-09 16:04:07.007 [main:238357] - [DEBUG] Post a task:826125
+2016-07-09 16:04:08.008 [main:238512] - [DEBUG] Task Posted:826125
+2016-07-09 16:04:08.008 [main:238513] - [DEBUG] 已执行 3/3 条任务！
+2016-07-09 16:04:08.008 [main:238513] - [DEBUG] 3 条任务已经完成，是否继续下一次任务？（Y/N）
