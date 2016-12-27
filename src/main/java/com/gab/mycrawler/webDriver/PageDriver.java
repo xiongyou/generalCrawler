@@ -28,35 +28,17 @@ public class PageDriver {
 		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
 		String path=MyPath.getProjectPath();		
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("user-data-dir="+path+"\\libs\\userData"); 	//加载用户配置文件
-		//options.addArguments("--user-agent=iphone");//设置User Agent
-		//File exFile=new File("AdBlock_v2.17.crx");
-		//options.addExtensions(exFile);//crx路径
+		List<String> chromeArgs=new ArrayList<String>();
+		chromeArgs.add("user-data-dir="+path+"\\libs\\userData");
+		chromeArgs.add("--incognito");//隐身模式
+		//chromeArgs.add("--disable-images");//禁止图像
+		//options.addArguments("user-data-dir="+path+"\\libs\\userData"); 	//加载用户配置文件
+		//options.addArguments("--incognito");//隐身模式
+		options.addArguments(chromeArgs);
+
 		WebDriver driver = null;		
 		
-		/*
-		    //增加cookie:
-			// Now set the cookie. This one's valid for the entire domain
-			Cookie cookie = new Cookie("key", "value");
-			driver.manage().addCookie(cookie);
-			//获取cookie的值：
-			// And now output all the available cookies for the current URL
-			Set<Cookie> allCookies = driver.manage().getCookies();
-			for (Cookie loadedCookie : allCookies) {
-			   System.out.println(String.format("%s -> %s",loadedCookie.getName(), loadedCookie.getValue()));
-			}
-			//根据某个cookie的name获取cookie的值：
-			driver.manage().getCookieNamed("mmsid");
-			//删除cookie:
-			 
-			
-			// By name
-			driver.manage().deleteCookieNamed("CookieName");
-			// By Cookie
-			driver.manage().deleteCookie(cookie);
-			// Or all of them
-			driver.manage().deleteAllCookies();
-		*/
+		
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		

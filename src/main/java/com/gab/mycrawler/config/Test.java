@@ -11,8 +11,9 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String crawlerUri = "http://www.0618.com/product-3593.html";
-		String platform ="TaiJiYSG";		
+
+		String crawlerUri = "http://www.umatou.com/goods-3920.html";
+		String platform ="YouMaTou";		
 		String dataObj = "Product";
 		int timeout =10;
 		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");

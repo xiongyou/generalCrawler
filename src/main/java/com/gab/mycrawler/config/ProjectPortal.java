@@ -1,26 +1,19 @@
 package com.gab.mycrawler.config;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.gab.mycrawler.data.iData;
-import com.gab.mycrawler.parse.StdParse;
-import com.gab.mycrawler.parse.iParse;
 import com.gab.mycrawler.taskComm.Task;
 import com.gab.mycrawler.taskComm.TaskCommunication;
 import com.gab.mycrawler.webDriver.PageDriver;
-import com.gab.mycrawler.webDriver.UriContent;
-import com.sun.glass.events.KeyEvent;
+
+
 
 public class ProjectPortal {
-	public static Logger logger = Logger.getLogger("com.foo");
+	public static Logger logger = Logger.getLogger(ProjectPortal.class);
 	private static Scanner sc;
 	public static int timeoutCount = 0;
 
@@ -29,8 +22,7 @@ public class ProjectPortal {
 		// TODO Auto-generated method stub
 		WebDriver driver=null;
 		try {
-			System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
-			 driver = PageDriver.generateDriver();
+			
 
 			iConfig config = new StdConfig("start.xml");
 
@@ -43,9 +35,15 @@ public class ProjectPortal {
 			String serverUri = config.getXpathText("config/serverUri/text()"); // 任务管理服务器地址
 			String clientID = config.getXpathText("config/clientID/text()"); // 用户
 			TaskCommunication taskComm = new TaskCommunication(serverUri, clientID); // 连接任务管理服务器
-			taskComm.userLogin(clientID); // 用户登录
+			//taskComm.userLogin(clientID); // 用户登录
 			// 2.从任务中得到平台、链接、数据对象
 			int errorCount = 0; // 记录出错次数,初始为0
+			int version=221;
+			if(!taskComm.validVersion(version)){
+				return;
+			}
+			System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
+			 driver = PageDriver.generateDriver();
 			for (int excutedTaskNum = 1; excutedTaskNum <= taskCount; excutedTaskNum++) {
 				Task task=null;
 				logger.debug("Get a task:" + clientID);
@@ -75,6 +73,7 @@ public class ProjectPortal {
 				// 3.打开页面，获取内容，或者保存网页源文件 ,内容解析,返回数据对象
 				iData data = null;
 				try {
+					
 					data = new PageDriver().getPageData(crawlerUri, platform, dataObj, timeout, driver);
 					errorCount = 0;
 				} catch (Exception e) {
