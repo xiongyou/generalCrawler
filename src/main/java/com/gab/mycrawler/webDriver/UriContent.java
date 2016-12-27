@@ -67,13 +67,11 @@ public class UriContent {
 		String tmpUrl = driver.getCurrentUrl();
 		stdUrl = tmpUrl;
 		/*
-		if (tmpUrl.indexOf("&") != -1)
-			stdUrl = tmpUrl.substring(0, tmpUrl.indexOf("&"));
-		else
-			stdUrl = tmpUrl;
-		*/
+		 * if (tmpUrl.indexOf("&") != -1) stdUrl = tmpUrl.substring(0,
+		 * tmpUrl.indexOf("&")); else stdUrl = tmpUrl;
+		 */
 		final WebDriver tmpDriver = driver.switchTo().window(curWindowHandle);
-		
+
 		final List<String> cssSelectorList;
 		cssSelectorList = config.getCssSelectors(platform);
 		List<String> errorInfoNames = config.getErrorInfoNames(platform);
@@ -93,20 +91,19 @@ public class UriContent {
 						}
 						return true;
 					}
-					
+
 					for (String cssSelector : cssSelectorList) {
 
 						String[] selectors = cssSelector.split("\\|");
 						int i = 0;
 						for (String str : selectors) {
-							if(str.equals(""))
+							if (str.equals(""))
 								continue;
-							String cssContent ="";
-							try{
+							String cssContent = "";
+							try {
 								cssContent = tmpDriver.findElement(By.cssSelector(str)).getText();
-							}
-							catch(Exception e){
-								//e.printStackTrace();
+							} catch (Exception e) {
+								// e.printStackTrace();
 							}
 							boolean b = (cssContent.equals("") || cssContent.equals("-"));
 							if (b) {
@@ -120,45 +117,50 @@ public class UriContent {
 					}
 					return false;
 				}
-			});			
+			});
 			ProjectPortal.logger.debug("Page is opened:" + uri);
 		} catch (TimeoutException e) {
 			// 如果没有设置下架等错误信息的配置，则默认下架
 			/*
-			if (errorInfoNames.size() == 0) {
-				pageList.add("商品已下架！");
-			} else {
-				pageList.add("访问超时");
-			}*/
+			 * if (errorInfoNames.size() == 0) { pageList.add("商品已下架！"); } else
+			 * { pageList.add("访问超时"); }
+			 */
 			pageList.add("访问超时");
 			return pageList;
 		}
-		
+
 		content = driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
 				.replaceAll("&quot;", "\"");
-		//System.out.println(content);
+		// System.out.println(content);
 		// 如果包含出错数据的处理
-		int errorStatus=0;//初始化错误状态为0
+		int errorStatus = 0;// 初始化错误状态为0
 		for (String errorInfoName : errorInfoNames) {
 			String errorInfoRegex = config.getErrorInfoRegex(platform, errorInfoName);
-			String errorInfo = (this.resultOfRegex(content, errorInfoRegex).equals("") ? "" : config.getErrorInfoText(platform, errorInfoName));
-			if (!errorInfo.equals("")) {
-				//String errorInfoText=config.getErrorInfoText(platform, errorInfoName);
-				pageList.add(errorInfo);
-				String isParsed = config.getErrorInfoIsParsed(platform, errorInfoName);
-				if (isParsed.equals("1")){	//如果有错误信息，是否仍然进行解析，如果=1，则添加网页源内容到输出列表
-					pageList.add(content);					
+			// 将同一种错误的多个错误的正则表达式拆分为多个，用||分隔
+			String[] errorInfoRegs = errorInfoRegex.split("\\|\\|");
+			for (String errorInfoReg : errorInfoRegs) {
+
+				String errorInfo = (this.resultOfRegex(content, errorInfoReg).equals("") ? ""
+						: config.getErrorInfoText(platform, errorInfoName));
+				if (!errorInfo.equals("")) {
+					// String errorInfoText=config.getErrorInfoText(platform,
+					// errorInfoName);
+					pageList.add(errorInfo);
+					String isParsed = config.getErrorInfoIsParsed(platform, errorInfoName);
+					if (isParsed.equals("1")) { // 如果有错误信息，是否仍然进行解析，如果=1，则添加网页源内容到输出列表
+						pageList.add(content);
+					}
+					errorStatus = 1; // 如果匹配到了错误信息，则修改其状态
+					break;
 				}
-				errorStatus=1;	//如果匹配到了错误信息，则修改其状态
-				break;
-			} 
+			}
 		}
-		if(errorStatus==0){	//在出错数据处理之后，如果错误状态仍为0，则表示没有错误信息，则按照正常情况进行处理
+		if (errorStatus == 0) { // 在出错数据处理之后，如果错误状态仍为0，则表示没有错误信息，则按照正常情况进行处理
 			pageList.add("");
-			 //System.out.println(content);
+			// System.out.println(content);
 			pageList.add(content);
 		}
-		
+
 		// 是否保存页面源文件
 		iConfig config = new StdConfig("start.xml");
 		String isSaveProductFile = config.getXpathText("config/isSaveProductFiles/text()");
@@ -206,8 +208,7 @@ public class UriContent {
 		}
 
 		String temp = sb.toString();
-		return temp.trim().replaceAll("\t", " ").replaceAll("\n", " ")
-				.replaceFirst(" ", "");// 去掉空格
+		return temp.trim().replaceAll("\t", " ").replaceAll("\n", " ").replaceFirst(" ", "");// 去掉空格
 	}
 
 }

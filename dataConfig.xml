@@ -4,20 +4,21 @@
 		<!-- 1、淘宝 -->
 		<website name="TaoBao">
 			<loadElements>
-				<cssSelector id="1" selector="#J_SellCounter|#J-From"/>
+				<cssSelector id="1" selector="#J_SellCounter"/><!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
 				<cssSelector id="2" selector="#detail &gt; div.tb-detail-bd.tb-clear &gt; div.tb-summary.tb-clear &gt; div &gt; div.tb-item-info-r &gt; div &gt; div &gt; div.tb-key.tb-out-of-date.tb-key-off-sale &gt; div &gt; p &gt; strong"/>
 				<!-- 此宝贝已下架 -->
 				<cssSelector id="3" selector="#error-notice &gt; div.error-notice-text &gt; div.error-notice-hd"/>
 				<!-- 已下架或者被转移 -->
 				<cssSelector id="4" selector="li.m-home &gt; a"></cssSelector><!-- 闲鱼 -->
-				<cssSelector id="5" selector="div.errorDetail &gt; h2"/>
+				<cssSelector id="5" selector="div.crumbs.J_Crumbs &gt; a"></cssSelector><!-- 闲鱼拍卖 -->
+				<cssSelector id="6" selector="a.link"></cssSelector><!-- 闲鱼登录 -->
+				<cssSelector id="7" selector="div.errorDetail &gt; h2"/>
 				<!-- 淘宝中有天猫的商品找不到 -->
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1">下架</errorInfo1>
-				<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)" isParsed="0">移除</errorInfo2>
-				<errorInfo3 regex="您查看的商品找不到了" isParsed="0">移除</errorInfo3><!-- 天猫移除 -->
-				<errorInfo4 regex="//2.taobao.com" isParsed="0">非农产品</errorInfo4><!-- 闲鱼非农产品 -->
+				<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)||您查看的商品找不到了" isParsed="0">移除</errorInfo2><!-- 包括天猫的移除 -->
+				<errorInfo3 regex="2.taobao.com%||闲鱼.淘宝二手  &lt;/title&gt;||拍卖&lt;/title&gt;" isParsed="0">非农产品</errorInfo3><!-- 闲鱼非农产品 -->
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -126,9 +127,9 @@
 			<errorInfos>
 				<errorInfo1 regex="此商品已下架" isParsed="1">下架</errorInfo1>
 				<errorInfo2 regex="您查看的商品找不到了" isParsed="0">移除</errorInfo2>
-				<errorInfo3 regex="www.fliggy.com" isParsed="0">非农产品</errorInfo3><!-- 阿里旅行 -->
-				<errorInfo4 regex="www.alitrip.com" isParsed="0">非农产品</errorInfo4>
-				<errorInfo5 regex="hotel.alitrip.com" isParsed="0">非农产品</errorInfo5>
+				<errorInfo3 regex="www.fliggy.com||hotel.alitrip.com%||&lt;title&gt;阿里旅行&lt;/title&gt;" isParsed="0">非农产品</errorInfo3><!-- 阿里旅行 -->
+				<!-- <errorInfo4 regex="www.alitrip.com" isParsed="0">非农产品</errorInfo4> -->
+				
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -320,6 +321,7 @@
 		<website name="YiHaoDian">
 			<loadElements>
 				<cssSelector id="1" selector="#productMainName"/>
+				
 				<!-- 产品名称  -->
 				<cssSelector id="2" selector="#main404 &gt; p.sorry.sorryMt"/>
 				<!-- 商品下架 /此站不销售-->
@@ -330,18 +332,19 @@
 				<!-- 这些商品也不错哦 -->
 				<cssSelector id="5" selector="#lunboActivities &gt; div.hd"></cssSelector>
 				<!-- 这些活动很热门哦 -->
+				<cssSelector id="6" selector="div.unit_tit"></cssSelector><!-- 一号让团购 -->
+				
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0">下架</errorInfo1>
-				<errorInfo2 regex="这些商品也不错哦" isParsed="0">移除</errorInfo2>
-				<errorInfo3 regex="这些活动很热门哦" isParsed="0">移除</errorInfo3>
+				<errorInfo2 regex="这些商品也不错哦||这些活动很热门哦" isParsed="0">移除</errorInfo2>
 			</errorInfos>
 			<dataobjects>
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=productMercantId[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)"/>
-						<productName regex="(?&lt;=cnName[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)"/>
-						<productDescription regex="(?&lt;=productSubName[^&gt;]{1,50}title=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productName regex="(?&lt;=cnName[^&gt;]{1,50}value=&quot;)([^&quot;]*)(?=&quot;)||(?&lt;=id=&quot;shortName&quot; value=&quot;)([^&quot;]{1,40})(?=&quot;)"/>
+						<productDescription regex="(?&lt;=productSubName[^&gt;]{1,50}title=&quot;)([^&quot;]*)(?=&quot;)||(?&lt;=Description&quot; content=&quot;)([^&quot;]{1,100})(?=&quot;)"/>
 						<shelveDate regex=""/>
 						<weight regex="(?&lt;=净重[^&gt;]{1,50}：)([^&gt;]*)(?=&lt;)"/>
 						<origin regex="(?&lt;=产地：)([^&gt;]*)(?=&quot;)"/>
@@ -355,13 +358,13 @@
 						<series regex=""/>
 						<specification regex=""/>
 						<deliveryStartArea regex=""/>
-						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)"/>
-						<productPromPrice regex=""/>
-						<monthSaleCount regex="(?&lt;=已售&lt;strong&gt;)([^&gt;]*)(?=&lt;)"/>
-						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=￥)([^&gt;]*)(?= 1号店，)||(?&lt;=&quot;marketPrice&quot;&gt;&lt;em&gt;¥&lt;/em&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=id=&quot;price&quot; value=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<monthSaleCount regex="(?&lt;=已售&lt;strong&gt;)([^&gt;]*)(?=&lt;)||(?&lt;=&gt;)([^&gt;]{1,10})(?=&lt;/strong&gt;人已购买)"/>
+						<commentCount regex="(?&lt;=yellow&quot;&gt;)([^&gt;]*)(?=&lt;)||(?&lt;=&gt;)([^&lt;]{1,10})(?=人评论)"/>
 						<storeActualID regex="(?&lt;=license-)([^&quot;]*)(?=.html)"/>
-						<storeName regex="(?&lt;=companyName[^&gt;]{1,20}&quot;)([^&quot;]*)(?=&quot; /)"/>
-						<storeURL regex="(?&lt;=key_shop&quot;&gt;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot; target)"/>
+						<storeName regex="(?&lt;=companyName[^&gt;]{1,20}&quot;)([^&quot;]*)(?=&quot; /)||(?&lt;=shop_name clearfix&quot;&gt;\r\n\s{10,30}&lt;strong&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<storeURL regex="(?&lt;=key_shop&quot;&gt;[^&gt;]{1,10}&quot;)([^&gt;]*)(?=&quot; target)||(?&lt;=href=&quot;)([^&quot;]{5,50})(?=&quot; class=&quot;in_shop&quot;)"/>
 					</fields>
 				</Product>
 				<ProductMonitor>
@@ -716,10 +719,13 @@
 				<!-- 配送地址 -->
 				<cssSelector id="7" selector="#itemDisplayName"/>
 				<!-- 商品名称 -->				
+				<cssSelector id="8" selector="a.ng-all-hook"></cssSelector><!-- 苏宁书城 -->
+				<cssSelector id="9" selector="div.errorMessageShow"></cssSelector><!-- 商品或页面没有找到 -->
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=&quot;&quot;&gt;[^&gt;]{10,20}&gt;)(此商品已下架)(?=，)" isParsed="1">下架</errorInfo1>
-				<errorInfo2 regex="(?&lt;=&quot;&quot;&gt;[^&gt;]{10,20}&gt;)(其它类似商品)(?=&lt;)" isParsed="0">移除</errorInfo2>
+				<errorInfo2 regex="(?&lt;=&quot;&quot;&gt;[^&gt;]{10,20}&gt;)(其它类似商品)(?=&lt;)||对不起，您浏览的商品暂时无法显示" isParsed="0">移除</errorInfo2>
+				<errorInfo3 regex="苏宁易购电子书&lt;/title&gt;" isParsed="0">非农产品</errorInfo3>
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -1248,18 +1254,19 @@
 				
 				<cssSelector id="4" selector="div.searchErrorContent"/>
 				<cssSelector id="5" selector="dd.price"/>
-				<!--<cssSelector id="5" selector="#proDetail &gt; div.pi_detail &gt; dl.proDetail_salesInfo &gt; dd &gt; div.fArea &gt; span"></cssSelector>
-				 配送起始地址 -->
+				<cssSelector id="6" selector="div.scontent"></cssSelector><!-- 已售完 -->
+				<cssSelector id="7" selector="span#listName"></cssSelector><!-- 非卖品商品名称 -->
+				
 			</loadElements>
 			<errorInfos>
-				<errorInfo1 regex="该商品已下架" isParsed="1">下架</errorInfo1>
+				<errorInfo1 regex="该商品已下架||class=&quot;scontent&quot; style=&quot;background" isParsed="1">下架</errorInfo1>
 				<errorInfo2 regex="您查看的物品或页面暂时未能查找到" isParsed="0">移除</errorInfo2>
 			</errorInfos>
 			<dataobjects>
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=listId = ')([^']*)(?=';)"/>
-						<productName regex="(?&lt;=productInfo[^&lt;]{1,50}&lt;h1&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productName regex="(?&lt;=productInfo[^&lt;]{1,50}&lt;h1&gt;)([^&lt;]*)(?=&lt;)||(?&lt;=&quot;listName&quot;&gt;)([^&lt;]{5,50})(?=&lt;)"/>
 						<productDescription regex="(?&lt;=subtitle&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<shelveDate regex=""/>
 						<weight regex=""/>
@@ -1279,7 +1286,7 @@
 						<commentCount regex="(?&lt;=商品评论[^&gt;]{1,5}&gt;)([^&lt;]*)(?=&lt;)"/>
 						<storeActualID regex="(?&lt;=storeId = ')([^\t]*)(?=')"/>
 						<storeName regex="(?&lt;=storeInfo[^&lt;]{1,50}&lt;[^&lt;]{1,50}&lt;a title=&quot;)([^&quot;]*)(?=&quot;)"/>
-						<storeURL regex="(?&lt;=storeInfo[^&lt;]{1,30}&lt;[^&lt;]{0,30}&lt;[^&gt;]{0,30}\s{1,30}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeURL regex="(?&lt;=storeInfo[^&lt;]{1,30}&lt;[^&lt;]{0,30}&lt;[^&gt;]{0,30}\s{1,30}href=&quot;)([^&quot;]*)(?=&quot;)||(?&lt;=class=&quot;brand&quot;[^&gt;]{1,40}&gt;[^&quot;]{5,20}&quot;)([^&quot;]{1,50})(?=&quot;)"/>
 						<companyName regex="(?&lt;=merchantName = ')([^\w]*)(?=')"/>
 					</fields>
 				</Product>
@@ -1516,7 +1523,7 @@
 				</StoreLicenseInfo>
 			</dataobjects>
 		</website>
-		<!-- 15、生鲜宅配 -->
+		<!-- 15、生鲜宅配     平台不存在-->
 		<website name="ShengXianZhaiPei">
 			<loadElements>
 				<cssSelector id="1" selector="#ECS_SHOPPRICE"/>
@@ -1609,9 +1616,10 @@
 		<website name="XiangManYuan">
 			<loadElements>
 				<cssSelector id="1" selector="div.pMsg"/>
+				<cssSelector id="2" selector="a.alls"></cssSelector>
 			</loadElements>
 			<errorInfos>
-				
+				<errorInfo1 regex="&lt;div class=&quot;nomsg1&quot;&gt;&lt;/div&gt;" isParsed="0">下架</errorInfo1>
 			</errorInfos>
 			<dataobjects>
 				<Product>

@@ -1,6 +1,0 @@
-2016-05-23 16:34:25.025 [main:0] - [DEBUG] Get a task:1
-2016-05-23 16:34:26.026 [main:1333] - [DEBUG] java.net.ConnectException: Connection refused: connect
-2016-05-23 16:40:36.036 [main:0] - [DEBUG] Get a task:1
-2016-05-23 16:40:37.037 [main:762] - [DEBUG] java.lang.Exception: 连接失败
-2016-05-23 16:42:14.014 [main:0] - [DEBUG] Get a task:1
-2016-05-23 16:43:03.003 [main:49492] - [DEBUG] java.net.SocketException: Connection reset
