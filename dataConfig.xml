@@ -758,7 +758,7 @@
 						<monthSaleCount regex="(?&lt;=近期销量&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
 						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<storeActualID regex="(?&lt;=value=&quot;)(\d*)(?=&quot;\sid=&quot;supplierID&quot;)"/>
-						<storeName regex="(?&lt;=div\sclass=&quot;si-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeName regex="(?&lt;=&quot;shopName&quot;:&quot;)([^&quot;]{1,30})(?=&quot;)"/>
 						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
 						<shopkeeper regex=""/>
 						<companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
@@ -1737,7 +1737,7 @@
 						<monthSaleCount regex="(?&lt;=class=&quot;green&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
 						<commentCount regex="(?&lt;=class=&quot;org&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
 						<storeActualID regex=""/>
-						<storeName regex="(?&lt;=店铺：)([^&lt;]{1,20})(?=&lt;)"/>
+						<storeName regex="(?&lt;=店铺：)([^&lt;]{1,40})(?=&lt;)"/>
 						<storeURL regex="(?&lt;=商家：&lt;a href=&quot;)([^&quot;]{1,70})(?=&quot;)"/>
 						<shopkeeper regex="(?&lt;=联系人：)([^&lt;]{1,15})(?=&lt;)"/>
 						<companyName regex=""/>
