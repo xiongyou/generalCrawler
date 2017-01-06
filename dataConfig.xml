@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataParseConfig>
+<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因，记录下URL-->
 	<websites>
 		<!-- 1、淘宝 -->
 		<website name="TaoBao">
@@ -21,9 +22,9 @@
 				<errorInfo3 regex="2.taobao.com%||闲鱼.淘宝二手  &lt;/title&gt;||拍卖&lt;/title&gt;" isParsed="0">非农产品</errorInfo3><!-- 闲鱼非农产品 -->
 			</errorInfos>
 			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
 				<Product>
-					<fields>
-					 
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
 						<productActualID regex="(?&lt;=itemId\s{3,15}: ')([^']*)(?=')"/>
 						<productName regex="(?&lt;=tb-main-title&quot; data-title=&quot;)([^&quot;]*)(?=&quot;)"/>
 						<productDescription regex="(?&lt;=tb-subtitle&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
@@ -731,13 +732,13 @@
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=ninePartNumber&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
-						<productCompleteID regex="(?&lt;=prdTypeVal&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
+						<productCompleteID regex="(?&lt;=partNumber&quot;:&quot;)([^&quot;]{1,30})(?=&quot;)"/>
 						<!-- 产品完整ID -->
 						<productName regex="(?&lt;=value=&quot;)([^&quot;]*)(?=&quot; id=&quot;ga_itemDataBean_description_name)"/>
 						<productDescription regex="(?&lt;=&quot;description&quot;\scontent=&quot;)([^&quot;]*)(?=&quot;)"/>
 						<shelveDate regex=""/>
-						<weight regex="(?&lt;=净含量[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
-						<origin regex="(?&lt;=产地[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<weight regex="(?&lt;=净含量[^&quot;]{100,200}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<origin regex="(?&lt;=产地[^&quot;]{100,200}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<province regex=""/>
 						<city regex=""/>
 						<category regex="(?&lt;=&gt;类[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
@@ -745,18 +746,18 @@
 						<category2 regex="(?&lt;=categoryName2&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
 						<category3 regex="(?&lt;=categoryName3&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
 						<specialtyCategory regex=""/>
-						<brand regex="(?&lt;=&gt;品牌[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<brand regex="(?&lt;=&gt;品牌[^&quot;]{100,200}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<factoryName regex=""/>
 						<factoryAddress regex=""/>
 						<series regex=""/>
 						<specification regex=""/>
 						<deliveryStartArea regex="(?&lt;=从\W{2})([^\s]*)(?=\W{2}销售和发货)"/>
-						<expirationDay regex="(?&lt;=&gt;保质期[^&quot;]{150,155}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<expirationDay regex="(?&lt;=&gt;保质期[^&quot;]{150,200}&quot;val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<!-- 保质期 -->
-						<productPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
-						<productPromPrice regex="(?&lt;=netPrice[\w\W]{1,20}¥&lt;/i&gt;)([^&lt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=small-price&quot;&gt;&lt;i&gt;¥&lt;/i&gt;\s)([^&lt;]{1,10})(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=cart2Price&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<monthSaleCount regex="(?&lt;=近期销量&lt;/span&gt;[^&gt;]{1,50}&gt;)([^&lt;]*)(?=&lt;)"/>
-						<commentCount regex="(?&lt;=totalReview&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
+						<commentCount regex="(?&lt;=累计评价&lt;/div&gt;&lt;span&gt;)([^&lt;]{1,10})(?=&lt;)"/>
 						<storeActualID regex="(?&lt;=value=&quot;)(\d*)(?=&quot;\sid=&quot;supplierID&quot;)"/>
 						<storeName regex="(?&lt;=&quot;shopName&quot;:&quot;)([^&quot;]{1,30})(?=&quot;)"/>
 						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
@@ -1382,6 +1383,7 @@
 						<midCommentCount regex="(?&lt;=中评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
 						<badCommentCount regex="(?&lt;=差评&lt;font&gt;\()([^&lt;]*)(?=\))"/>
 						<pictureCommentCount regex="(?&lt;=有晒单&lt;font&gt;\()([^&lt;]*)(?=\))"/>
+						<storeName regex="(?&lt;=hcTitle&quot;[^&gt;]{10,100}&gt;)([^&lt;]*)(?=&lt;)"/>
 					</fields>
 				</Product>
 				<ProductMonitor>
@@ -1400,7 +1402,7 @@
 				<Store>
 					<fields>
 						<storeActualID regex=""/>
-						<storeName regex=""/>
+						<storeName regex="(?&lt;=hcTitle&quot;[^&gt;]{10,100}&gt;)([^&lt;]*)(?=&lt;)"/>
 						<storeURL regex=""/>
 						<shopkeeper regex=""/>
 						<companyName regex=""/>
