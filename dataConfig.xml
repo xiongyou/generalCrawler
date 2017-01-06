@@ -254,12 +254,12 @@
 						<series regex=""/>
 						<specification regex="(?&lt;=规格&lt;/td&gt;&lt;td&gt;)([^&lt;]*)(?=&lt;)"/>
 						<deliveryStartArea regex="(?&lt;=从\s{1,5})([^\s]*)(?=\s{1,5}发货)"/>
-						<productPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
+						<productPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)||(?&lt;=￥&lt;/span&gt;&lt;span\sclass=&quot;price[^&quot;]{0,120}&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<productPromPrice regex="(?&lt;=p-price&quot; id=&quot;jd-price&quot;&gt;￥)([^&lt;]*)(?=&lt;)"/>
 						<monthSaleCount regex=""/>
 						<commentCount regex="(?&lt;=商品评价[^(]{1,50}\()([^\)]*)(?=\))"/>
 						<storeActualID regex="(?&lt;=venderId:[^:]{1,50}shopId:')(\d{1,20})(?=')"/>
-						<storeName regex="(?&lt;=name&quot;[^_]{1,50}_blank&quot; title=&quot;)([^&quot;]*)(?=&quot; clstag=&quot;)||(?&lt;=class=&quot;seller-infor&quot;&gt;[^&gt;]{1,300}&gt;)([^&lt;]*)(?=&lt;)"/>
+						<storeName regex="(?&lt;=name&quot;[^_]{1,50}_blank&quot; title=&quot;)([^&quot;]*)(?=&quot; clstag=&quot;)||(?&lt;=class=&quot;seller-infor&quot;&gt;[^&gt;]{1,300}&gt;)([^&lt;]*)(?=&lt;)||(?&lt;=&lt;li title=&quot;)([^&quot;]*)(?=&quot;&gt;店铺：)"/>
 						<storeURL regex=""/>
 						<shopkeeper regex=""/>
 						<companyName regex="(?&lt;=J-shop-name&quot;&gt;)([^&lt;]*)(?=&lt;)"/>

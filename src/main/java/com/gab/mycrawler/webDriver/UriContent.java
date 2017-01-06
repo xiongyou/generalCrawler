@@ -131,7 +131,7 @@ public class UriContent {
 
 		content = driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
 				.replaceAll("&quot;", "\"");
-		// System.out.println(content);
+		 //System.out.println(content);
 		// 如果包含出错数据的处理
 		int errorStatus = 0;// 初始化错误状态为0
 		for (String errorInfoName : errorInfoNames) {
