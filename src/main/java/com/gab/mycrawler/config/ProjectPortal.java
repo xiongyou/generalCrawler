@@ -14,7 +14,7 @@ import com.gab.mycrawler.webDriver.PageDriver;
 
 public class ProjectPortal {
 	public static Logger logger = Logger.getLogger(ProjectPortal.class);
-	private static Scanner sc;
+	
 	public static int timeoutCount = 0;
 
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class ProjectPortal {
 		// TODO Auto-generated method stub
 		WebDriver driver=null;
 		try {
-			
+			Input input=new Input();
 
 			iConfig config = new StdConfig("start.xml");
 
@@ -31,6 +31,7 @@ public class ProjectPortal {
 			int exceptionPause = Integer.parseInt(config.getXpathText("config/exceptionPause/text()"));
 			int exceptionLimit = Integer.parseInt(config.getXpathText("config/exceptionLimit/text()"));
 			int timeoutCountLimit=Integer.parseInt(config.getXpathText("config/timeoutCountLimit/text()"));//连续超时次数限制
+			int autoExcute=Integer.parseInt(config.getXpathText("config/autoExcute/text()"));
 			// 1.从服务器请求任务
 			String serverUri = config.getXpathText("config/serverUri/text()"); // 任务管理服务器地址
 			String clientID = config.getXpathText("config/clientID/text()"); // 用户
@@ -43,7 +44,8 @@ public class ProjectPortal {
 				return;
 			}
 			System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
-			 driver = PageDriver.generateDriver();
+			driver = PageDriver.generateDriver();
+			int totalCount=1;//设置多次执行后的总任务数量
 			for (int excutedTaskNum = 1; excutedTaskNum <= taskCount; excutedTaskNum++) {
 				Task task=null;
 				logger.debug("Get a task:" + clientID);
@@ -57,14 +59,22 @@ public class ProjectPortal {
 				}
 				// 任务被处理完毕后的操作
 				if (task == null) {
-					System.out.println("本次处理任务  " + (excutedTaskNum - 1) + " 条！");
+					//System.out.println("本次处理任务  " + (excutedTaskNum - 1) + " 条！");
+					System.out.println("本次处理任务  " + (totalCount-1) + " 条！");
 					System.out.println("检查是否有新的任务，请输出回车！");
-					sc = new Scanner(System.in);
-					sc.nextLine();
+					if(input.readInput('\r', autoExcute*60, true)){//就算没有输入回车，到达了等待输入的时间，也继续执行。
+					/*Scanner  sc = new Scanner(System.in);
+					sc.nextLine();*/
+					excutedTaskNum--;
 					System.out.println("新的任务开始！");
-					excutedTaskNum = 0;
+					//excutedTaskNum = 0;
+					//sc.close();
 					continue;
-					// break;
+					}
+					else{
+						System.out.println("未输入回车，任务结束！");	
+					 break;
+					}
 				}
 				logger.debug("Task is gotten:" + task.getTaskid());
 				String platform = task.getWebsite();
@@ -82,8 +92,9 @@ public class ProjectPortal {
 					if (errorCount == exceptionLimit) {
 						logger.warn("访问连续出错"+exceptionLimit+"次，请重新启动程序！");
 						driver.quit();
-						sc = new Scanner(System.in);
+						Scanner sc = new Scanner(System.in);
 						sc.nextLine();
+						sc.close();
 						break; // 如果连续出错三次，则程序终止。
 					}
 					logger.warn("访问异常，将暂停 " + exceptionPause + " 分钟");
@@ -103,17 +114,26 @@ public class ProjectPortal {
 				if(timeoutCount>=timeoutCountLimit){
 					logger.debug("连续访问超时的次数达到 "+timeoutCount+" 次，请检查网络连接，然后输入回车继续");
 					
-					sc = new Scanner(System.in);
-					sc.nextLine();					
+					Scanner sc = new Scanner(System.in);
+					sc.nextLine();		
+					sc.close();
 				}
 				if(excutedTaskNum==taskCount){
-					logger.debug(taskCount + " 条任务已经完成，是否继续下一次任务？（Y/N）");
-					sc = new Scanner(System.in);
+					logger.debug(taskCount + " 条任务已经完成，本次已执行总任务数为"+totalCount+"，是否继续下一次任务？（Y/N）");
+					if(input.readInput('y',autoExcute*60, true)){
+						excutedTaskNum=0;
+						break;
+					}					
+					
+					/*
+					Scanner sc = new Scanner(System.in);
 					String str=sc.nextLine().toLowerCase();
 					if(str.startsWith("y")){
 						excutedTaskNum=0;
-					}
+						sc.close();
+					}*/
 				}
+				totalCount++;
 			}
 			driver.quit();
 			

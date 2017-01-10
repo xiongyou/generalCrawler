@@ -11,6 +11,18 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Input input=new Input();
+		
+
+		if (input.readInput('y',10,false)) {
+            //cleanDb();
+            System.out.println("The database was cleaned!");
+        } else {
+            System.out.println("The clean operation was ignored.");
+        }
+		
+		
+		/*
 
 		String crawlerUri = "http://item.jd.com/11046638214.html";
 		String platform ="JingDong";		
@@ -28,7 +40,7 @@ public class Test {
 		} catch (Exception e) {
 			e.printStackTrace();			
 		}	
-		driver.quit();
+		driver.quit();*/
 	}
 
 }

@@ -7,9 +7,10 @@
 	<serverUri>http://202.202.5.140/ecrawler/task</serverUri><!-- 服务器地址  202.202.5.140  http://localhost:8080-->
 	<serverPause>1</serverPause><!-- 与服务器连接异常的暂停时间，默认1分钟 -->
 	<clientID>1</clientID><!--用户ID分配： 熊友-1  杨梦琴-2  张盼-3	  刘宇胜-4   袁中卫-5  钟老师-6    陈光伟-7	  李老师-8  邓忠-9  崔磊-10-->
-	<taskCount>30000</taskCount><!-- 每次执行任务的数量 -->
+	<taskCount>4</taskCount><!-- 每次执行任务的数量 -->
 	<timeoutCountLimit>50</timeoutCountLimit><!-- 连续页面访问超时次数限制，默认连续超时次数达到10次则暂停程序 -->
 	<timeout>15</timeout><!-- 请求页面超时 -->	
 	<exceptionPause>1</exceptionPause><!-- 访问异常时，暂停访问时间，3 分钟 -->
 	<exceptionLimit>5</exceptionLimit><!-- 连续页面访问异常次数限制，默认连续异常次数达到5次则暂停程序 -->
+	<autoExcute>10</autoExcute><!-- 设置当前任务批次任务数量处理完成后，等待下次任务自动执行的时间，单位：分钟，默认10分钟。PS：用于服务器端新任务发布和设置的任务数量完毕 -->
 </config>
