@@ -5,41 +5,6 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class Input {
-	public boolean readInputStreamWithTimeout(String checkStr,int timeoutMillis) throws IOException{
-		boolean result=false;
-		int bufferOffset = 0;    //读取数据buf偏移量
-        long maxTimeMillis = System.currentTimeMillis() + timeoutMillis;//计算过期时间        
-        InputStream is=System.in;
-        byte[] buf=new byte[1];;
-        while (System.currentTimeMillis() < maxTimeMillis && bufferOffset < buf.length) { //时间到，buf被写满，或者到读取到内容时
-            int readLength = Math.min(is.available(), buf.length - bufferOffset); //按可读数据长与buf长度，选择读取长度
-
-            int readResult = is.read(buf, bufferOffset, readLength);
-
-            if (readResult == -1) {//流结束直接结束
-                break;
-            }
-
-            bufferOffset += readResult;
-
-            if (readResult > 0) {   //读取到内容结束循环
-                break;
-            }
-
-            try {
-                Thread.sleep(10);          //等待10ms读取，减小cpu占用
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        if (bufferOffset==0)
-        	return true;
-        String  t = new String(buf);
-        if(t.contains(checkStr)){
-        	return true;
-        }
-		return result;
-	}
 	
 	 public int readInputStreamWithTimeout(InputStream is, byte[] buf, int timeoutMillis)
 	            throws IOException {

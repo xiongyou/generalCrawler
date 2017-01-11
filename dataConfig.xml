@@ -732,7 +732,7 @@
 				<Product>
 					<fields>
 						<productActualID regex="(?&lt;=ninePartNumber&quot;:&quot;)([^&quot;]*)(?=&quot;)"/>
-						<productCompleteID regex="(?&lt;=partNumber&quot;:&quot;)([^&quot;]{1,30})(?=&quot;)"/>
+						<productCompleteID regex="(?&lt;=partNumber&quot;:&quot;)([^&quot;]{1,30})(?=&quot;,&quot;context)"/>
 						<!-- 产品完整ID -->
 						<productName regex="(?&lt;=value=&quot;)([^&quot;]*)(?=&quot; id=&quot;ga_itemDataBean_description_name)"/>
 						<productDescription regex="(?&lt;=&quot;description&quot;\scontent=&quot;)([^&quot;]*)(?=&quot;)"/>
@@ -1647,7 +1647,7 @@
 						<monthSaleCount regex="(?&lt;=&gt;)([^&lt;]{1,10})(?=&lt;/p&gt;&lt;p&gt;累计销量)"/>
 						<commentCount regex="(?&lt;=&gt;)([^&lt;]{1,10})(?=&lt;/p&gt;&lt;p&gt;累计评价)"/>
 						<storeActualID regex=""/>
-						<storeName regex="(?&lt;=商家：&lt;/strong&gt;\[)([^\]]{1,25})(?=\])"/>
+						<storeName regex="(?&lt;=商家：&lt;/strong&gt;\[{0,1})([^/|\[|\]]{1,35})(?=\]{0,1}&lt;)"/>
 						<storeURL regex=""/>
 						<shopkeeper regex=""/>
 						<companyName regex=""/>
