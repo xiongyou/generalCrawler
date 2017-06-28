@@ -2,6 +2,71 @@
 <dataParseConfig>
 <!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因，记录下URL-->
 	<websites>
+	<!-- 0、模板 -->
+		<!-- 网站名称 -->
+		<website name="webName">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector=""/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)||您查看的商品找不到了" isParsed="0">移除</errorInfo2><!-- 包括天猫的移除 -->
+				<errorInfo3 regex="2.taobao.com%||闲鱼.淘宝二手  &lt;/title&gt;||拍卖&lt;/title&gt;" isParsed="0">非农产品</errorInfo3><!-- 闲鱼非农产品 -->
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex=""/>
+						<productName regex=""/>
+						<productDescription regex=""/>
+						<shelveDate regex=""/>
+						<weight regex=""/>
+						<origin regex=""/>
+						<province regex=""/>
+						<city regex=""/>
+						<category regex=""/>
+						<specialtyCategory regex=""/>
+						<brand regex=""/>
+						<factoryName regex=""/>
+						<factoryAddress regex=""/>
+						<series regex=""/>
+						<specification regex=""/>
+						<deliveryStartArea regex=""/>
+						<productPrice regex=""/>
+						<productPromPrice regex=""/>
+						<monthSaleCount regex=""/>
+						<commentCount regex=""/>
+						<storeActualID regex=""/>
+						<storeName regex=""/>
+						<storeURL regex=""/>
+						<shopkeeper regex=""/>
+						<companyName regex=""/>
+						<storeLocation regex=""/>
+						<expirationDay regex=""/>
+						<produceDay regex=""/>
+						<productPromotionID regex=""/>
+						<productCompleteID regex=""/>
+						<category1 regex=""/>
+						<category2 regex=""/>
+						<category3 regex=""/>
+						<goodCommentCount regex=""/>
+						<midCommentCount regex=""/>
+						<badCommentCount regex=""/>
+						<SaleCount regex=""/>
+						<goodCommentRate regex=""/>
+						<category4 regex=""/>
+						<taxRate regex=""/>
+						<productHighVipPrice regex=""/>
+						<productLowVipPrice regex=""/>
+						<productTax regex=""/>
+						<pictureCommentCount regex=""/>
+						<additionCommentCount regex=""/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
 		<!-- 1、淘宝 -->
 		<website name="TaoBao">
 			<loadElements>
@@ -1799,5 +1864,247 @@
 				</StoreLicenseInfo>
 			</dataobjects>
 		</website>
+		
+		<!-- 18、我买网 ，团购、酒品-->
+		<website name="WoMai">
+			<loadElements>
+			<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="#buyPrice"/><!-- 价格 -->	
+				<cssSelector id="2" selector=".buyPrice"/><!-- 团购中的价格 -->			
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>				
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=var\spid\s=\s&quot;)(\d+)(?=&quot;)||(?&lt;=identifier: ')(\d+)(?=')"/>
+						<productName regex="(?&lt;=fn: ')([^']{5,50})(?=')||(?&lt;=class=&quot;p-title&quot; title=&quot;)([^&quot;]{1,50})(?=&quot;)"/>
+						<productDescription regex="(?&lt;=description: ')([^']{0,60})(?=')||(?&lt;=name=&quot;description&quot; content=&quot;)([^&quot;]{1,200})(?=&quot;)"/>
+						<weight regex="(?&lt;=item_dna\['shape'\]=&quot;)([^&quot;]{1,12})(?=&quot;)||(?&lt;=item_dna\['maozhong'\]=&quot;)([^&quot;]{1,12})(?=&quot;)"/>
+						<origin regex="(?&lt;=item_dna\['yuanchanguo'\]=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<province regex="(?&lt;=item_dna\['chandi'\]=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<category regex="(?&lt;=&quot;p_class4&quot;: &quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<category1 regex="(?&lt;=&quot;p_class1&quot;: &quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<category2 regex="(?&lt;=&quot;p_class2&quot;: &quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<category3 regex="(?&lt;=&quot;p_class3&quot;: &quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<brand regex="(?&lt;=brand: ')([^']{0,15})(?=')||(?&lt;=brand&quot;: &quot;)([^&quot;]{1,15})(?=&quot;)"/>
+						<produceDay regex="(?&lt;=item_dna\['scriqi'\]=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<expirationDay regex="(?&lt;=title=&quot;)([^&quot;]{1,6})(?=&quot;&gt;保质期)"/>
+						<productPrice regex="(?&lt;=amount: ')([^']{1,10})(?=')||(?&lt;=item_dna\['price'\]=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=price: ')([^']{1,10})(?=')||(?&lt;=buyPrice&quot;&gt;￥)([^&lt;]{1,10})(?=&lt;)"/>
+						<SaleCount regex="(?&lt;=&lt;strong&gt;)(\d{1,6})(?=&lt;/strong&gt;人购买)"/>
+						<commentCount regex="(?&lt;=item_dna\['pjcishu'\]=&quot;)(\d+)(?=&quot;)||(?&lt;=&gt;)([^&lt;]{1,10})(?=&lt;/strong&gt;评价)"/>
+					</fields>
+				</Product>				
+			</dataobjects>
+		</website>	
+		
+		<!-- 19、天天果园-->
+		<website name="TianTian">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="#jq-price"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=data-product_no=&quot;)([^&quot;]{5,15})(?=&quot;)"/>
+						<productName regex="(?&lt;=name pull-left&quot;&gt;\s{5,30}&lt;h3&gt;)([^&lt;]{1,50})(?=&lt;)"/>
+						<productDescription regex="(?&lt;=&quot;title_describeapp&quot;&gt;\s{5,30})([^&lt;]{1,80})(?=\s{5,30}&lt;)"/>
+						<origin regex="(?&lt;=产地&lt;/h5&gt;\s{15,30}&lt;span class=&quot;pull-left&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<specification regex="(?&lt;=pull-left current&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<productPrice regex="(?&lt;=data-old-price=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=jq-price&quot;&gt;￥)([^&lt;]{1,10})(?=&lt;)"/>
+						<commentCount regex="(?&lt;=comment_total_top&quot;&gt;\()(\d+)(?=\))"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+
+		<!-- 20、易果生鲜 -->
+		<website name="YiGuo"><!-- 网站名称 -->
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector=".pro-price"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=id: ')([^']{2,10})(?=')"/>
+						<productName regex="(?&lt;=name: ')([^']{2,40})(?=')"/>
+						<productDescription regex="(?&lt;=Description&quot; content=&quot;)([^&quot;]{10,100})(?=&quot;)"/>
+						<origin regex="(?&lt;=原产地：&lt;/th&gt;&lt;td&gt;)([^&lt;]{1,8})(?=&lt;)"/>
+						<brand regex="(?&lt;=brand: ')([^']{1,10})(?=')"/>
+						<specification regex="(?&lt;=规格&lt;/th&gt;\s{5,25}&lt;td&gt;)([^&lt;]{1,40})(?=&lt;)||(?&lt;=Spec:&quot;)([^&quot;]{1,14})(?=&quot;)"/>
+						<deliveryStartArea regex="(?&lt;=发货地：&lt;/th&gt;&lt;td&gt;)([^&lt;]{1,8})(?=&lt;)"/>
+						<productPrice regex="(?&lt;=price: ')([^']{1,10})(?=')"/>
+						<commentCount regex="(?&lt;=评论数)(\d+)(?=\))"/>
+						<goodCommentCount regex="(?&lt;=好评（&lt;font id=&quot;vote_hp&quot;&gt;)(\d+)(?=&lt;)"/>
+						<midCommentCount regex="(?&lt;=中评（&lt;font id=&quot;vote_zp&quot;&gt;)(\d+)(?=&lt;)"/>
+						<badCommentCount regex="(?&lt;=差评（&lt;font id=&quot;vote_cp&quot;&gt;)(\d+)(?=&lt;)"/>
+						<pictureCommentCount regex="(?&lt;=有晒单（&lt;font id=&quot;vote_st&quot;&gt;)(\d+)(?=&lt;)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+		
+		<!-- 21、本来生活 -->
+		<website name="BenLai"><!-- 网站名称 -->
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="p.price"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=_sysno = ')([^']{2,12})(?=')||(?&lt;=Product_ProductID&quot;&gt;)([^&lt;]{4,14})(?=&lt;)"/>
+						<productName regex="(?&lt;=Product_ProductDetailsName&quot; title=&quot;)([^&quot;]{1,50})(?=&quot;)||(?&lt;=_productname = ')([^']{2,50})(?=')"/>
+						<productDescription regex="(?&lt;=&gt;\s{1,20})([^&lt;]{10,80})(?=[^&quot;]{20,70}&quot;intro_sales&quot;)||(?&lt;=Description&quot; content=&quot;)([^&quot;]{10,200})(?=&quot;)"/>
+						<weight regex="(?&lt;=&gt;重量：&lt;/dt&gt;&lt;dd&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<origin regex="(?&lt;=产地：\s{0,40})([^&lt;]{1,20})(?=\s{0,40}&lt;)"/>
+						<province regex="(?&lt;=产地：\s{0,40})([^&lt;]{1,20})(?=\s{0,40}&lt;)"/>
+						<category regex="(?&lt;=分类：&lt;/dt&gt;&lt;dd&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<specialtyCategory regex="(?&lt;=&gt;品种：&lt;/dt&gt;&lt;dd&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<specification regex="(?&lt;=规格：\s{0,40})([^&lt;]{1,20})(?=\s{0,40}&lt;)||(?&lt;=规格：[^_]{30,60}propon&quot;&gt;&lt;span&gt;)([^&lt;]{1,15})(?=&lt;)||(?&lt;=规格\s{1,60}&lt;/td&gt;\s{1,60}&lt;td class=&quot;right&quot;&gt;)([^&lt;]{1,100})(?=&lt;)"/>
+						<productPrice regex="(?&lt;=market_price:&quot;)([^&quot;]{1,15})(?=&quot;)"/>
+						<productPromPrice regex="(?&lt;=[^_]price:&quot;)([^&quot;]{1,15})(?=&quot;)"/>
+						<commentCount regex="(?&lt;=&gt;)(\d+)(?=&lt;/span&gt;人评价)"/>
+						<expirationDay regex="(?&lt;=保质期：\s{0,40})([^&lt;]{1,20})(?=\s{0,40}&lt;)"/>
+						<category1 regex="(?&lt;=category: ')([^']{1,10})(?=')"/>
+						<category2 regex="(?&lt;=category: '[^']{1,10}' \+ '-' \+ ')([^']{1,10})(?=')"/>
+						<category3 regex="(?&lt;=category: '[^']{1,10}' \+ '-' \+ '[^']{1,10}' \+ '-' \+ ')([^']{1,10})(?=')"/>
+						<pictureCommentCount regex="(?&lt;=晒图\()(\d+)(?=条)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+		
+		<!-- 22、家乐宝 -->
+		<website name="JiaLeBao">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector=".mt-info-name"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=uid=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<productName regex="(?&lt;=名称：&lt;/span&gt;&lt;[^&gt;]30,70}&gt;)([^&lt;]{2,40})(?=&lt;)"/>
+						<productDescription regex="(?&lt;=描述：&lt;/span&gt;&lt;[^&gt;]{30,70}&gt;)([^&lt;]{2,70})(?=&lt;)"/>
+						<weight regex="(?&lt;=规格：&lt;/span&gt;&lt;[^&gt;]{30,70}&gt;)([^&lt;]{1,15})(?=&lt;)"/>
+						<province regex="(?&lt;=产地：&lt;i[^&gt;]{30,70}&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<specification regex="(?&lt;=规格：&lt;/span&gt;&lt;[^&gt;]{20,80}&gt;)([^&lt;]{1,15})(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=价格：&lt;/span&gt;&lt;[^&gt;]{20,80}&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<category1 regex="(?&lt;=CommodityNavigation=\d{1,6}&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<category2 regex="(?&lt;=idCommoditySecondNavigation=\d{1,5}&quot;&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+
+		<!-- 23、云买乐、聚巫山  -->
+		<website name="JuWuShan">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="#mallPrice"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=&quot;)(\d+)(?=&quot; id=&quot;tgid)"/>
+						<productName regex="(?&lt;=product_info&quot;&gt;[^&lt;]{1,10}&lt;h1&gt;)([^&lt;]{1,30})(?=&lt;)"/>
+						<productDescription regex="(?&lt;=strong&gt;)([^&lt;]{5,250})(?=&lt;)"/>
+						<factoryAddress regex="(?&lt;=商家地址：&lt;/span&gt;&lt;span class=&quot;b&quot;&gt;)([^&lt;]{2,40})(?=&lt;)"/>
+						<productPrice regex="(?&lt;=市场价&lt;/span&gt;&lt;span class=&quot;del&quot;&gt;¥)([^&lt;]{1,10})(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=mallPrice&quot; data-price=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<commentCount regex="(?&lt;=total_revert1&quot;&gt;)(\d+)(?=&lt;)"/>
+						<storeActualID regex="(?&lt;=&quot;)(\d+)(?=&quot; id=&quot;shopid)"/>
+						<storeName regex="(?&lt;=shop_title&quot;&gt;)([^&lt;]{1,15})(?=&lt;)"/>
+						<storeURL regex="(?&lt;=&lt;a href=&quot;)([^&quot;]{20,60})(?=&quot; target=&quot;_blank&quot; class=&quot;shop_title&quot;)"/>
+						<storeLocation regex="(?&lt;=商家地址：&lt;/span&gt;&lt;span class=&quot;b&quot;&gt;)([^&lt;]{2,40})(?=&lt;)"/>
+						<SaleCount regex="(?&lt;=已售出 &lt;span[^&lt;]{10,50}&gt;)(\d+)(?=&lt;)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+		
+		<!-- 24、奇异网 （渝北、忠县、梁平3个站）-->
+		<website name="QiYi">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="span.price"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="(?&lt;=tb-hint&quot;&gt;[^&gt;]{20,30}&gt;)([^&lt;]*)(?=&lt;)" isParsed="1">下架</errorInfo1>
+				<errorInfo2 regex="(?&lt;=error-notice-hd&quot;&gt;)([^&lt;]*)(?=&lt;)||您查看的商品找不到了" isParsed="0">移除</errorInfo2><!-- 包括天猫的移除 -->
+				<errorInfo3 regex="2.taobao.com%||闲鱼.淘宝二手  &lt;/title&gt;||拍卖&lt;/title&gt;" isParsed="0">非农产品</errorInfo3><!-- 闲鱼非农产品 -->
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=load_goods_id=&quot;)([^&quot;]{1,10})(?=&quot;)"/>
+						<productName regex="(?&lt;=product_hd&quot; title=&quot;)([^&quot;]{2,25})(?=&quot;)||(?&lt;=product_hd&quot;&gt;)([^&lt;]{2,30})(?=&lt;)"/>
+						<factoryAddress regex="(?&lt;=地址：)([^&lt;]{2,10})(?=&lt;)"/>
+						<productPromPrice regex="(?&lt;=price&quot;&gt;&lt;b&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<storeName regex="(?&lt;=gsname&quot;&gt;)([^&lt;]{2,20})(?=&lt;)"/>
+						<storeURL regex="(?&lt;=&quot;)([^&quot;]{10,40})(?=&quot;&gt;店铺首页)"/>
+						<shopkeeper regex="(?&lt;=联系人：)([^&lt;]{2,10})(?=&lt;)"/>
+						<storeLocation regex="(?&lt;=地区：)([^&lt;]{2,10})(?=&lt;)"/>
+						<productCompleteID regex="(?&lt;=商品编码：&lt;/label&gt;[^\d]{20,50})(\d+)(?=&lt;)"/>
+						<SaleCount regex="(?&lt;=累计出售：&lt;/label&gt;[^\d]{20,50})(\d+)(?=&lt;)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+		
+		<!-- 25、亿农加 -->
+		<website name="YiNongJia">
+			<loadElements><!-- 用于判断页面是否完全加载完成，要尽量选择较后加载出来的重要信息，同时要考虑多种页面的情况（如：一个网站可能有多个不同的内部网站【常规页面、团购页面等】，还有考虑下架、移除、登录、非农产品等 -->
+				<!-- 多个同时满足的条件用|分隔，如#J_SellCounter|#J-From -->
+				<cssSelector id="1" selector="div.xinmu"/>
+			</loadElements>
+			<errorInfos>
+				<errorInfo1 regex="" isParsed="1">下架</errorInfo1>
+			</errorInfos>
+			<dataobjects>
+			<!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+				<Product>
+					<fields><!-- 设置一个是否必采的属性，用来监测配置是否变化 ，分析未采到的次数与原因-->
+						<productActualID regex="(?&lt;=goods_id = )(\d+)(?=;)"/>
+						<productName regex="(?&lt;=test_rigth&quot;&gt;\s{2,30}&lt;h3&gt;)([^&lt;]{1,40})(?=&lt;)"/>
+						<shelveDate regex="(?&lt;=上架时间：\s{2,30})([^&lt;]{1,14})(?=&lt;)||(?&lt;=上架时间：)([^&lt;]{8,25})(?=&lt;)"/>
+						<weight regex="(?&lt;=净重\s{1,30})([^&lt;]{1,10})(?=&lt;)||(?&lt;=净重)([^&lt;]{10,70})(?=&lt;)"/>
+						<productPrice regex="(?&lt;=一口价:&lt;[^&gt;]{10,50}&gt;￥)([^&lt;]{1,10})(?=元)||(?&lt;=市场价:&lt;[^&gt;]{10,100}&gt;￥)([^&lt;]{1,10})(?=元)"/>
+						<productPromPrice regex="(?&lt;=促销价&lt;[^&gt;]{30,100}&gt;￥)([^&lt;]{1,10})(?=元)||(?&lt;=价格:&lt;[^&gt;]{10,100}&gt;)([^&lt;]{1,10})(?=&lt;)"/>
+						<monthSaleCount regex="(?&lt;=&gt;)(\d+)(?=&lt;/span&gt;\s{5,40}&lt;span&gt;月销量)"/>
+						<commentCount regex="(?&lt;=&gt;)(\d+)(?=&lt;/span&gt;\s{5,40}&lt;span&gt;累积评价)"/>
+					</fields>
+				</Product>
+			</dataobjects>
+		</website>
+	
 	</websites>
 </dataParseConfig>
