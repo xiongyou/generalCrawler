@@ -9,9 +9,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -20,7 +22,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.gab.mycrawler.config.ProjectPortal;
+import com.gab.mycrawler.config.Input;
+import com.gab.mycrawler.config.ProjectPortal1;
 import com.gab.mycrawler.config.StdConfig;
 import com.gab.mycrawler.config.iConfig;
 import com.gab.mycrawler.save.StdSaveObj;
@@ -33,8 +36,8 @@ import com.gab.mycrawler.save.StdSaveObj;
  * 
  */
 public class UriContent {
-
 	iConfig config = new StdConfig("dataConfig.xml");
+	iConfig startConfig = new StdConfig("start.xml");
 	private String commentLoadCssSelector;
 
 	/**
@@ -61,18 +64,71 @@ public class UriContent {
 		String curWindowHandle = driver.getWindowHandle();
 
 		// 打开页面
-		ProjectPortal.logger.debug("Beginning,Open page:" + uri);
+		ProjectPortal1.logger.debug("Beginning,Open page:" + uri);
 		driver.get(uri);
 
+		
+		String userName = startConfig.getXpathText("config/login/@username");
+		String password = startConfig.getXpathText("config/login/@password");
+		Thread.sleep(200);
 		String tmpUrl = driver.getCurrentUrl();
 		stdUrl = tmpUrl;
+		
+		int loginTime=0;
+		while(tmpUrl.contains("login")&&loginTime<5){
+			try{
+				ProjectPortal1.logger.debug("需要登录!");
+			if("Tmall".equals(website)){
+				driver.switchTo().frame("J_loginIframe");
+			}
+			
+			
+			//切换到输入用户名、密码登录
+			try{
+			WebElement switchBtn=driver.findElement(By.cssSelector("a.J_Quick2Static"));
+			switchBtn.click();
+			}
+			//输入用户名密码
+			finally{
+			WebElement usernameEle=driver.findElement(By.cssSelector("#TPL_username_1"));
+			usernameEle.clear();
+			usernameEle.sendKeys(userName);
+			Thread.sleep(2000);
+			
+			WebElement pwdEle=driver.findElement(By.cssSelector("#TPL_password_1"));
+			pwdEle.clear();
+			pwdEle.sendKeys(password);
+			Thread.sleep(2000);
+			//点击登录
+			driver.findElement(By.cssSelector("button#J_SubmitStatic")).click();
+			Thread.sleep(2000);
+			}
+			//pageList.add("需要登录");
+			//return pageList;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			loginTime++;
+			if(loginTime>=5){
+				ProjectPortal1.logger.debug("登录出错超过5次，请检查用户名、密码，然后输入回车!");
+
+				Input.sc.nextLine();
+			}
+			driver.switchTo().defaultContent();
+			tmpUrl = driver.getCurrentUrl();
+		}}
+		
 		/*
 		 * if (tmpUrl.indexOf("&") != -1) stdUrl = tmpUrl.substring(0,
 		 * tmpUrl.indexOf("&")); else stdUrl = tmpUrl;
 		 */
 		final WebDriver tmpDriver = driver.switchTo().window(curWindowHandle);
-
+		final String u=userName;
+		final String pwd=password;
 		final List<String> cssSelectorList;
+		final String tUrl=uri;
 		cssSelectorList = config.getCssSelectors(platform);
 		List<String> errorInfoNames = config.getErrorInfoNames(platform);
 		// 等待页面加载完毕，超时时间设为 timeout秒
@@ -84,7 +140,7 @@ public class UriContent {
 					// 如果没有设置CssSeletor，则默认等待页面加载1.5秒
 					if (cssSelectorList.size() == 0) {
 						try {
-							Thread.sleep(1500);
+							Thread.sleep(1000);
 						} catch (InterruptedException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -106,7 +162,63 @@ public class UriContent {
 								// e.printStackTrace();
 							}
 							boolean b = (cssContent.equals("") || cssContent.equals("-"));
+							boolean sale= cssContent.equals("-");//此处用于判断销量数据是否出现
 							if (b) {
+								//判断是否出现了登录弹窗
+								if(sale){//如果销量数据是-，则表示未加载出来，需要登录或重新加载
+								try{
+									//注意，此处登录与验证码的弹窗是同一个窗体对象
+									tmpDriver.findElement(By.cssSelector("div.sufei-dialog-content"));
+									//输入用户名密码
+									tmpDriver.switchTo().frame("sufei-dialog-content");  
+							        
+									//先判断是否为验证码弹窗
+									try{
+									   WebElement identCodeEle=tmpDriver.findElement(By.cssSelector("div#J_CodeContainer"));
+									   ProjectPortal1.logger.warn("需要输入验证码！" );
+									   Input.sc.nextLine();
+									}
+									catch(Exception e){
+									
+									
+									
+									WebElement usernameEle=tmpDriver.findElement(By.cssSelector("#TPL_username_1"));
+									usernameEle.clear();
+									usernameEle.sendKeys(u);
+									Thread.sleep(2000);
+									
+									WebElement pwdEle=tmpDriver.findElement(By.cssSelector("#TPL_password_1"));
+									pwdEle.clear();
+									pwdEle.sendKeys(pwd);
+									Thread.sleep(2000);
+									//点击登录
+									tmpDriver.findElement(By.cssSelector("button#J_SubmitStatic")).click();
+									
+									// 此时 没跳出frame，如果这时定位default content中的元素也会报错  
+							        // dr.findElement(By.id("id1"));//error  
+							        /** 跳出frame,进入default content;重新定位id="id1"的div */  
+							        tmpDriver.switchTo().defaultContent(); 
+									}
+								}
+								catch(Exception e){
+									tmpDriver.navigate().refresh();
+									e.printStackTrace();
+									ProjectPortal1.logger.debug("等待加载");
+									try {
+										Thread.sleep(500);
+									} catch (InterruptedException e1) {
+										// TODO Auto-generated catch block
+										e1.printStackTrace();
+									}
+									tmpDriver.navigate().refresh();
+									try {
+										Thread.sleep(1000);
+									} catch (InterruptedException e1) {
+										// TODO Auto-generated catch block
+										e1.printStackTrace();
+									}
+								}
+								}
 								break;
 							}
 							i++;
@@ -118,7 +230,7 @@ public class UriContent {
 					return false;
 				}
 			});
-			ProjectPortal.logger.debug("Page is opened:" + uri);
+			ProjectPortal1.logger.debug("Page is opened:" + uri);
 		} catch (TimeoutException e) {
 			// 如果没有设置下架等错误信息的配置，则默认下架
 			/*
@@ -175,7 +287,7 @@ public class UriContent {
 				f.mkdirs();
 
 			String fileName = stdUrl.replace('/', '+').replace(':', '^').replace('?', '_');
-			ProjectPortal.logger.debug("Beginning,Save file:" + fileName);
+			ProjectPortal1.logger.debug("Beginning,Save file:" + fileName);
 			File file = new File(path + "/" + fileName + ".txt");
 			if (!file.exists()) {
 				file.createNewFile();
@@ -184,7 +296,7 @@ public class UriContent {
 			BufferedWriter writer = new BufferedWriter(osw);
 			writer.write(content);
 			writer.close();
-			ProjectPortal.logger.debug("File is Saved:" + fileName);
+			ProjectPortal1.logger.debug("File is Saved:" + fileName);
 		}
 		return pageList;
 
@@ -203,7 +315,7 @@ public class UriContent {
 		Matcher ma = pa.matcher(oldContent);
 
 		StringBuffer sb = new StringBuffer();
-		while (ma.find()) {
+		if (ma.find()) {
 			sb.append(ma.group());
 		}
 

@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class Input {
 	
+	public final static Scanner sc=new Scanner(System.in);
+	 
+	
 	 public int readInputStreamWithTimeout(InputStream is, byte[] buf, int timeoutMillis)
 	            throws IOException {
 	        int bufferOffset = 0;    //读取数据buf偏移量

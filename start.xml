@@ -4,13 +4,34 @@
 	<isSaveProductFiles>0</isSaveProductFiles><!-- 1：表示保存产品页面源文件，0：表示不保存 -->
 	
 	<!-- 上面两项不用管 -->	
-	<serverUri>http://202.202.5.140/ecrawler/task</serverUri><!-- 服务器地址  202.202.5.140  http://localhost:8080-->
+	<serverUri>http://139.224.112.239:8080/ecrawler</serverUri><!--139.224.112.239 服务器地址  202.202.5.140  http://localhost:8080   http://localhost:8080/ecrawler/ipProxy/queryOldest-->
 	<serverPause>1</serverPause><!-- 与服务器连接异常的暂停时间，默认1分钟 -->
-	<clientID>1</clientID><!--用户ID分配： 熊友-1  杨梦琴-2  张盼-3	  刘宇胜-4   袁中卫-5  钟老师-6    陈光伟-7	  李老师-8  邓忠-9  崔磊-10-->
-	<taskCount>10000</taskCount><!-- 每次执行任务的数量 -->
+	<clientID>1</clientID><!--用户ID分配： 熊友-1  杨梦琴-2  张盼-3	  常宁-4  袁红阳-5  钟老师-6    陈光伟-7	  李老师-8  文鹏-14  段赛赛-15-->
+	<taskCount>20000</taskCount><!-- 每次执行任务的数量 -->
 	<timeoutCountLimit>50</timeoutCountLimit><!-- 连续页面访问超时次数限制，默认连续超时次数达到10次则暂停程序 -->
 	<timeout>15</timeout><!-- 请求页面超时 -->	
 	<exceptionPause>1</exceptionPause><!-- 访问异常时，暂停访问时间，3 分钟 -->
 	<exceptionLimit>5</exceptionLimit><!-- 连续页面访问异常次数限制，默认连续异常次数达到5次则暂停程序 -->
-	<autoExcute>10</autoExcute><!-- 设置当前任务批次任务数量处理完成后，等待下次任务自动执行的时间，单位：分钟，默认10分钟。PS：用于服务器端新任务发布和设置的任务数量完毕 -->
+	<autoExcute>1</autoExcute><!-- 设置当前任务批次任务数量处理完成后，等待下次任务自动执行的时间，单位：分钟，默认10分钟。PS：用于服务器端新任务发布和设置的任务数量完毕 -->
+	
+	<!-- 配置淘宝账号 -->
+	<login username="xiongyou2011" password="ad6984984xiong"></login>
+	
+	<proxy auto="0"  available="0" proxyPool="1" type="amount" force="1" validUrl="https://item.taobao.com/" userName="" password="448477258CF9CC29">500</proxy> 
+	 
+	 <!--available为是否使用代理：0不使用，1使用； 	proxyPool:是否从代理池获取任务：0从普通任务池获取任务，1从代理任务池中获取任务
+	 type：time|amount，值为时间（分钟，必须为整数）或任务次数；force:表示当天猫、淘宝出现登录或未采集到销量信息时强制重新获取新的代理
+	  validUrl：用于验证代理ip有效性的网站；userName：代理的用户名；  password：代理的密码 -->
+	
+	<!--
+		1. 配置两个任务池，
+		2.最开始的时候可以配置为从需要登录验证的“代理任务池”中获取任务，
+		3.当出现需要登录的时候自动切换到不需要登录的“非代理任务池”中获取任务，
+		4.在采集了“非代理任务池”一定时间之后，将任务池重新切换回“代理任务池”，重复3，
+		5.当遇到其中一个任务池中任务采集完成时，自动从另外一个任务池获取任务，
+			5.1 此时如出现登录的情况，再用代理的方式采集数据 
+			
+		注：也提供手动的配置方式，比如在使用代理方式采集数据的时候也需要进行登录，而此时本机IP可以解除了限制，
+		       那么可以在配置文件中配置上当前采集任务只使用非代理方式采集“代理任务池”中的任务，将不受上面的约束
+	-->
 </config>
