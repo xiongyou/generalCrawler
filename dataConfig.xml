@@ -404,11 +404,14 @@
 				<cssSelector id="5" selector="#lunboActivities &gt; div.hd"></cssSelector>
 				<!-- 这些活动很热门哦 -->
 				<cssSelector id="6" selector="div.unit_tit"></cssSelector><!-- 一号让团购 -->
+				<!-- 一号店首页  资讯 -->
+				<cssSelector id="7" selector="div.notice_list &gt; a &gt; span"> </cssSelector>
 				
 			</loadElements>
 			<errorInfos>
 				<errorInfo1 regex="(?&lt;=sorry sorryMt&quot;&gt;)(.{1,40})(?=&lt;/p&gt;)" isParsed="0">下架</errorInfo1>
 				<errorInfo2 regex="这些商品也不错哦||这些活动很热门哦" isParsed="0">移除</errorInfo2>
+				<errorInfo3 regex="title&gt;网上超市1号店，省力省钱省时间&lt;/title">移除</errorInfo3>
 			</errorInfos>
 			<dataobjects>
 				<Product>
@@ -830,8 +833,9 @@
 						<commentCount regex="(?&lt;=累计评价&lt;/div&gt;&lt;span&gt;)([^&lt;]{1,10})(?=&lt;)"/>
 						<storeActualID regex="(?&lt;=value=&quot;)(\d*)(?=&quot;\sid=&quot;supplierID&quot;)"/>
 						<storeName regex="(?&lt;=&quot;shopName&quot;:&quot;)([^&quot;]{1,30})(?=&quot;)"/>
-						<storeURL regex="(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
+						<storeURL regex="(?&lt;=shopContext : &quot;//)([^&quot;]*)(?=&quot;)||(?&lt;=curShopName&quot;[^&lt;]{2,20}&lt;[^&gt;]{50,80}href=&quot;)([^&quot;]*)(?=&quot;)"/>
 						<shopkeeper regex=""/>
+						<storeLocation regex="(?&lt;=companyAddress&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 						<companyName regex="(?&lt;=公司[^&quot;]{20,30}&quot;detail-val&quot;&gt;)([^&lt;]*)(?=&lt;)"/>
 					</fields>
 				</Product>

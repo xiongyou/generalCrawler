@@ -70,22 +70,28 @@ public class UriContent {
 		
 		String userName = startConfig.getXpathText("config/login/@username");
 		String password = startConfig.getXpathText("config/login/@password");
+		String printPage=startConfig.getXpathText("config/printPage/text()");
 		Thread.sleep(200);
 		String tmpUrl = driver.getCurrentUrl();
 		stdUrl = tmpUrl;
 		
 		int loginTime=0;
-		while(tmpUrl.contains("login")&&loginTime<5){
+		while(tmpUrl.contains("//login.")&&loginTime<5){
 			try{
 				ProjectPortal1.logger.debug("需要登录!");
 			if("Tmall".equals(website)){
-				driver.switchTo().frame("J_loginIframe");
+				try{
+					driver.switchTo().frame("J_loginIframe");
+				}
+				catch(Exception e){
+					ProjectPortal1.logger.warn("不是天猫网站!");
+				}
 			}
 			
 			
 			//切换到输入用户名、密码登录
 			try{
-			WebElement switchBtn=driver.findElement(By.cssSelector("a.J_Quick2Static"));
+			WebElement switchBtn=driver.findElement(By.cssSelector(".J_Quick2Static"));
 			switchBtn.click();
 			}
 			//输入用户名密码
@@ -124,6 +130,13 @@ public class UriContent {
 		 * if (tmpUrl.indexOf("&") != -1) stdUrl = tmpUrl.substring(0,
 		 * tmpUrl.indexOf("&")); else stdUrl = tmpUrl;
 		 */
+		
+		
+		
+		//淘宝、天猫登录与验证码弹窗处理
+		
+		
+		
 		final WebDriver tmpDriver = driver.switchTo().window(curWindowHandle);
 		final String u=userName;
 		final String pwd=password;
@@ -238,12 +251,16 @@ public class UriContent {
 			 * { pageList.add("访问超时"); }
 			 */
 			pageList.add("访问超时");
+			if("1".equals(printPage))
+			System.out.println(driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
+					.replaceAll("&quot;", "\""));
 			return pageList;
 		}
 
 		content = driver.getPageSource().replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&amp;", "&")
 				.replaceAll("&quot;", "\"");
-		 //System.out.println(content);
+		if("1".equals(printPage))
+		 System.out.println(content);
 		// 如果包含出错数据的处理
 		int errorStatus = 0;// 初始化错误状态为0
 		for (String errorInfoName : errorInfoNames) {

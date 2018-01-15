@@ -119,12 +119,16 @@ public class PageDriver {
 			 ChromeOptions options = new ChromeOptions();
 			  List<String> chromeArgs = new ArrayList<String>();
 			 chromeArgs.add("user-data-dir=" + path + "\\libs\\userData");
+			 
 			 //chromeArgs.add("--incognito");// 隐身模式
 			 String  host=ipProxy.getIp()+":"+ipProxy.getPort();
 			 chromeArgs.add("proxy-server=http://" 
 			 		+host);//代理–proxy-server chromeArgs.add("--disable-images");//禁止图像 //
 			 options.addArguments("user-data-dir="+path+"\\libs\\userData"); //
 			  //加载用户配置文件 // options.addArguments("--incognito");//隐身模式
+			 
+			 //模拟百度蜘蛛
+			 chromeArgs.add("user-agent=Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)");
 			 options.addArguments(chromeArgs);
 			 WebDriver driver = new ChromeDriver(options);
 
@@ -178,6 +182,7 @@ public class PageDriver {
 		 
 		 */
 		chromeArgs.add("--disable-images");// 禁止图像
+		chromeArgs.add("user-agent=Mozilla/5.0 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)");
 		options.addArguments(chromeArgs);
 		
 		WebDriver driver = null;

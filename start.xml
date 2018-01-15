@@ -4,16 +4,16 @@
 	<isSaveProductFiles>0</isSaveProductFiles><!-- 1：表示保存产品页面源文件，0：表示不保存 -->
 	
 	<!-- 上面两项不用管 -->	
-	<serverUri>http://139.224.112.239:8080/ecrawler</serverUri><!--139.224.112.239 服务器地址  202.202.5.140  http://localhost:8080   http://localhost:8080/ecrawler/ipProxy/queryOldest-->
+	<serverUri>http://localhost:8080/ecrawler</serverUri><!--139.224.112.239 服务器地址  202.202.5.140  http://localhost:8080   http://localhost:8080/ecrawler/ipProxy/queryOldest-->
 	<serverPause>1</serverPause><!-- 与服务器连接异常的暂停时间，默认1分钟 -->
 	<clientID>1</clientID><!--用户ID分配： 熊友-1  杨梦琴-2  张盼-3	  常宁-4  袁红阳-5  钟老师-6    陈光伟-7	  李老师-8  文鹏-14  段赛赛-15-->
 	<taskCount>20000</taskCount><!-- 每次执行任务的数量 -->
 	<timeoutCountLimit>50</timeoutCountLimit><!-- 连续页面访问超时次数限制，默认连续超时次数达到10次则暂停程序 -->
-	<timeout>15</timeout><!-- 请求页面超时 -->	
+	<timeout>7</timeout><!-- 请求页面超时 -->	
 	<exceptionPause>1</exceptionPause><!-- 访问异常时，暂停访问时间，3 分钟 -->
 	<exceptionLimit>5</exceptionLimit><!-- 连续页面访问异常次数限制，默认连续异常次数达到5次则暂停程序 -->
 	<autoExcute>1</autoExcute><!-- 设置当前任务批次任务数量处理完成后，等待下次任务自动执行的时间，单位：分钟，默认10分钟。PS：用于服务器端新任务发布和设置的任务数量完毕 -->
-	
+	<printPage>0</printPage>
 	<!-- 配置淘宝账号 -->
 	<login username="xiongyou2011" password="ad6984984xiong"></login>
 	

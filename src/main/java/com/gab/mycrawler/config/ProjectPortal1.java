@@ -47,7 +47,7 @@ public class ProjectPortal1 {
 			// taskComm.userLogin(clientID); // 用户登录
 			// 2.从任务中得到平台、链接、数据对象
 			int errorCount = 0; // 记录出错次数,初始为0
-			int version = 232;
+			int version = 233;
 			if (!taskComm.validVersion(version)) {
 				return;
 			}

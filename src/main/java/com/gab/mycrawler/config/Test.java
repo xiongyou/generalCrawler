@@ -13,8 +13,8 @@ public class Test {
 
 	
 
-		String crawlerUri = "https://item.taobao.com/item.htm?id=15571653611";
-		String platform ="TaoBao";		
+		String crawlerUri = "http://item.yhd.com/item/52880376";
+		String platform ="YiHaoDian";		
 		String dataObj = "Product";
 		int timeout =10;
 		System.setProperty("webdriver.chrome.driver", "libs/chromedriver.exe");
